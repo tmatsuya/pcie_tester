@@ -1,0 +1,56 @@
+2014/12/26
+1. DMA write test (3DW) into 0xD0000000
+  47,890,624 pps
+  47,890,624*(64+20)*8 = 32,182,499,328 bps
+
+2. DMA write test (4DW) into 0x00000000D0000000
+  47,890,550 pps
+  47,890,550*(64+20)*8 = 32,182,449,600 bps
+
+3. DMA write test (4DW) into 0x00000001D0000000
+  47,892,866 pps
+  47,892,866*(64+20)*8 = 32,184,005,952 bps
+
+2014/12/29
+1. DMA read test (4DW,64Byte) into 0x0000000078000000 (non-burst)
+  2,175,045 pps
+  2,175,045*(64+20)*8 = 1,461,630,240 bps
+  459 ns
+
+2015/1/3
+1. DMA read test (4DW,64Byte,BUFFER=CD) into 0x0000000200000000 (burst)
+1.1 cycle=1  45280070
+1.2 cycle=2  45295118  
+1.3 cycle=3  45289109
+1.4 cycle=4  45314225
+1.5 cycle=5  45540704
+1.6 cycle=6  41660727 
+1.7 cycle=7  35710451
+1.8 cycle=8  31248123
+1.9 cycle=9  27777618
+1.A cycle=10 25000000
+1.B cycle=11 22726984
+
+
+cycle=1 BUFFER=18 ok
+cycle=1 BUFFER=19 ng
+cycle=2 BUFFER=17 ok
+cycle=2 BUFFER=18 ng
+cycle=3 BUFFER=1b ok
+cycle=3 BUFFER=1c ng
+cycle=4 BUFFER=20 ng
+
+cycle=10 BUFFER=5C ok
+cycle=10 BUFFER=5D ng
+
+2014/12/29
+1. DMA read test (4DW,128Byte) into 0x0000000200000000 (burst)
+2.F cycle=3  32231494 25867869
+2.F cycle=4  44964670 25870968
+2.F cycle=5  36956068 25870703
+2.F cycle=6  34133912 25869670
+2.F cycle=7  31619440 25870484
+2.F cycle=8  29456990 25870967
+2.F cycle=9  27295488 25865979
+2.F cycle=10 25000000 25049986
+2.F cycle=11 22725108 22750618
