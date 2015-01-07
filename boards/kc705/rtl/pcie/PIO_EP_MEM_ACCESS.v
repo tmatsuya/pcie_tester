@@ -81,8 +81,27 @@ always @(posedge clk) begin
 				read_data[31:0] <= {dma_para[31:0]};
 			6'h02: // cfg_command & cfg_lcommand
 				read_data[31:0] <= {cfg_command, cfg_lcommand};
-			6'h03: // cfg_dcommand, cfg_dcommand2
-				read_data[31:0] <= {cfg_dcommand, cfg_dcommand2};
+			6'h03: begin // Max Pay load, Max Read Request Size // cfg_dcommand, cfg_dcommand2
+//				read_data[31:0] <= {cfg_dcommand, cfg_dcommand2};
+				case (cfg_dcommand[7:5])	// Max Payload Size
+				3'b000: read_data[31:16] <= 16'd128;
+				3'b001: read_data[31:16] <= 16'd256;
+				3'b010: read_data[31:16] <= 16'd512;
+				3'b011: read_data[31:16] <= 16'd1024;
+				3'b100: read_data[31:16] <= 16'd2048;
+				3'b101: read_data[31:16] <= 16'd4096;
+				default:read_data[31:16] <= 16'd000;
+				endcase
+				case (cfg_dcommand[14:12])	// Max Read Request Size
+				3'b000: read_data[15:0] <= 16'd128;
+				3'b001: read_data[15:0] <= 16'd256;
+				3'b010: read_data[15:0] <= 16'd512;
+				3'b011: read_data[15:0] <= 16'd1024;
+				3'b100: read_data[15:0] <= 16'd2048;
+				3'b101: read_data[15:0] <= 16'd4096;
+				default: read_data[15:0] <= 16'd000;
+				endcase
+			end
 			6'h04: // dma addr high
 				read_data[31:0] <= {32'h0, dma_addrh[15:0]};
 			6'h05: // dma addr low
