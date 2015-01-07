@@ -54,3 +54,18 @@ cycle=10 BUFFER=5D ng
 2.F cycle=9  27295488 25865979
 2.F cycle=10 25000000 25049986
 2.F cycle=11 22725108 22750618
+
+
+2015/01/07
+1. DMA writed test (4DW,64Byte) into other board 0x60000000 (local G2x8, other
+xx)
+
+1.1 other Gen2x8  47,894,825 pps
+1.2 other Gen2x4  38,322,273 pps
+1.3 other Gen2x2  23,718,870 pps
+1.4 other Gen2x1  11,854,332 pps
+1.5 other Gen1x8  38,317,776 pps
+1.6 other Gen1x4  23,718,642 pps
+1.7 other Gen1x2  11,853,076 pps
+1.8 other Gen1x1   5,920,822 pps
+
