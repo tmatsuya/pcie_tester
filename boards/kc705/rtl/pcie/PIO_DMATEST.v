@@ -1,8 +1,6 @@
 `default_nettype none
 `timescale 1ps/1ps
 
-`define USE_TLP4DW
-
 module PIO_DMATEST # (
 	// RX/TX interface data width
 	parameter C_DATA_WIDTH = 64,
@@ -90,6 +88,7 @@ parameter TLP_TX_IDLE       = 3'b000;
 parameter TLP_TX_WRITE      = 3'b001;
 parameter TLP_TX_READ       = 3'b010;
 parameter TLP_TX_READWAIT   = 3'b011;
+parameter TLP_TX_READWRITE  = 3'b101;
 parameter TLP_TX_LOOP       = 3'b100;
 reg [2:0] tx_state = TLP_TX_IDLE;
 reg [15:0] tlp_tx_count = 16'h0;
@@ -140,17 +139,19 @@ always @(posedge clk) begin
 			s_axis_tx_tlast <= 1'b0;
 			s_axis_tx_tkeep <= 16'h0000;
 			s_axis_tx_tdata <= 128'h00000000_00000000_00000000_00000000;
-			if (dma_length != 32'h0 && s_axis_other_req == 1'b0) begin
+			if (dma_testmode != 3'h0 && s_axis_other_req == 1'b0) begin
 				if (dma_addr == 30'h0) begin
 					dma_addr <= dma_addrl;
 					dma_len  <= dma_length;
 				end
 				s_axis_tx_req <= 1'b1;
 				if (s_axis_tx_ack && s_axis_tx_tready)
-					if (dma_testmode == 3'b01)
+					if (dma_testmode == 3'b001)
 						tx_state <= TLP_TX_WRITE;
 					else if (dma_testmode[1])
 						tx_state <= TLP_TX_READ;
+					else if (dma_testmode[2])
+						tx_state <= TLP_TX_READWRITE;
 			end else
 				s_axis_tx_req <= 1'b0;
 		end
@@ -161,11 +162,7 @@ always @(posedge clk) begin
 				s_axis_tx_tvalid <= 1'b1;
 				s_axis_tx_tlast <= 1'b0;
 				s_axis_tx_tkeep <= 16'hffff;
-`ifndef USE_TLP4DW
-				s_axis_tx_tdata <= {32'h00010203, {dma_addr, 2'b00}, cfg_completer_id, tlp_rx_tag[7:0], 8'hFF, 24'h400000, dma_para[7:0]};
-`else
 				s_axis_tx_tdata <= {{dma_addr, 2'b00}, {16'h00, dma_addrh}, cfg_completer_id, tlp_tx_tag[7:0], 8'hFF, 24'h600000, dma_para[7:0]};
-`endif
 			end
 			16'h1: begin
 				s_axis_tx_tvalid <= 1'b1;
@@ -185,13 +182,8 @@ always @(posedge clk) begin
 			16'h4: begin
 				s_axis_tx_tvalid <= 1'b1;
 				s_axis_tx_tlast <= 1'b1;
-`ifndef USE_TLP4DW
-				s_axis_tx_tkeep <= 16'h0fff;
-				s_axis_tx_tdata <= 128'h00000000_3C3D3E3F_38393A3B_34353637;
-`else
 				s_axis_tx_tkeep <= 16'hffff;
 				s_axis_tx_tdata <= 128'h40414243_3C3D3E3F_38393A3B_34353637;
-`endif
 				tx_done <= 1'b1;
 				if (!oneshot_1sec) begin
 					tlp_tx_pps <= tlp_tx_pps + 32'h1;
@@ -229,13 +221,8 @@ always @(posedge clk) begin
 					tx_done <= 1'b1;
 					s_axis_tx_tvalid <= 1'b1;
 					s_axis_tx_tlast <= 1'b1;
-`ifndef	 USE_TLP4DW
-					s_axis_tx_tkeep <= 16'h0fff;
-					s_axis_tx_tdata <= {32'h00000000, {dma_addr, 2'b00}, cfg_completer_id, tlp_rx_tag[7:0], 8'hff, 24'h000000, dma_para[7:0]};
-`else
 					s_axis_tx_tkeep <= 16'hffff;
 					s_axis_tx_tdata <= {{dma_addr, 2'b00}, {16'h0, dma_addrh}, cfg_completer_id, tlp_rx_tag[7:0], 8'hff, 24'h200000, dma_para[7:0]};
-`endif
 					if (!oneshot_1sec) begin
 						tlp_tx_pps <= tlp_tx_pps + 32'h1;
 						tlp_tx_dw <= tlp_tx_dw + {24'h0, dma_para[7:0]};
@@ -273,6 +260,9 @@ always @(posedge clk) begin
 				tx_state <= TLP_TX_IDLE;
 			end else if (rx_done)
 				tx_state <= TLP_TX_READ;
+		end
+		TLP_TX_READWRITE: begin
+			tx_state <= TLP_TX_IDLE;
 		end
 		TLP_TX_LOOP: begin
 			s_axis_tx_tvalid <= 1'b0;
