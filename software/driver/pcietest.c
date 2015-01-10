@@ -24,6 +24,8 @@
 #endif
 
 static DEFINE_PCI_DEVICE_TABLE(pcietest_pci_tbl) = {
+	{0x1425, 0x0030, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
+	{0x1425, 0x0001, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0x15ad, 0x0405, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0,}
 };
@@ -40,7 +42,7 @@ static __inline unsigned long long int rdtsc(void)
 }
 
 
-static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L;
+static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L, *mmio1wc_ptr;
 static unsigned long mmio0_start, mmio0_end, mmio0_flags, mmio0_len;
 static unsigned long mmio1_start, mmio1_end, mmio1_flags, mmio1_len;
 static struct pci_dev *pcidev = NULL;
@@ -74,7 +76,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	mb();
 	s[0] = rdtsc();
 	while (i<LOOPS) {
-//		rmb();
+//		mb();
 		memcpy(tmp, ptr, 4);
 		++i;
 		ptr+=4;
@@ -87,7 +89,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	mb();
 	s[1] = rdtsc();
 	while (i<LOOPS) {
-//		rmb();
+//		mb();
 		memcpy(tmp, ptr, 64);
 		++i;
 		ptr+=64;
@@ -100,10 +102,10 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	mb();
 	s[2] = rdtsc();
 	while (i<LOOPS) {
-//		rmb();
-//		memcpy(ptr, tmp, 4);
+//		mb();
+		memcpy(ptr, tmp, 4);
 		++i;
-//		ptr+=4;
+		ptr+=4;
 	}
 	e[2] = rdtsc();
 
@@ -113,14 +115,40 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	mb();
 	s[3] = rdtsc();
 	while (i<LOOPS) {
-//		rmb();
-//		memcpy(ptr, tmp, 64);
+//		mb();
+		memcpy(ptr, tmp, 64);
 		++i;
-//		ptr+=64;
+		ptr+=64;
 	}
 	e[3] = rdtsc();
 
-	sprintf(tmp, "%d\n%d\n%d\n%d\n\n", e[0]-s[0], e[1]-s[1], e[2]-s[2], e[3]-s[3]);
+	/* write 4 byte */
+	i = 0;
+	ptr = mmio1wc_ptr;
+	mb();
+	s[4] = rdtsc();
+	while (i<LOOPS) {
+//		mb();
+		memcpy(ptr, tmp, 4);
+		++i;
+		ptr+=4;
+	}
+	e[4] = rdtsc();
+
+	/* write 64 byte */
+	i = 0;
+	ptr = mmio1wc_ptr;
+	mb();
+	s[5] = rdtsc();
+	while (i<LOOPS) {
+//		mb();
+		memcpy(ptr, tmp, 64);
+		++i;
+		ptr+=64;
+	}
+	e[5] = rdtsc();
+
+	sprintf(tmp, "%d\n%d\n%d\n%d\n%d\n%d\n\n", e[0]-s[0], e[1]-s[1], e[2]-s[2], e[3]-s[3], e[4]-s[4], e[5]-s[5]);
 	len = strlen(tmp);
 
 	copy_len = len;
@@ -254,10 +282,14 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 	printk( KERN_INFO "mmio1_flags: %X\n", (unsigned int)mmio1_flags );
 	printk( KERN_INFO "mmio1_len  : %X\n", (unsigned int)mmio1_len   );
 
-//	mmio1_ptr = ioremap(mmio1_start, mmio1_len);
-	mmio1_ptr = ioremap_wc(mmio1_start, mmio1_len);
+	mmio1_ptr = ioremap(mmio1_start, mmio1_len);
+	mmio1wc_ptr = ioremap_wc(mmio1_start, mmio1_len);
 	if (!mmio1_ptr) {
 		printk(KERN_ERR "cannot ioremap MMIO1 base\n");
+		goto err_out;
+	}
+	if (!mmio1wc_ptr) {
+		printk(KERN_ERR "cannot ioremap MMIO1wc base\n");
 		goto err_out;
 	}
 
@@ -293,6 +325,10 @@ static void __devexit pcietest_remove_one (struct pci_dev *pdev)
 	if (mmio1_ptr) {
 		iounmap(mmio1_ptr);
 		mmio1_ptr = 0L;
+	}
+	if (mmio1wc_ptr) {
+		iounmap(mmio1wc_ptr);
+		mmio1wc_ptr = 0L;
 	}
 	pci_release_regions (pdev);
 	pci_disable_device (pdev);

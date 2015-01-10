@@ -1,4 +1,5 @@
-#cpupower -c all frequency-set -g performance
+#sudo  yum install kernel-tools
+cpupower -c all frequency-set -g performance
 sudo rmmod pcietest
 make clean
 make
@@ -7,6 +8,6 @@ sudo modprobe pcietest
 # link mode = 13
 echo 13 >/dev/pcietest/0
 sleep 1
-head -4 /dev/pcietest/0
+head -6 /dev/pcietest/0
 #
-#cpupower -c all frequency-set -g ondemand
+cpupower -c all frequency-set -g ondemand
