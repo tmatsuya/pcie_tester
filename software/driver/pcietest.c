@@ -8,6 +8,7 @@
 #include <linux/version.h>
 
 #define	LOOPS	(100000)
+#define	DMA_BUF_MAX	(4*1024*1024)
 
 #ifndef DRV_NAME
 #define DRV_NAME	"pcietest"
@@ -45,6 +46,7 @@ static __inline unsigned long long int rdtsc(void)
 static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L, *mmio1wc_ptr;
 static unsigned long mmio0_start, mmio0_end, mmio0_flags, mmio0_len;
 static unsigned long mmio1_start, mmio1_end, mmio1_flags, mmio1_len;
+static unsigned long *dma_ptr = 0L;
 static struct pci_dev *pcidev = NULL;
 
 
@@ -62,7 +64,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 {
 	int copy_len, i, s[10], e[10], len;
 	char tmp[256];
-	unsigned char *ptr;
+	unsigned char *ptr, *dptr;
 
 #ifdef DEBUG
 	printk("%s\n", __func__);
@@ -73,78 +75,90 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	/* read 4 byte */
 	i = 0;
 	ptr = mmio1_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[0] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(tmp, ptr, 4);
+		memcpy(dptr, ptr, 4);
 		++i;
 		ptr+=4;
+		dptr+=4;
 	}
 	e[0] = rdtsc();
 
 	/* read 64 byte */
 	i = 0;
 	ptr = mmio1_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[1] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(tmp, ptr, 64);
+		memcpy(dptr, ptr, 64);
 		++i;
 		ptr+=64;
+		dptr+=32;
 	}
 	e[1] = rdtsc();
 
 	/* write 4 byte */
 	i = 0;
 	ptr = mmio1_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[2] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(ptr, tmp, 4);
+		memcpy(ptr, dptr, 4);
 		++i;
 		ptr+=4;
+		dptr+=4;
 	}
 	e[2] = rdtsc();
 
 	/* write 64 byte */
 	i = 0;
 	ptr = mmio1_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[3] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(ptr, tmp, 64);
+		memcpy(ptr, dptr, 64);
 		++i;
 		ptr+=64;
+		dptr+=32;
 	}
 	e[3] = rdtsc();
 
 	/* write 4 byte */
 	i = 0;
 	ptr = mmio1wc_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[4] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(ptr, tmp, 4);
+		memcpy(ptr, dptr, 4);
 		++i;
 		ptr+=4;
+		dptr+=4;
 	}
 	e[4] = rdtsc();
 
 	/* write 64 byte */
 	i = 0;
 	ptr = mmio1wc_ptr;
+	dptr = dma_ptr;
 	mb();
 	s[5] = rdtsc();
 	while (i<LOOPS) {
 //		mb();
-		memcpy(ptr, tmp, 64);
+		memcpy(ptr, dptr, 64);
 		++i;
 		ptr+=64;
+		dptr+=32;
 	}
 	e[5] = rdtsc();
 
@@ -282,6 +296,11 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 	printk( KERN_INFO "mmio1_flags: %X\n", (unsigned int)mmio1_flags );
 	printk( KERN_INFO "mmio1_len  : %X\n", (unsigned int)mmio1_len   );
 
+	if ( ( dma_ptr = kmalloc(DMA_BUF_MAX, GFP_KERNEL) ) == 0 ) {
+		printk("fail to kmalloc\n");
+		goto err_out;
+	}
+
 	mmio1_ptr = ioremap(mmio1_start, mmio1_len);
 	mmio1wc_ptr = ioremap_wc(mmio1_start, mmio1_len);
 	if (!mmio1_ptr) {
@@ -310,6 +329,8 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 	return 0;
 
 err_out:
+	if (dma_ptr != 0L)
+		kfree(dma_ptr);
 	pci_release_regions (pdev);
 	pci_disable_device (pdev);
 	return -1;
@@ -318,6 +339,8 @@ err_out:
 
 static void __devexit pcietest_remove_one (struct pci_dev *pdev)
 {
+	if (dma_ptr != 0L)
+		kfree(dma_ptr);
 	if (mmio0_ptr) {
 		iounmap(mmio0_ptr);
 		mmio0_ptr = 0L;
