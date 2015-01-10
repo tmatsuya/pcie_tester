@@ -1,3 +1,4 @@
+#include <linux/kernel.h>
 #include <linux/module.h>
 #include <linux/miscdevice.h>
 #include <linux/fs.h>
@@ -77,20 +78,27 @@ static ssize_t pcietest_write(struct file *filp, const char __user *buf,
 			    size_t count, loff_t *ppos)
 
 {
-	int copy_len;
+	char tmp[256];
+	int copy_len, i;
 
-	copy_len = count;
+	if (count <= 256)
+		copy_len = count;
+	else
+		copy_len = 256;
 
 #ifdef DEBUG
 	printk("%s\n", __func__);
 #endif
 
-#if 0
-	if ( copy_from_user( mmio0_ptr, buf, copy_len ) ) {
+	if ( copy_from_user( tmp, buf, copy_len ) ) {
 		printk( KERN_INFO "copy_from_user failed\n" );
 		return -EFAULT;
 	}
-#endif
+	if ( copy_len >= 2) {
+		sscanf(tmp, "%02X", &i);
+		printk("PCIe link mode is %02x.\n", i);
+		*mmio0_ptr = i;		/* set PCIe link mode */
+	}
 
 	return copy_len;
 }
@@ -187,6 +195,7 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 	printk( KERN_INFO "mmio1_flags: %X\n", (unsigned int)mmio1_flags );
 	printk( KERN_INFO "mmio1_len  : %X\n", (unsigned int)mmio1_len   );
 
+//	mmio1_ptr = ioremap(mmio1_start, mmio1_len);
 	mmio1_ptr = ioremap_wc(mmio1_start, mmio1_len);
 	if (!mmio1_ptr) {
 		printk(KERN_ERR "cannot ioremap MMIO1 base\n");

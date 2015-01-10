@@ -1,0 +1,8 @@
+sudo rmmod pcietest
+make clean
+make
+make install
+sudo modprobe pcietest
+echo 13 >/dev/pcietest/0
+sleep 1
+cat /dec/pcietest/0
