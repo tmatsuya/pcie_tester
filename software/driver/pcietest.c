@@ -99,9 +99,9 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	s[2] = rdtsc();
 	while (i<100) {
 //		rmb();
-		memcpy(ptr, tmp, 4);
+//		memcpy(ptr, tmp, 4);
 		++i;
-		ptr+=4;
+//		ptr+=4;
 	}
 	e[2] = rdtsc();
 
@@ -112,9 +112,9 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	s[3] = rdtsc();
 	while (i<100) {
 //		rmb();
-		memcpy(ptr, tmp, 64);
+//		memcpy(ptr, tmp, 64);
 		++i;
-		ptr+=64;
+//		ptr+=64;
 	}
 	e[3] = rdtsc();
 

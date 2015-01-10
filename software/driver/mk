@@ -5,4 +5,4 @@ sudo make install
 sudo modprobe pcietest
 echo 13 >/dev/pcietest/0
 sleep 1
-cat /dev/pcietest/0
+head -4 /dev/pcietest/0
