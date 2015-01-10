@@ -4,9 +4,6 @@
 #include <linux/poll.h>
 #include <linux/string.h>
 #include <linux/pci.h>
-#include <linux/wait.h>		/* wait_queue_head_t */
-#include <linux/sched.h>	/* wait_event_interruptible, wake_up_interruptible */
-#include <linux/interrupt.h>
 #include <linux/version.h>
 
 #ifndef DRV_NAME
@@ -29,32 +26,22 @@ static DEFINE_PCI_DEVICE_TABLE(pcietest_pci_tbl) = {
 };
 MODULE_DEVICE_TABLE(pci, pcietest_pci_tbl);
 
+
+static __inline unsigned long long int rdtsc(void)
+{
+	unsigned a, d;
+
+	__asm__ volatile("rdtsc" : "=a" (a), "=d" (d));
+
+	return ((unsigned long long)a) | (((unsigned long long)d) << 32);;
+}
+
+
 static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L;
 static unsigned long mmio0_start, mmio0_end, mmio0_flags, mmio0_len;
 static unsigned long mmio1_start, mmio1_end, mmio1_flags, mmio1_len;
 static struct pci_dev *pcidev = NULL;
-static wait_queue_head_t write_q;
-static wait_queue_head_t read_q;
 
-extern unsigned long any_v2p(unsigned long);
-
-
-static irqreturn_t pcietest_interrupt(int irq, void *pdev)
-{
-
-	// not my interrupt
-	if (1) {
-		return IRQ_NONE;
-	}
-
-#ifdef DEBUG
-	printk("%s\n", __func__);
-#endif
-
-	wake_up_interruptible( &read_q );
-
-	return IRQ_HANDLED;
-}
 
 static int pcietest_open(struct inode *inode, struct file *filp)
 {
@@ -72,11 +59,6 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 
 #ifdef DEBUG
 	printk("%s\n", __func__);
-#endif
-
-#if 0
-	if ( wait_event_interruptible( read_q, ( pbuf0.rx_read_ptr != pbuf0.rx_write_ptr ) ) )
-		return -ERESTARTSYS;
 #endif
 
 	copy_len = count;
@@ -211,10 +193,6 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 		goto err_out;
 	}
 
-	if (request_irq(pdev->irq, pcietest_interrupt, IRQF_SHARED, DRV_NAME, pdev)) {
-		printk(KERN_ERR "cannot request_irq\n");
-	}
-	
 	pcidev = pdev;
 
 	/* reset board */
@@ -228,9 +206,6 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 		return rc;
 	}
 
-	init_waitqueue_head( &write_q );
-	init_waitqueue_head( &read_q );
-	
 
 	return 0;
 
@@ -243,9 +218,6 @@ err_out:
 
 static void __devexit pcietest_remove_one (struct pci_dev *pdev)
 {
-	disable_irq(pdev->irq);
-	free_irq(pdev->irq, pdev);
-
 	if (mmio0_ptr) {
 		iounmap(mmio0_ptr);
 		mmio0_ptr = 0L;
