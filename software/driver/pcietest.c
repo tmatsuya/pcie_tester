@@ -56,7 +56,9 @@ static int pcietest_open(struct inode *inode, struct file *filp)
 static ssize_t pcietest_read(struct file *filp, char __user *buf,
 			   size_t count, loff_t *ppos)
 {
-	int copy_len;
+	char tmp[256];
+	int copy_len, i, s[10], e[10], len;
+	unsigned char *ptr;
 
 #ifdef DEBUG
 	printk("%s\n", __func__);
@@ -64,12 +66,67 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 
 	copy_len = count;
 
-#if 0
-	if ( copy_to_user( buf, pbuf0.rx_read_ptr, copy_len ) ) {
+	/* read 4 byte */
+	i = 0;
+	ptr = mmio1_ptr;
+	mb();
+	s[0] = rdtsc();
+	while (i<100) {
+//		rmb();
+		memcpy(tmp, ptr, 4);
+		++i;
+		ptr+=4;
+	}
+	e[0] = rdtsc();
+
+	/* read 64 byte */
+	i = 0;
+	ptr = mmio1_ptr;
+	mb();
+	s[1] = rdtsc();
+	while (i<100) {
+//		rmb();
+		memcpy(tmp, ptr, 64);
+		++i;
+		ptr+=64;
+	}
+	e[1] = rdtsc();
+
+	/* write 4 byte */
+	i = 0;
+	ptr = mmio1_ptr;
+	mb();
+	s[2] = rdtsc();
+	while (i<100) {
+//		rmb();
+		memcpy(ptr, tmp, 4);
+		++i;
+		ptr+=4;
+	}
+	e[2] = rdtsc();
+
+	/* write 64 byte */
+	i = 0;
+	ptr = mmio1_ptr;
+	mb();
+	s[3] = rdtsc();
+	while (i<100) {
+//		rmb();
+		memcpy(ptr, tmp, 64);
+		++i;
+		ptr+=64;
+	}
+	e[3] = rdtsc();
+
+	sprintf(tmp, "%d\n%d\n%d\n%d\n\n", e[0]-s[0], e[1]-s[1], e[2]-s[2], e[3]-s[3]);
+	len = strlen(tmp);
+
+	copy_len = len;
+
+	if ( copy_to_user( buf, tmp, copy_len ) ) {
 		printk( KERN_INFO "copy_to_user failed\n" );
 		return -EFAULT;
 	}
-#endif
 
 	return copy_len;
 }
