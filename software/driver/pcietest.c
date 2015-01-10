@@ -257,6 +257,7 @@ static void __devexit pcietest_remove_one (struct pci_dev *pdev)
 	pci_release_regions (pdev);
 	pci_disable_device (pdev);
 	printk("%s\n", __func__);
+	misc_deregister(&pcietest_dev);
 }
 
 
@@ -286,7 +287,6 @@ static int __init pcietest_init(void)
 static void __exit pcietest_cleanup(void)
 {
 	printk("%s\n", __func__);
-	misc_deregister(&pcietest_dev);
 	pci_unregister_driver(&pcietest_pci_driver);
 }
 
