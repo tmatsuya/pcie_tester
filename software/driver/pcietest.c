@@ -24,13 +24,12 @@
 #endif
 
 static DEFINE_PCI_DEVICE_TABLE(pcietest_pci_tbl) = {
-	{0x3776, 0x8011, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
+	{0x15ad, 0x0405, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0,}
 };
 MODULE_DEVICE_TABLE(pci, pcietest_pci_tbl);
 
-static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L, *dma_virt_ptr = 0L;
-static dma_addr_t dma_phys_ptr = 0L;
+static unsigned char *mmio0_ptr = 0L, *mmio1_ptr = 0L;
 static unsigned long mmio0_start, mmio0_end, mmio0_flags, mmio0_len;
 static unsigned long mmio1_start, mmio1_end, mmio1_flags, mmio1_len;
 static struct pci_dev *pcidev = NULL;
@@ -165,8 +164,6 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 
 	mmio0_ptr = 0L;
 	mmio1_ptr = 0L;
-	dma_virt_ptr = 0L;
-	dma_phys_ptr = 0L;
 
 	rc = pci_enable_device (pdev);
 	if (rc)
@@ -213,14 +210,6 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 		printk(KERN_ERR "cannot ioremap MMIO1 base\n");
 		goto err_out;
 	}
-
-	dma_virt_ptr = dma_alloc_coherent( &pdev->dev, DMA_BUF_SIZE, &dma_phys_ptr, GFP_KERNEL);
-	if (!dma_virt_ptr) {
-		printk(KERN_ERR "cannot dma_alloc_coherent\n");
-		goto err_out;
-	}
-	printk( KERN_INFO "dma_virt_ptr  : %X\n", (unsigned int)dma_virt_ptr );
-	printk( KERN_INFO "dma_phys_ptr  : %X\n", (unsigned int)dma_phys_ptr );
 
 	if (request_irq(pdev->irq, pcietest_interrupt, IRQF_SHARED, DRV_NAME, pdev)) {
 		printk(KERN_ERR "cannot request_irq\n");
@@ -299,10 +288,6 @@ static void __exit pcietest_cleanup(void)
 	printk("%s\n", __func__);
 	misc_deregister(&pcietest_dev);
 	pci_unregister_driver(&pcietest_pci_driver);
-
-	if ( dma_virt_ptr )
-		dma_free_coherent(&pcidev->dev, DMA_BUF_SIZE, dma_virt_ptr, dma_phys_ptr);
-
 }
 
 MODULE_LICENSE("GPL");
