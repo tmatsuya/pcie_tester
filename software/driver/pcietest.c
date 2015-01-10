@@ -7,6 +7,8 @@
 #include <linux/pci.h>
 #include <linux/version.h>
 
+#define	LOOPS	(100000)
+
 #ifndef DRV_NAME
 #define DRV_NAME	"pcietest"
 #endif
@@ -56,8 +58,8 @@ static int pcietest_open(struct inode *inode, struct file *filp)
 static ssize_t pcietest_read(struct file *filp, char __user *buf,
 			   size_t count, loff_t *ppos)
 {
-	char tmp[256];
 	int copy_len, i, s[10], e[10], len;
+	char tmp[256];
 	unsigned char *ptr;
 
 #ifdef DEBUG
@@ -71,7 +73,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	ptr = mmio1_ptr;
 	mb();
 	s[0] = rdtsc();
-	while (i<100) {
+	while (i<LOOPS) {
 //		rmb();
 		memcpy(tmp, ptr, 4);
 		++i;
@@ -84,7 +86,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	ptr = mmio1_ptr;
 	mb();
 	s[1] = rdtsc();
-	while (i<100) {
+	while (i<LOOPS) {
 //		rmb();
 		memcpy(tmp, ptr, 64);
 		++i;
@@ -97,7 +99,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	ptr = mmio1_ptr;
 	mb();
 	s[2] = rdtsc();
-	while (i<100) {
+	while (i<LOOPS) {
 //		rmb();
 //		memcpy(ptr, tmp, 4);
 		++i;
@@ -110,7 +112,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	ptr = mmio1_ptr;
 	mb();
 	s[3] = rdtsc();
-	while (i<100) {
+	while (i<LOOPS) {
 //		rmb();
 //		memcpy(ptr, tmp, 64);
 		++i;
