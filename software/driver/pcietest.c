@@ -7,7 +7,7 @@
 #include <linux/pci.h>
 #include <linux/version.h>
 
-#define	LOOPS	(100000)
+#define	LOOPS	(1000000)
 #define	DMA_BUF_MAX	(4*1024*1024)
 
 #ifndef DRV_NAME
@@ -61,7 +61,8 @@ static int pcietest_open(struct inode *inode, struct file *filp)
 static ssize_t pcietest_read(struct file *filp, char __user *buf,
 			   size_t count, loff_t *ppos)
 {
-	int copy_len, i, s[10], e[10], len;
+	int copy_len, i, len;
+	unsigned long long s[10], e[10];
 	char tmp[256];
 	unsigned char *ptr, *dptr;
 
@@ -77,13 +78,13 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	dptr = dma_ptr;
 	mb();
 	s[0] = rdtsc();
+if (parameter_length <= 4)
 	while (i<LOOPS) {
 //		mb();
-if (parameter_length <= 4)
 		memcpy(dptr, ptr, parameter_length);
 		++i;
 		ptr+=parameter_length;
-		dptr+=parameter_length;
+//		dptr+=parameter_length;
 	}
 	e[0] = rdtsc();
 
@@ -98,7 +99,7 @@ if (parameter_length <= 4)
 		memcpy(ptr, dptr, parameter_length);
 		++i;
 		ptr+=parameter_length;
-		dptr+=parameter_length;
+//		dptr+=parameter_length;
 	}
 	e[1] = rdtsc();
 
@@ -113,11 +114,11 @@ if (parameter_length <= 4)
 		memcpy(ptr, dptr, parameter_length);
 		++i;
 		ptr+=parameter_length;
-		dptr+=parameter_length;
+//		dptr+=parameter_length;
 	}
 	e[2] = rdtsc();
 
-	sprintf(tmp, "%02x,%d,%d,%d,%d,%d\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
+	sprintf(tmp, "%02x,%d,%d,%llu,%llu,%llu\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
 	len = strlen(tmp);
 
 	copy_len = len;

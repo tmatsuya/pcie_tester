@@ -24,7 +24,7 @@ int main()
 	i = read( fd, buf, 256 );
 	write( 0, buf, i);
 
-	sscanf( buf, "%x,%d,%d,%lu,%lu,%lu", &mode, &size, &loops, &cycles[0], &cycles[1], &cycles[2]);
+	sscanf( buf, "%x,%d,%d,%llu,%llu,%llu", &mode, &size, &loops, &cycles[0], &cycles[1], &cycles[2]);
 
 	printf("CPU Frequency:%lldMHz (%lld cycles/sec)\n", cpu_cycles_per_sec / 1000000, cpu_cycles_per_sec);
 
