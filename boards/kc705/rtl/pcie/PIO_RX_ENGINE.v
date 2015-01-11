@@ -224,7 +224,8 @@ module PIO_RX_ENGINE  #(
                     m_axis_rx_tready <= #TCQ 1'b0;
 
 
-                    if (m_axis_rx_tdata[9:0] == 10'b1)
+//                    if (m_axis_rx_tdata[9:0] == 10'b1)
+                    if (m_axis_rx_tdata[9:0] != 10'b0)
                     begin
 
                       req_tc     <= #TCQ m_axis_rx_tdata[22:20];
@@ -275,7 +276,8 @@ module PIO_RX_ENGINE  #(
                     req_len      <= #TCQ m_axis_rx_tdata[9:0];
                     m_axis_rx_tready <= #TCQ 1'b0;
 
-                    if (m_axis_rx_tdata[9:0] == 10'b1)
+//                    if (m_axis_rx_tdata[9:0] == 10'b1)
+                    if (m_axis_rx_tdata[9:0] != 10'b0)
                     begin
 
                       req_tc     <= #TCQ m_axis_rx_tdata[22:20];
@@ -624,7 +626,8 @@ module PIO_RX_ENGINE  #(
                   case (m_axis_rx_tdata[94:88])
 
                     PIO_RX_MEM_RD32_FMT_TYPE : begin
-                      if (m_axis_rx_tdata[73:64] == 10'b1)
+//                      if (m_axis_rx_tdata[73:64] == 10'b1)
+                      if (m_axis_rx_tdata[73:64] != 10'b0)
                       begin
                         req_tc       <= #TCQ m_axis_rx_tdata[86:84];
                         req_td       <= #TCQ m_axis_rx_tdata[79];
@@ -655,7 +658,8 @@ module PIO_RX_ENGINE  #(
                     end // PIO_RX_MEM_WR32_FMT_TYPE
 
                     PIO_RX_MEM_RD64_FMT_TYPE : begin
-                      if (m_axis_rx_tdata[73:64] == 10'b1)
+//                      if (m_axis_rx_tdata[73:64] == 10'b1)
+                      if (m_axis_rx_tdata[73:64] != 10'b0)
                       begin
                         req_tc       <= #TCQ m_axis_rx_tdata[86:84];
                         req_td       <= #TCQ m_axis_rx_tdata[79];

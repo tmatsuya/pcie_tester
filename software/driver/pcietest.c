@@ -7,7 +7,7 @@
 #include <linux/pci.h>
 #include <linux/version.h>
 
-#define	LOOPS	(100000)
+#define	LOOPS	(10000)
 #define	DMA_BUF_MAX	(4*1024*1024)
 
 #ifndef DRV_NAME
@@ -78,7 +78,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	dptr = dma_ptr;
 	mb();
 	s[0] = rdtsc();
-if (parameter_length <= 4)
+//if (parameter_length <= 4)
 	while (i<LOOPS) {
 //		mb();
 		memcpy(dptr, ptr, parameter_length);
