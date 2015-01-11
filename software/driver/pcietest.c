@@ -25,6 +25,7 @@
 #endif
 
 static DEFINE_PCI_DEVICE_TABLE(pcietest_pci_tbl) = {
+	{0x3776, 0x8011, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0x1425, 0x0030, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0x1425, 0x0001, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0x15ad, 0x0405, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
@@ -87,6 +88,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	}
 	e[0] = rdtsc();
 
+#if 0
 	/* read 64 byte */
 	i = 0;
 	ptr = mmio1_ptr;
@@ -101,6 +103,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 		dptr+=32;
 	}
 	e[1] = rdtsc();
+#endif
 
 	/* write 4 byte */
 	i = 0;
@@ -301,8 +304,8 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 		goto err_out;
 	}
 
-	mmio1_ptr = ioremap(mmio1_start, mmio1_len);
-	mmio1wc_ptr = ioremap_wc(mmio1_start, mmio1_len);
+	mmio1_ptr = ioremap(mmio1_start, mmio1_len/2);
+	mmio1wc_ptr = ioremap_wc(mmio1_start+mmio1_len/2, mmio1_len/2);
 	if (!mmio1_ptr) {
 		printk(KERN_ERR "cannot ioremap MMIO1 base\n");
 		goto err_out;
