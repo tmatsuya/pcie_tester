@@ -165,7 +165,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	}
 	e[5] = rdtsc();
 
-	sprintf(tmp, "%d\n%d\n%d\n%d\n%d\n%d\n\n", e[0]-s[0], e[1]-s[1], e[2]-s[2], e[3]-s[3], e[4]-s[4], e[5]-s[5]);
+	sprintf(tmp, "%d,%d,%d,%d,%d,%d\n", e[0]-s[0], e[1]-s[1], e[2]-s[2], e[3]-s[3], e[4]-s[4], e[5]-s[5]);
 	len = strlen(tmp);
 
 	copy_len = len;

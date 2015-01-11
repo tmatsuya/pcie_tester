@@ -4,11 +4,15 @@ else
 KDIR		:= /lib/modules/$(shell uname -r)/build/
 PWD		:= $(shell pwd)
 
-all:
+all: user
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) V=1 modules
+
+user: user.c
+	gcc -O -o user user.c
 
 clean:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean 
+	rm -f user.o user
 
 install:
 	install -m 644 $(PWD)/*.ko /lib/modules/`uname -r`/kernel/drivers/misc

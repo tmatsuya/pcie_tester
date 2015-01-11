@@ -1,31 +1,38 @@
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
-#include <sys/mman.h>
-#include <arpa/inet.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include "rtdsc.h"
 
-//#define DEBUG
+TimeWatcher tw;
 
-#define	MEM_DEVICE	"/dev/pcietest/0"
-#define	BUF_SIZE	(256)
+#define	DEV_FILE	"/dev/pcietest/0"
 
-int main(int argc,char **argv)
+int main()
 {
-	unsigned long pa, mem0p, baraddr;
-	int fd, i;
-	unsigned char if_ipv4[4], if_mac[6];
-	if ((fd=open(MEM_DEVICE,O_RDONLY)) <0) {
-		fprintf(stderr,"cannot open %s\n",MEM_DEVICE);
-		return 1;
+	int i;
+	char buf[256];
+	int fd;
+	unsigned long long cycles[10];
+
+	if ( ( fd = open( DEV_FILE, O_RDWR ) ) < 0 ) {
+		fprintf( stderr, "File can not open\n" );
+		return (-1);
 	}
-	i = 123;
-	while (1) {
-		printf ("i=%d, &i=%p, Physical Address=%012lx\n", i, &i, pa);
-		usleep(10000);
+	get_cpu_cycle_per_sec();
+
+	i = read( fd, buf, 256 );
+	write( 0, buf, i);
+
+	sscanf( buf, "%lu,%lu,%lu,%lu,%lu,%lu", &cycles[0], &cycles[1], &cycles[2], &cycles[3], &cycles[4], &cycles[5]);
+
+	printf("CPU Frequency:%lldMHz (%lld cycles/sec)\n", cpu_cycles_per_sec / 1000000, cpu_cycles_per_sec);
+
+	for (i=0; i<6; ++i) {
+		printf("time:%llu ns, CPU cycles:%llu\n", cycles[i] * 1000000000 / cpu_cycles_per_sec / 100000, cycles[i] / 100000);
 	}
+
 	close(fd);
+
+	return 0;
 }
