@@ -69,3 +69,38 @@ xx)
 1.7 other Gen1x2  11,853,076 pps
 1.8 other Gen1x1   5,920,822 pps
 
+2015/01/11
+10. BAR memory access test
+4 read, 64 read, 4 write, 64 write, 4 write with wc, 64 write with wc
+
+<North G2x16 slot default linkmode=13>
+144080400
+0
+16587010
+132286357
+449888
+7273223
+
+<North G2x8 slot default linkmode=13>
+144415834
+0
+16605811
+132825461
+460517
+7459142
+
+<North G2x4 slot set linkmode=12>
+159908467
+0
+16613458
+133718313
+896433
+14366959
+
+<Sourth G2x4 slot default linkmode=12>
+322921661
+0
+16676239
+133739919
+895983
+14377346
