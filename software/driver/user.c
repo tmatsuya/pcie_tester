@@ -10,10 +10,10 @@ TimeWatcher tw;
 
 int main()
 {
-	int i, mode, size, loops;
+	int i, mode, size;
 	char buf[256];
 	int fd;
-	unsigned long long cycles[10];
+	unsigned long long cycles[10], loops;
 
 	if ( ( fd = open( DEV_FILE, O_RDWR ) ) < 0 ) {
 		fprintf( stderr, "File can not open\n" );
@@ -26,11 +26,11 @@ int main()
 
 	sscanf( buf, "%x,%d,%d,%llu,%llu,%llu", &mode, &size, &loops, &cycles[0], &cycles[1], &cycles[2]);
 
-	printf("CPU Frequency:%lldMHz (%lld cycles/sec)\n", cpu_cycles_per_sec / 1000000, cpu_cycles_per_sec);
+	printf("CPU Frequency:%lldMHz (%lld cycles/sec)\n", cpu_cycles_per_sec / 1000000LL, cpu_cycles_per_sec);
 
 	printf("PCIe linkmode=%x, length=%d, loops=%d\n", mode, size, loops);
 	for (i=0; i<3; ++i) {
-		printf("    time:%8d ns, CPU cycles:%llu\n", cycles[i] * 1000000000 / cpu_cycles_per_sec / loops, cycles[i] / loops);
+		printf("    time:%8d ns, CPU cycles:%llu\n", cycles[i] * 1000000000LL / cpu_cycles_per_sec / loops, cycles[i] / loops);
 	}
 
 	close(fd);

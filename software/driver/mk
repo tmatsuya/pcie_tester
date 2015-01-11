@@ -5,17 +5,18 @@ make clean
 make
 sudo make install
 sudo modprobe pcietest
-#for mode in 00 01 02 03 10 11 12 13
-for mode in 13
+for mode in 00 01 02 03 10 11 12 13
 do
+echo ============================= | tee -a log.txt
+#for mode in 13
 # link mode = 13, length=4
-echo $mode,4 >/dev/pcietest/0
-head -4 /dev/pcietest/0
-./user
+echo $mode,4 | tee -a log.txt >/dev/pcietest/0
+head -4 /dev/pcietest/0 | tee -a log.txt
+./user | tee -a log.txt
 # link mode = 13, length=64
 echo $mode,64 >/dev/pcietest/0
-head -4 /dev/pcietest/0
-./user
+head -4 /dev/pcietest/0 | tee -a log.txt
+./user | tee -a log.txt
 done
 #
 cpupower -c all frequency-set -g ondemand

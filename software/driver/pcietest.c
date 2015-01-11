@@ -7,7 +7,7 @@
 #include <linux/pci.h>
 #include <linux/version.h>
 
-#define	LOOPS	(1000000)
+#define	LOOPS	(100000)
 #define	DMA_BUF_MAX	(4*1024*1024)
 
 #ifndef DRV_NAME
@@ -118,7 +118,7 @@ if (parameter_length <= 4)
 	}
 	e[2] = rdtsc();
 
-	sprintf(tmp, "%02x,%d,%d,%llu,%llu,%llu\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
+	sprintf(tmp, "%02x,%d,%d,%lld,%lld,%lld\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
 	len = strlen(tmp);
 
 	copy_len = len;
