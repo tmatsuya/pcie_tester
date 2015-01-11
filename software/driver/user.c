@@ -10,7 +10,7 @@ TimeWatcher tw;
 
 int main()
 {
-	int i;
+	int i, mode, size, loops;
 	char buf[256];
 	int fd;
 	unsigned long long cycles[10];
@@ -24,12 +24,13 @@ int main()
 	i = read( fd, buf, 256 );
 	write( 0, buf, i);
 
-	sscanf( buf, "%lu,%lu,%lu,%lu,%lu,%lu", &cycles[0], &cycles[1], &cycles[2], &cycles[3], &cycles[4], &cycles[5]);
+	sscanf( buf, "%x,%d,%d,%lu,%lu,%lu", &mode, &size, &loops, &cycles[0], &cycles[1], &cycles[2]);
 
 	printf("CPU Frequency:%lldMHz (%lld cycles/sec)\n", cpu_cycles_per_sec / 1000000, cpu_cycles_per_sec);
 
-	for (i=0; i<6; ++i) {
-		printf("time:%llu ns, CPU cycles:%llu\n", cycles[i] * 1000000000 / cpu_cycles_per_sec / 100000, cycles[i] / 100000);
+	printf("PCIe linkmode=%x, length=%d, loops=%d\n", mode, size, loops);
+	for (i=0; i<3; ++i) {
+		printf("    time:%8d ns, CPU cycles:%llu\n", cycles[i] * 1000000000 / cpu_cycles_per_sec / loops, cycles[i] / loops);
 	}
 
 	close(fd);
