@@ -47,6 +47,7 @@ static unsigned long mmio0_start, mmio0_end, mmio0_flags, mmio0_len;
 static unsigned long mmio1_start, mmio1_end, mmio1_flags, mmio1_len;
 static unsigned long *dma_ptr = 0L;
 static int parameter_length = 0;
+static int parameter_test = 0;
 static struct pci_dev *pcidev = NULL;
 
 
@@ -77,47 +78,58 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	i = 0;
 	ptr = mmio1_ptr;
 	dptr = dma_ptr;
-	mb();
-	s[0] = rdtsc();
-//if (parameter_length <= 4)
-	while (i<LOOPS) {
-//		mb();
-		memcpy(dptr, ptr, parameter_length);
-		++i;
-		ptr+=parameter_length;
-//		dptr+=parameter_length;
+	if (parameter_test == 0 || parameter_test == 1) {
+		mb();
+		s[0] = rdtsc();
+		while (i<LOOPS) {
+//			mb();
+			memcpy(dptr, ptr, parameter_length);
+			++i;
+			ptr+=parameter_length;
+//			dptr+=parameter_length;
+		}
+		e[0] = rdtsc();
+	} else {
+		s[0] = e[0] = 0;
 	}
-	e[0] = rdtsc();
 
 	/* write */
 	i = 0;
 	ptr = mmio1_ptr;
 	dptr = dma_ptr;
-	mb();
-	s[1] = rdtsc();
-	while (i<LOOPS) {
-//		mb();
-		memcpy(ptr, dptr, parameter_length);
-		++i;
-		ptr+=parameter_length;
-//		dptr+=parameter_length;
+	if (parameter_test == 0 || parameter_test == 2) {
+		mb();
+		s[1] = rdtsc();
+		while (i<LOOPS) {
+//			mb();
+			memcpy(ptr, dptr, parameter_length);
+			++i;
+			ptr+=parameter_length;
+//			dptr+=parameter_length;
+		}
+		e[1] = rdtsc();
+	} else {
+		s[1] = e[1] = 0;
 	}
-	e[1] = rdtsc();
 
 	/* write with wc */
 	i = 0;
 	ptr = mmio1wc_ptr;
 	dptr = dma_ptr;
-	mb();
-	s[2] = rdtsc();
-	while (i<LOOPS) {
-//		mb();
-		memcpy(ptr, dptr, parameter_length);
-		++i;
-		ptr+=parameter_length;
-//		dptr+=parameter_length;
+	if (parameter_test == 0 || parameter_test == 3) {
+		mb();
+		s[2] = rdtsc();
+		while (i<LOOPS) {
+//			mb();
+			memcpy(ptr, dptr, parameter_length);
+			++i;
+			ptr+=parameter_length;
+//			dptr+=parameter_length;
+		}
+		e[2] = rdtsc();
+	} else {
+		s[2] = e[2] = 0;
 	}
-	e[2] = rdtsc();
 
 	sprintf(tmp, "%02x,%d,%d,%lld,%lld,%lld\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
 	len = strlen(tmp);
@@ -137,7 +149,7 @@ static ssize_t pcietest_write(struct file *filp, const char __user *buf,
 
 {
 	char tmp[256];
-	int copy_len, i, j;
+	int copy_len, i, j, k;
 
 	if (count <= 256)
 		copy_len = count;
@@ -153,9 +165,11 @@ static ssize_t pcietest_write(struct file *filp, const char __user *buf,
 		return -EFAULT;
 	}
 	if ( copy_len >= 2) {
-		sscanf(tmp, "%02X,%d", &i, &j);
+		sscanf(tmp, "%02X,%d,%d", &i, &j, &k);
 		if (j>0 && j<65536)
 			parameter_length = j;
+		if (k>=0 && k<=3)
+			parameter_test = k;
 		printk("PCIe link mode is %02x.\n", i);
 		*mmio0_ptr = i;		/* set PCIe link mode */
 	}
@@ -235,6 +249,7 @@ static int __devinit pcietest_init_one (struct pci_dev *pdev,
 	mmio0_len   = pci_resource_len   (pdev, 0);
 
 	parameter_length = 4;		/* read length */
+	parameter_test = 0;		/* test pattern = all */
 
 	printk( KERN_INFO "mmio0_start: %X\n", (unsigned int)mmio0_start );
 	printk( KERN_INFO "mmio0_end  : %X\n", (unsigned int)mmio0_end   );

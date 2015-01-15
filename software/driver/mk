@@ -10,11 +10,11 @@ do
 echo ============================= | tee -a log.txt
 #for mode in 13
 # link mode = 13, length=4
-echo $mode,4 | tee -a log.txt >/dev/pcietest/0
+echo $mode,4,0 | tee -a log.txt >/dev/pcietest/0
 head -4 /dev/pcietest/0 | tee -a log.txt
 ./user | tee -a log.txt
 # link mode = 13, length=64
-echo $mode,64 >/dev/pcietest/0
+echo $mode,64,0 >/dev/pcietest/0
 head -4 /dev/pcietest/0 | tee -a log.txt
 ./user | tee -a log.txt
 done
