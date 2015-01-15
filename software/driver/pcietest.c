@@ -25,6 +25,7 @@
 #endif
 
 static DEFINE_PCI_DEVICE_TABLE(pcietest_pci_tbl) = {
+	{0x3776, 0x8010, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0x3776, 0x8011, PCI_ANY_ID, PCI_ANY_ID, 0, 0, 0 },
 	{0,}
 };
