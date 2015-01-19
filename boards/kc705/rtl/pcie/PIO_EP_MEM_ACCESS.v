@@ -74,7 +74,7 @@ always @(posedge clk) begin
 		dma_para <= 32'h0016_0A10;
 	end else begin
 		req_link_change <= 1'b0;
-		if (rd_addr[13:12] == 2'b01) begin // BAR1
+		if (rd_addr[13:12] == 2'b01) begin // BAR0
 		case (rd_addr[5:0])
 			6'h00: // status
 				read_data[31:0] <= {3'h0, pl_sel_lnk_rate,  2'h0, pl_sel_lnk_width, 21'h0, dma_testmode};
@@ -128,7 +128,7 @@ always @(posedge clk) begin
 			default: read_data[31:0] <= 32'h0;
 		endcase
 		end
-		if (wr_addr[13:12] == 2'b01 && wr_en == 1'b1) begin // BAR1
+		if (wr_addr[13:12] == 2'b01 && wr_en == 1'b1) begin // BAR0
 			case (wr_addr[5:0])
 				6'h00: begin // status
 					if (wr_be[0]) begin
