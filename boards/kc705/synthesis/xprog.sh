@@ -12,7 +12,7 @@ case "${board}" in
 	vivado -mode tcl -nojournal -nolog <<EOF
 	open_hw
 	connect_hw_server -url localhost:3121
-        set_property PARAM.FREQUENCY 15000000 [lindex [get_hw_targets ${target}] 0]
+        set_property PARAM.FREQUENCY 15000000 [lindex [get_hw_targets *${target}*] 0]
         open_hw_target
 	create_hw_cfgmem -hw_device [lindex [get_hw_devices] 0] -mem_dev [lindex [get_cfgmem_parts {28f00ap30t-bpi-x16}] 0]
 	set_property PROGRAM.BLANK_CHECK  0 [ get_property PROGRAM.HW_CFGMEM [lindex [get_hw_devices] 0 ]]
@@ -60,8 +60,8 @@ esac
 	vivado -mode tcl -nojournal -nolog <<EOF
 	open_hw
 	connect_hw_server -url localhost:3121
-	current_hw_target [lindex [get_hw_targets ${target}] 0]
-	set_property PARAM.FREQUENCY 15000000 [lindex [get_hw_targets ${target}] 0]
+	current_hw_target [lindex [get_hw_targets *${target}*] 0]
+	set_property PARAM.FREQUENCY 15000000 [lindex [get_hw_targets *${target}*] 0]
 	open_hw_target
 	set_property PROGRAM.FILE {${bitfile}} [lindex [get_hw_devices ${device}] 0]
 	current_hw_device [lindex [get_hw_devices ${device}] 0]
