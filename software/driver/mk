@@ -1,5 +1,5 @@
 #sudo  yum install kernel-tools
-cpupower -c all frequency-set -g performance
+sudo cpupower -c all frequency-set -g performance
 sudo rmmod pcietest
 make clean
 make
@@ -19,4 +19,4 @@ head -4 /dev/pcietest/0 | tee -a log.txt
 ./user | tee -a log.txt
 done
 #
-cpupower -c all frequency-set -g ondemand
+sudo cpupower -c all frequency-set -g powersave
