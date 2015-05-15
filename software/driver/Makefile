@@ -8,7 +8,7 @@ all: user
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) V=1 modules
 
 user: user.c
-	gcc -O -o user user.c
+	gcc -lm -O -o user user.c
 
 clean:
 	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) clean 

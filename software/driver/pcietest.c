@@ -49,6 +49,7 @@ static unsigned long *dma_ptr = 0L;
 static int parameter_length = 0;
 static int parameter_test = 0;
 static struct pci_dev *pcidev = NULL;
+static unsigned int tsc0[LOOPS], tsc1[LOOPS], tsc2[LOOPS];
 
 
 static int pcietest_open(struct inode *inode, struct file *filp)
@@ -63,8 +64,10 @@ static int pcietest_open(struct inode *inode, struct file *filp)
 static ssize_t pcietest_read(struct file *filp, char __user *buf,
 			   size_t count, loff_t *ppos)
 {
-	int copy_len, i, len;
-	unsigned long long s[10], e[10];
+	int copy_len, i, j, len;
+	unsigned long long s[3], e[3];
+	unsigned long long min[3], max[3], tscs, tsce;
+	long long avg[3], stdd[3];
 	char tmp[256];
 	unsigned char *ptr, *dptr;
 
@@ -80,13 +83,16 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	dptr = dma_ptr;
 	if (parameter_test == 0 || parameter_test == 1) {
 		mb();
-		s[0] = rdtsc();
+		s[0] = tscs = rdtsc();
 		while (i<LOOPS) {
 //			mb();
 			memcpy(dptr, ptr, parameter_length);
-			++i;
 			ptr+=parameter_length;
 //			dptr+=parameter_length;
+			tsce = rdtsc();
+			tsc0[i] = tsce-tscs;
+			tscs = tsce;
+			++i;
 		}
 		e[0] = rdtsc();
 	} else {
@@ -99,13 +105,16 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	dptr = dma_ptr;
 	if (parameter_test == 0 || parameter_test == 2) {
 		mb();
-		s[1] = rdtsc();
+		s[1] = tscs = rdtsc();
 		while (i<LOOPS) {
 //			mb();
 			memcpy(ptr, dptr, parameter_length);
-			++i;
 			ptr+=parameter_length;
 //			dptr+=parameter_length;
+			tsce = rdtsc();
+			tsc1[i] = tsce-tscs;
+			tscs = tsce;
+			++i;
 		}
 		e[1] = rdtsc();
 	} else {
@@ -118,20 +127,59 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 	dptr = dma_ptr;
 	if (parameter_test == 0 || parameter_test == 3) {
 		mb();
-		s[2] = rdtsc();
+		s[2] = tscs = rdtsc();
 		while (i<LOOPS) {
 //			mb();
 			memcpy(ptr, dptr, parameter_length);
-			++i;
 			ptr+=parameter_length;
 //			dptr+=parameter_length;
+			tsce = rdtsc();
+			tsc2[i] = tsce-tscs;
+			tscs = tsce;
+			++i;
 		}
 		e[2] = rdtsc();
 	} else {
 		s[2] = e[2] = 0;
 	}
 
-	sprintf(tmp, "%02x,%d,%d,%lld,%lld,%lld\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2]);
+	// calculate max and min
+	for (i=0; i<3; ++i) {
+		avg[i] = 0;
+		max[i] = 0;
+		min[i] = ~max[i];
+	}
+	for (i=0; i<LOOPS; ++i) {
+		avg[0] += tsc0[i];
+		avg[1] += tsc1[i];
+		avg[2] += tsc2[i];
+		if (min[0] > tsc0[i])
+			min[0] = tsc0[i];
+		if (max[0] < tsc0[i])
+			max[0] = tsc0[i];
+		if (min[1] > tsc1[i])
+			min[1] = tsc1[i];
+		if (max[1] < tsc1[i])
+			max[1] = tsc1[i];
+		if (min[2] > tsc2[i])
+			min[2] = tsc2[i];
+		if (max[2] < tsc2[i])
+			max[2] = tsc2[i];
+	}
+	for (i=0; i<3; ++i) {
+		stdd[i] = 0;
+		avg[i] /= LOOPS;
+	}
+	for (i=0; i<LOOPS; ++i) {
+		stdd[0] += abs((long long)tsc0[i] - (long long)avg[0]) * abs((long long)tsc0[i] - (long long)avg[0]);
+		stdd[1] += abs((long long)tsc1[i] - (long long)avg[1]) * abs((long long)tsc1[i] - (long long)avg[1]);
+		stdd[2] += abs((long long)tsc2[i] - (long long)avg[2]) * abs((long long)tsc2[i] - (long long)avg[2]);
+	}
+	for (i=0; i<3; ++i) {
+		stdd[i] /= LOOPS;
+	}
+//	sprintf(tmp, "%02x,%d,%d,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%lld\n", (char)*mmio0_ptr, parameter_length, LOOPS, e[0]-s[0], e[1]-s[1], e[2]-s[2], min[0], min[1], min[2], max[0], max[1], max[2], stdd[0], stdd[1], stdd[2]);
+	sprintf(tmp, "%02x,%d,%d,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%lld,%lld\n", (char)*mmio0_ptr, parameter_length, LOOPS, avg[0], avg[1], avg[2], min[0], min[1], min[2], max[0], max[1], max[2], stdd[0], stdd[1], stdd[2]);
 	len = strlen(tmp);
 
 	copy_len = len;
