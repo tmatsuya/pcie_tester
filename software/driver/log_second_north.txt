@@ -1,0 +1,483 @@
+
+
+2015年  5月 18日 月曜日 17:44:49 JST
+=============================
+00,4,0
+00,4,10000,16372,1311,66,121,133,27,71794,4812,17181
+00,4,10000,16348,1311,69,121,130,36,72507,5848,85269
+00,4,10000,16390,1321,63,105,130,30,85264,37123,95506
+00,4,10000,16328,1311,64,102,130,27,80281,5558,12863
+CPU Frequency:3392MHz (3392158310 cycles/sec)
+PCIe linkmode=0, length=4, loops=10000
+    time (avg):  4816 ns (min):    31 ns (max): 20088 ns, CPU cycles(avg):   16339 (min):     108 (max):   68144 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1972 ns, CPU cycles(avg):    1311 (min):     130 (max):    6691 (stdd):11862853.111188
+    time (avg):    18 ns (min):     7 ns (max): 17482 ns, CPU cycles(avg):      63 (min):      27 (max):   59305 (stdd):11845749.607405
+CPU Frequency:3392MHz (3392159344 cycles/sec)
+PCIe linkmode=0, length=4, loops=10000
+    time (avg):  4814 ns (min):    30 ns (max): 10758 ns, CPU cycles(avg):   16332 (min):     102 (max):   36496 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1632 ns, CPU cycles(avg):    1311 (min):     130 (max):    5537 (stdd):11863204.971160
+    time (avg):    19 ns (min):     8 ns (max): 11617 ns, CPU cycles(avg):      66 (min):      30 (max):   39407 (stdd):11852713.842557
+CPU Frequency:3392MHz (3392157248 cycles/sec)
+PCIe linkmode=0, length=4, loops=10000
+    time (avg):  4814 ns (min):    30 ns (max): 11139 ns, CPU cycles(avg):   16333 (min):     105 (max):   37787 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1592 ns, CPU cycles(avg):    1311 (min):     130 (max):    5401 (stdd):11863179.160873
+    time (avg):    19 ns (min):     7 ns (max): 11446 ns, CPU cycles(avg):      66 (min):      27 (max):   38829 (stdd):11827235.657887
+CPU Frequency:3392MHz (3392157711 cycles/sec)
+PCIe linkmode=0, length=4, loops=10000
+    time (avg):  4814 ns (min):    35 ns (max): 10689 ns, CPU cycles(avg):   16332 (min):     121 (max):   36261 (stdd):2.236068
+    time (avg):   386 ns (min):    39 ns (max):  1363 ns, CPU cycles(avg):    1311 (min):     133 (max):    4624 (stdd):11863210.281745
+    time (avg):    20 ns (min):    10 ns (max): 27848 ns, CPU cycles(avg):      70 (min):      36 (max):   94468 (stdd):11860855.591136
+CPU Frequency:3392MHz (3392159600 cycles/sec)
+PCIe linkmode=0, length=4, loops=10000
+    time (avg):  4809 ns (min):    35 ns (max): 18494 ns, CPU cycles(avg):   16313 (min):     121 (max):   62735 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1630 ns, CPU cycles(avg):    1311 (min):     130 (max):    5530 (stdd):11862701.056891
+    time (avg):    18 ns (min):     7 ns (max): 19054 ns, CPU cycles(avg):      63 (min):      27 (max):   64636 (stdd):11861525.003928
+00,64,10000,261359,21081,1142,154191,3452,30,549653,76483,130563
+00,64,10000,260849,21081,1138,146448,3421,30,444956,77150,100450
+00,64,10000,262123,21050,1138,146360,6728,45,477115,76633,101471
+00,64,10000,260334,21010,1138,154230,3418,27,395418,59097,101704
+CPU Frequency:3392MHz (3392158060 cycles/sec)
+PCIe linkmode=0, length=64, loops=10000
+    time (avg): 76739 ns (min): 45448 ns (max):114053 ns, CPU cycles(avg):  260314 (min):  154167 (max):  386886 (stdd):2.236068
+    time (avg):  6190 ns (min):  1005 ns (max): 11021 ns, CPU cycles(avg):   21000 (min):    3412 (max):   37388 (stdd):11862987.123419
+    time (avg):   335 ns (min):     7 ns (max): 29548 ns, CPU cycles(avg):    1138 (min):      27 (max):  100232 (stdd):11849229.580878
+CPU Frequency:3392MHz (3392157654 cycles/sec)
+PCIe linkmode=0, length=64, loops=10000
+    time (avg): 77105 ns (min): 45398 ns (max):135944 ns, CPU cycles(avg):  261555 (min):  154000 (max):  461146 (stdd):2.236068
+    time (avg):  6216 ns (min):  1009 ns (max): 21347 ns, CPU cycles(avg):   21087 (min):    3424 (max):   72415 (stdd):11863221.928011
+    time (avg):   335 ns (min):     8 ns (max): 29641 ns, CPU cycles(avg):    1138 (min):      30 (max):  100547 (stdd):11849596.305457
+CPU Frequency:3392MHz (3392158431 cycles/sec)
+PCIe linkmode=0, length=64, loops=10000
+    time (avg): 76984 ns (min): 43641 ns (max):144634 ns, CPU cycles(avg):  261145 (min):  148040 (max):  490622 (stdd):2.236068
+    time (avg):  6190 ns (min):  1008 ns (max): 11145 ns, CPU cycles(avg):   21000 (min):    3421 (max):   37808 (stdd):11862795.618387
+    time (avg):   335 ns (min):     8 ns (max): 29960 ns, CPU cycles(avg):    1138 (min):      30 (max):  101631 (stdd):11847545.832708
+CPU Frequency:3392MHz (3392159344 cycles/sec)
+PCIe linkmode=0, length=64, loops=10000
+    time (avg): 77093 ns (min): 45459 ns (max):127904 ns, CPU cycles(avg):  261514 (min):  154206 (max):  433872 (stdd):2.236068
+    time (avg):  6191 ns (min):  1980 ns (max):  9361 ns, CPU cycles(avg):   21001 (min):    6719 (max):   31757 (stdd):11862763.949673
+    time (avg):   335 ns (min):    13 ns (max): 29878 ns, CPU cycles(avg):    1138 (min):      45 (max):  101354 (stdd):11820873.504414
+CPU Frequency:3392MHz (3392158186 cycles/sec)
+PCIe linkmode=0, length=64, loops=10000
+    time (avg): 76808 ns (min): 44484 ns (max):133545 ns, CPU cycles(avg):  260546 (min):  150900 (max):  453007 (stdd):2.236068
+    time (avg):  6219 ns (min):  1010 ns (max): 22891 ns, CPU cycles(avg):   21099 (min):    3427 (max):   77650 (stdd):11863005.836306
+    time (avg):   336 ns (min):     9 ns (max): 37970 ns, CPU cycles(avg):    1143 (min):      33 (max):  128801 (stdd):11816241.549149
+=============================
+01,4,0
+01,4,10000,12696,739,45,105,130,30,75737,34511,106
+01,4,10000,12626,739,45,102,136,30,61459,34566,97
+01,4,10000,12626,739,45,102,130,36,68625,34569,100
+01,4,10000,12622,739,45,121,130,30,64556,34406,3446
+CPU Frequency:3392MHz (3392159050 cycles/sec)
+PCIe linkmode=1, length=4, loops=10000
+    time (avg):  3691 ns (min):    30 ns (max):  8453 ns, CPU cycles(avg):   12522 (min):     102 (max):   28675 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1218 ns, CPU cycles(avg):     732 (min):     130 (max):    4132 (stdd):11863266.794912
+    time (avg):    13 ns (min):    10 ns (max):    31 ns, CPU cycles(avg):      45 (min):      36 (max):     106 (stdd):11822498.567317
+CPU Frequency:3392MHz (3392156445 cycles/sec)
+PCIe linkmode=1, length=4, loops=10000
+    time (avg):  3691 ns (min):    30 ns (max):  8209 ns, CPU cycles(avg):   12523 (min):     102 (max):   27847 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1185 ns, CPU cycles(avg):     732 (min):     130 (max):    4020 (stdd):11862643.683857
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11847366.347553
+CPU Frequency:3392MHz (3392159600 cycles/sec)
+PCIe linkmode=1, length=4, loops=10000
+    time (avg):  3691 ns (min):    35 ns (max):  8569 ns, CPU cycles(avg):   12523 (min):     121 (max):   29068 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1194 ns, CPU cycles(avg):     733 (min):     133 (max):    4052 (stdd):11862918.491926
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11816805.837922
+CPU Frequency:3392MHz (3392156566 cycles/sec)
+PCIe linkmode=1, length=4, loops=10000
+    time (avg):  3691 ns (min):    30 ns (max):  8564 ns, CPU cycles(avg):   12522 (min):     102 (max):   29053 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1198 ns, CPU cycles(avg):     733 (min):     130 (max):    4065 (stdd):11863027.049296
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11830042.533152
+CPU Frequency:3392MHz (3392159885 cycles/sec)
+PCIe linkmode=1, length=4, loops=10000
+    time (avg):  3691 ns (min):    30 ns (max):  8612 ns, CPU cycles(avg):   12523 (min):     102 (max):   29216 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1203 ns, CPU cycles(avg):     733 (min):     133 (max):    4083 (stdd):11862779.266550
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11855089.187079
+01,64,10000,198416,10511,568,117226,3412,27,372862,64113,52079
+01,64,10000,198377,10489,568,117259,3415,30,315206,20239,51689
+01,64,10000,199163,10555,568,117259,3406,27,373302,65461,52209
+01,64,10000,198478,10555,568,117326,6712,45,379571,47076,52390
+CPU Frequency:3392MHz (3392159252 cycles/sec)
+PCIe linkmode=1, length=64, loops=10000
+    time (avg): 58541 ns (min): 34565 ns (max):109449 ns, CPU cycles(avg):  198582 (min):  117253 (max):  371271 (stdd):2.236068
+    time (avg):  3102 ns (min):  1003 ns (max): 21662 ns, CPU cycles(avg):   10524 (min):    3403 (max):   73482 (stdd):11862782.577110
+    time (avg):   168 ns (min):     7 ns (max): 23972 ns, CPU cycles(avg):     573 (min):      27 (max):   81317 (stdd):11817309.401872
+CPU Frequency:3392MHz (3392158482 cycles/sec)
+PCIe linkmode=1, length=64, loops=10000
+    time (avg): 58480 ns (min): 34576 ns (max): 97458 ns, CPU cycles(avg):  198374 (min):  117289 (max):  330595 (stdd):2.236068
+    time (avg):  3092 ns (min):  1005 ns (max):  6194 ns, CPU cycles(avg):   10490 (min):    3412 (max):   21014 (stdd):11862972.513591
+    time (avg):   167 ns (min):     8 ns (max): 15224 ns, CPU cycles(avg):     568 (min):      30 (max):   51644 (stdd):11856184.472927
+CPU Frequency:3392MHz (3392157728 cycles/sec)
+PCIe linkmode=1, length=64, loops=10000
+    time (avg): 58465 ns (min): 34555 ns (max): 83428 ns, CPU cycles(avg):  198325 (min):  117217 (max):  283004 (stdd):2.236068
+    time (avg):  3092 ns (min):  1006 ns (max):  5920 ns, CPU cycles(avg):   10489 (min):    3415 (max):   20083 (stdd):11863251.641804
+    time (avg):   167 ns (min):     7 ns (max): 15825 ns, CPU cycles(avg):     568 (min):      27 (max):   53681 (stdd):11861708.388037
+CPU Frequency:3392MHz (3392157753 cycles/sec)
+PCIe linkmode=1, length=64, loops=10000
+    time (avg): 58507 ns (min): 34575 ns (max):102969 ns, CPU cycles(avg):  198468 (min):  117287 (max):  349290 (stdd):2.236068
+    time (avg):  3092 ns (min):  1977 ns (max):  5139 ns, CPU cycles(avg):   10491 (min):    6709 (max):   17435 (stdd):11862706.619586
+    time (avg):   167 ns (min):    13 ns (max): 15385 ns, CPU cycles(avg):     568 (min):      45 (max):   52191 (stdd):11836880.866485
+CPU Frequency:3392MHz (3392158156 cycles/sec)
+PCIe linkmode=1, length=64, loops=10000
+    time (avg): 58628 ns (min): 34562 ns (max):109682 ns, CPU cycles(avg):  198877 (min):  117241 (max):  372059 (stdd):2.236068
+    time (avg):  3112 ns (min):  1006 ns (max): 19622 ns, CPU cycles(avg):   10557 (min):    3415 (max):   66564 (stdd):11862662.419556
+    time (avg):   167 ns (min):     7 ns (max): 15309 ns, CPU cycles(avg):     568 (min):      27 (max):   51931 (stdd):11858049.623922
+=============================
+02,4,0
+02,4,10000,10158,743,45,121,130,36,69276,4219,97
+02,4,10000,10131,743,45,102,136,36,24380,4309,145
+02,4,10000,10137,743,45,102,130,36,53305,4168,112
+02,4,10000,10165,744,45,102,111,27,74197,4479,97
+CPU Frequency:3392MHz (3392157755 cycles/sec)
+PCIe linkmode=2, length=4, loops=10000
+    time (avg):  2982 ns (min):    35 ns (max):  8154 ns, CPU cycles(avg):   10117 (min):     121 (max):   27663 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1154 ns, CPU cycles(avg):     732 (min):     133 (max):    3917 (stdd):11863220.691086
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11849106.219188
+CPU Frequency:3392MHz (3392157573 cycles/sec)
+PCIe linkmode=2, length=4, loops=10000
+    time (avg):  2992 ns (min):    39 ns (max):  7025 ns, CPU cycles(avg):   10150 (min):     133 (max):   23833 (stdd):2.236068
+    time (avg):   218 ns (min):    43 ns (max):  1626 ns, CPU cycles(avg):     740 (min):     148 (max):    5516 (stdd):11862651.648902
+    time (avg):    18 ns (min):    13 ns (max):    34 ns, CPU cycles(avg):      63 (min):      45 (max):     118 (stdd):11840948.219866
+CPU Frequency:3392MHz (3392157525 cycles/sec)
+PCIe linkmode=2, length=4, loops=10000
+    time (avg):  2983 ns (min):    35 ns (max):  6813 ns, CPU cycles(avg):   10119 (min):     121 (max):   23114 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1224 ns, CPU cycles(avg):     732 (min):     133 (max):    4153 (stdd):11863087.722146
+    time (avg):    13 ns (min):    10 ns (max):    33 ns, CPU cycles(avg):      45 (min):      36 (max):     112 (stdd):11842529.338241
+CPU Frequency:3392MHz (3392158866 cycles/sec)
+PCIe linkmode=2, length=4, loops=10000
+    time (avg):  2984 ns (min):    35 ns (max):  7070 ns, CPU cycles(avg):   10124 (min):     121 (max):   23984 (stdd):2.236068
+    time (avg):   217 ns (min):    39 ns (max):  1439 ns, CPU cycles(avg):     739 (min):     133 (max):    4884 (stdd):11862824.597800
+    time (avg):    13 ns (min):     8 ns (max):    31 ns, CPU cycles(avg):      45 (min):      30 (max):     106 (stdd):11823340.114671
+CPU Frequency:3392MHz (3392158874 cycles/sec)
+PCIe linkmode=2, length=4, loops=10000
+    time (avg):  2983 ns (min):    35 ns (max):  7073 ns, CPU cycles(avg):   10122 (min):     121 (max):   23993 (stdd):2.236068
+    time (avg):   217 ns (min):    38 ns (max):  1209 ns, CPU cycles(avg):     739 (min):     130 (max):    4102 (stdd):11863123.904422
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11848126.961942
+02,64,10000,159905,10461,289,94414,3412,27,285890,67213,57454
+02,64,10000,159769,10399,284,94417,3418,33,299907,20137,27720
+02,64,10000,159880,10484,284,94414,3409,30,316113,67767,27889
+02,64,10000,159768,10403,284,94490,3421,30,283557,19379,4567
+CPU Frequency:3392MHz (3392159845 cycles/sec)
+PCIe linkmode=2, length=64, loops=10000
+    time (avg): 47201 ns (min): 27912 ns (max): 73573 ns, CPU cycles(avg):  160116 (min):   94683 (max):  249572 (stdd):2.236068
+    time (avg):  3090 ns (min):   978 ns (max):  6142 ns, CPU cycles(avg):   10482 (min):    3318 (max):   20838 (stdd):11862589.685728
+    time (avg):    83 ns (min):    10 ns (max):  8354 ns, CPU cycles(avg):     284 (min):      36 (max):   28340 (stdd):11823793.870677
+CPU Frequency:3392MHz (3392157133 cycles/sec)
+PCIe linkmode=2, length=64, loops=10000
+    time (avg): 47099 ns (min): 27839 ns (max): 72413 ns, CPU cycles(avg):  159768 (min):   94435 (max):  245637 (stdd):2.236068
+    time (avg):  3065 ns (min):  1008 ns (max):  6029 ns, CPU cycles(avg):   10397 (min):    3421 (max):   20454 (stdd):11863193.556034
+    time (avg):    83 ns (min):     8 ns (max):  8099 ns, CPU cycles(avg):     284 (min):      30 (max):   27475 (stdd):11860024.429776
+CPU Frequency:3392MHz (3392157650 cycles/sec)
+PCIe linkmode=2, length=64, loops=10000
+    time (avg): 47141 ns (min): 27844 ns (max): 94210 ns, CPU cycles(avg):  159912 (min):   94453 (max):  319576 (stdd):2.236068
+    time (avg):  3083 ns (min):  1010 ns (max): 19883 ns, CPU cycles(avg):   10459 (min):    3427 (max):   67447 (stdd):11863167.384743
+    time (avg):    83 ns (min):     8 ns (max):  8082 ns, CPU cycles(avg):     284 (min):      30 (max):   27418 (stdd):11823007.564237
+CPU Frequency:3392MHz (3392159747 cycles/sec)
+PCIe linkmode=2, length=64, loops=10000
+    time (avg): 47098 ns (min): 27843 ns (max): 88144 ns, CPU cycles(avg):  159766 (min):   94451 (max):  299001 (stdd):2.236068
+    time (avg):  3072 ns (min):  1004 ns (max): 19054 ns, CPU cycles(avg):   10421 (min):    3409 (max):   64637 (stdd):11862592.332354
+    time (avg):    83 ns (min):     8 ns (max):  7940 ns, CPU cycles(avg):     284 (min):      30 (max):   26934 (stdd):11825476.843410
+CPU Frequency:3392MHz (3392159146 cycles/sec)
+PCIe linkmode=2, length=64, loops=10000
+    time (avg): 47297 ns (min): 31495 ns (max): 89253 ns, CPU cycles(avg):  160440 (min):  106838 (max):  302763 (stdd):2.236068
+    time (avg):  3082 ns (min):  1006 ns (max): 19877 ns, CPU cycles(avg):   10456 (min):    3415 (max):   67426 (stdd):11863173.511046
+    time (avg):    84 ns (min):     7 ns (max): 17039 ns, CPU cycles(avg):     287 (min):      27 (max):   57801 (stdd):11857069.674108
+=============================
+03,4,0
+03,4,10000,9340,733,45,105,133,27,67126,4980,118
+03,4,10000,9323,732,45,102,133,30,21579,4065,224
+03,4,10000,9339,732,45,102,130,30,51003,4080,97
+03,4,10000,9323,732,45,105,130,27,22582,4440,97
+CPU Frequency:3392MHz (3392156590 cycles/sec)
+PCIe linkmode=3, length=4, loops=10000
+    time (avg):  2748 ns (min):    35 ns (max):  6565 ns, CPU cycles(avg):    9323 (min):     121 (max):   22271 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1176 ns, CPU cycles(avg):     733 (min):     133 (max):    3992 (stdd):11862687.673160
+    time (avg):    13 ns (min):    10 ns (max):  1149 ns, CPU cycles(avg):      45 (min):      36 (max):    3899 (stdd):11848521.494508
+CPU Frequency:3392MHz (3392159343 cycles/sec)
+PCIe linkmode=3, length=4, loops=10000
+    time (avg):  2748 ns (min):    30 ns (max):  6564 ns, CPU cycles(avg):    9323 (min):     102 (max):   22268 (stdd):2.236068
+    time (avg):   219 ns (min):    38 ns (max):  1186 ns, CPU cycles(avg):     744 (min):     130 (max):    4026 (stdd):11862564.756659
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11858469.258714
+CPU Frequency:3392MHz (3392157203 cycles/sec)
+PCIe linkmode=3, length=4, loops=10000
+    time (avg):  2735 ns (min):    30 ns (max): 19374 ns, CPU cycles(avg):    9280 (min):     105 (max):   65720 (stdd):2.236068
+    time (avg):   217 ns (min):    39 ns (max):  1164 ns, CPU cycles(avg):     739 (min):     133 (max):    3950 (stdd):11863010.401186
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11822662.151905
+CPU Frequency:3392MHz (3392157851 cycles/sec)
+PCIe linkmode=3, length=4, loops=10000
+    time (avg):  2748 ns (min):    30 ns (max):  6324 ns, CPU cycles(avg):    9323 (min):     102 (max):   21455 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1185 ns, CPU cycles(avg):     744 (min):     133 (max):    4023 (stdd):11862683.707742
+    time (avg):    13 ns (min):     8 ns (max):    48 ns, CPU cycles(avg):      45 (min):      30 (max):     163 (stdd):11857371.253211
+CPU Frequency:3392MHz (3392156960 cycles/sec)
+PCIe linkmode=3, length=4, loops=10000
+    time (avg):  2748 ns (min):    30 ns (max):  6433 ns, CPU cycles(avg):    9323 (min):     102 (max):   21824 (stdd):2.236068
+    time (avg):   218 ns (min):    38 ns (max):  1196 ns, CPU cycles(avg):     742 (min):     130 (max):    4059 (stdd):11863031.259917
+    time (avg):    13 ns (min):     8 ns (max):    33 ns, CPU cycles(avg):      45 (min):      30 (max):     112 (stdd):11826824.518821
+03,64,10000,147173,10489,142,87687,3337,36,295153,66462,3294
+03,64,10000,147123,10486,142,85381,3300,30,261423,20527,16879
+03,64,10000,147157,10478,142,85399,3312,30,301288,21733,15812
+03,64,10000,147160,10482,142,79478,3309,30,271918,21162,2584
+CPU Frequency:3392MHz (3392159307 cycles/sec)
+PCIe linkmode=3, length=64, loops=10000
+    time (avg): 43377 ns (min): 28506 ns (max): 62758 ns, CPU cycles(avg):  147144 (min):   96699 (max):  212886 (stdd):2.236068
+    time (avg):  3080 ns (min):  1915 ns (max):  5371 ns, CPU cycles(avg):   10450 (min):    6497 (max):   18221 (stdd):11862638.209180
+    time (avg):    41 ns (min):    10 ns (max):  4855 ns, CPU cycles(avg):     142 (min):      36 (max):   16471 (stdd):11850462.118914
+CPU Frequency:3392MHz (3392159234 cycles/sec)
+PCIe linkmode=3, length=64, loops=10000
+    time (avg): 43361 ns (min): 24824 ns (max): 62261 ns, CPU cycles(avg):  147088 (min):   84208 (max):  211202 (stdd):2.236068
+    time (avg):  3090 ns (min):   973 ns (max):  6114 ns, CPU cycles(avg):   10484 (min):    3303 (max):   20742 (stdd):11863220.243790
+    time (avg):    41 ns (min):    10 ns (max):  1558 ns, CPU cycles(avg):     142 (min):      36 (max):    5286 (stdd):11818443.843165
+CPU Frequency:3392MHz (3392159340 cycles/sec)
+PCIe linkmode=3, length=64, loops=10000
+    time (avg): 43371 ns (min): 25170 ns (max): 82701 ns, CPU cycles(avg):  147124 (min):   85384 (max):  280535 (stdd):2.236068
+    time (avg):  3080 ns (min):  1916 ns (max):  5179 ns, CPU cycles(avg):   10450 (min):    6501 (max):   17568 (stdd):11862622.652665
+    time (avg):    41 ns (min):    14 ns (max):  1583 ns, CPU cycles(avg):     142 (min):      48 (max):    5371 (stdd):11853585.337371
+CPU Frequency:3392MHz (3392216218 cycles/sec)
+PCIe linkmode=3, length=64, loops=10000
+    time (avg): 43365 ns (min): 25234 ns (max): 81272 ns, CPU cycles(avg):  147104 (min):   85602 (max):  275693 (stdd):2.236068
+    time (avg):  3090 ns (min):   984 ns (max): 13079 ns, CPU cycles(avg):   10484 (min):    3340 (max):   44368 (stdd):11863217.949133
+    time (avg):    41 ns (min):     8 ns (max):  4640 ns, CPU cycles(avg):     142 (min):      30 (max):   15742 (stdd):11833852.369940
+CPU Frequency:3392MHz (3392217092 cycles/sec)
+PCIe linkmode=3, length=64, loops=10000
+    time (avg): 43456 ns (min): 25542 ns (max): 95685 ns, CPU cycles(avg):  147413 (min):   86647 (max):  324587 (stdd):2.236068
+    time (avg):  3074 ns (min):  1013 ns (max): 19803 ns, CPU cycles(avg):   10430 (min):    3437 (max):   67178 (stdd):11862934.390913
+    time (avg):    41 ns (min):    10 ns (max):   628 ns, CPU cycles(avg):     142 (min):      36 (max):    2131 (stdd):11855053.292791
+=============================
+10,4,0
+10,4,10000,9421,732,45,121,130,36,67288,4935,109
+10,4,10000,9392,732,45,105,130,30,22141,4959,97
+10,4,10000,9407,732,45,121,111,27,68458,4942,202
+10,4,10000,9391,732,45,102,111,30,21820,4896,97
+CPU Frequency:3392MHz (3392217911 cycles/sec)
+PCIe linkmode=10, length=4, loops=10000
+    time (avg):  2768 ns (min):    35 ns (max):  6660 ns, CPU cycles(avg):    9391 (min):     121 (max):   22594 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1544 ns, CPU cycles(avg):     733 (min):     133 (max):    5238 (stdd):11862698.047913
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11843551.010435
+CPU Frequency:3392MHz (3392219909 cycles/sec)
+PCIe linkmode=10, length=4, loops=10000
+    time (avg):  2768 ns (min):    30 ns (max):  6603 ns, CPU cycles(avg):    9390 (min):     102 (max):   22401 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1465 ns, CPU cycles(avg):     733 (min):     130 (max):    4972 (stdd):11863037.271832
+    time (avg):    13 ns (min):    10 ns (max):    32 ns, CPU cycles(avg):      45 (min):      36 (max):     109 (stdd):11837704.596110
+CPU Frequency:3392MHz (3392209153 cycles/sec)
+PCIe linkmode=10, length=4, loops=10000
+    time (avg):  2771 ns (min):    35 ns (max): 18319 ns, CPU cycles(avg):    9402 (min):     121 (max):   62145 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1176 ns, CPU cycles(avg):     732 (min):     133 (max):    3992 (stdd):11862708.417133
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11828121.430533
+CPU Frequency:3392MHz (3392159863 cycles/sec)
+PCIe linkmode=10, length=4, loops=10000
+    time (avg):  2768 ns (min):    35 ns (max):  6785 ns, CPU cycles(avg):    9391 (min):     121 (max):   23017 (stdd):2.236068
+    time (avg):   215 ns (min):    33 ns (max):  1458 ns, CPU cycles(avg):     732 (min):     114 (max):    4947 (stdd):11863224.679976
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11825127.268871
+CPU Frequency:3392MHz (3392160333 cycles/sec)
+PCIe linkmode=10, length=4, loops=10000
+    time (avg):  2768 ns (min):    35 ns (max):  6432 ns, CPU cycles(avg):    9390 (min):     121 (max):   21820 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1201 ns, CPU cycles(avg):     733 (min):     133 (max):    4077 (stdd):11862831.169519
+    time (avg):    13 ns (min):    10 ns (max):    32 ns, CPU cycles(avg):      45 (min):      36 (max):     109 (stdd):11853640.572287
+10,64,10000,148274,10498,568,87995,3415,27,262988,65304,51913
+10,64,10000,148227,10489,568,82446,3424,30,304418,20747,51976
+10,64,10000,148294,10504,568,83462,3406,30,308996,63799,51671
+10,64,10000,148247,10489,568,87823,3418,33,307704,20527,51946
+CPU Frequency:3392MHz (3392159131 cycles/sec)
+PCIe linkmode=10, length=64, loops=10000
+    time (avg): 43704 ns (min): 25920 ns (max): 85833 ns, CPU cycles(avg):  148253 (min):   87928 (max):  291161 (stdd):2.236068
+    time (avg):  3108 ns (min):  1006 ns (max): 19483 ns, CPU cycles(avg):   10546 (min):    3415 (max):   66090 (stdd):11862968.239073
+    time (avg):   168 ns (min):     7 ns (max): 24138 ns, CPU cycles(avg):     571 (min):      27 (max):   81882 (stdd):11821171.887618
+CPU Frequency:3392MHz (3392158229 cycles/sec)
+PCIe linkmode=10, length=64, loops=10000
+    time (avg): 43689 ns (min): 25908 ns (max): 62466 ns, CPU cycles(avg):  148202 (min):   87886 (max):  211897 (stdd):2.236068
+    time (avg):  3092 ns (min):  1007 ns (max):  5931 ns, CPU cycles(avg):   10489 (min):    3418 (max):   20122 (stdd):11863163.079912
+    time (avg):   167 ns (min):     7 ns (max): 15354 ns, CPU cycles(avg):     568 (min):      27 (max):   52085 (stdd):11818633.761985
+CPU Frequency:3392MHz (3392159135 cycles/sec)
+PCIe linkmode=10, length=64, loops=10000
+    time (avg): 43776 ns (min): 25917 ns (max): 87831 ns, CPU cycles(avg):  148497 (min):   87916 (max):  297937 (stdd):2.236068
+    time (avg):  3111 ns (min):   977 ns (max): 20087 ns, CPU cycles(avg):   10556 (min):    3316 (max):   68140 (stdd):11863154.647540
+    time (avg):   167 ns (min):     8 ns (max): 15141 ns, CPU cycles(avg):     568 (min):      30 (max):   51363 (stdd):11827637.839967
+CPU Frequency:3392MHz (3392158457 cycles/sec)
+PCIe linkmode=10, length=64, loops=10000
+    time (avg): 43714 ns (min): 26569 ns (max): 77435 ns, CPU cycles(avg):  148288 (min):   90129 (max):  262673 (stdd):2.236068
+    time (avg):  3092 ns (min):  1976 ns (max):  5015 ns, CPU cycles(avg):   10489 (min):    6703 (max):   17015 (stdd):11863257.174721
+    time (avg):   167 ns (min):    13 ns (max): 15421 ns, CPU cycles(avg):     568 (min):      45 (max):   52311 (stdd):11852866.046746
+CPU Frequency:3392MHz (3392159617 cycles/sec)
+PCIe linkmode=10, length=64, loops=10000
+    time (avg): 43758 ns (min): 24570 ns (max): 85467 ns, CPU cycles(avg):  148436 (min):   83347 (max):  289919 (stdd):2.236068
+    time (avg):  3110 ns (min):  1004 ns (max): 19906 ns, CPU cycles(avg):   10552 (min):    3409 (max):   67525 (stdd):11862930.850095
+    time (avg):   167 ns (min):     7 ns (max): 16020 ns, CPU cycles(avg):     568 (min):      27 (max):   54345 (stdd):11843985.626704
+=============================
+11,4,0
+11,4,10000,7683,740,45,105,133,27,66860,34432,109
+11,4,10000,7648,732,45,102,133,27,46660,4470,97
+11,4,10000,7648,739,45,102,130,36,46887,34317,97
+11,4,10000,7657,739,45,102,130,30,46962,34532,97
+CPU Frequency:3392MHz (3392159607 cycles/sec)
+PCIe linkmode=11, length=4, loops=10000
+    time (avg):  2233 ns (min):    30 ns (max):  5660 ns, CPU cycles(avg):    7577 (min):     102 (max):   19203 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1180 ns, CPU cycles(avg):     733 (min):     133 (max):    4004 (stdd):11862669.221325
+    time (avg):    13 ns (min):     8 ns (max):    31 ns, CPU cycles(avg):      45 (min):      30 (max):     106 (stdd):11843665.462734
+CPU Frequency:3392MHz (3392157534 cycles/sec)
+PCIe linkmode=11, length=4, loops=10000
+    time (avg):  2234 ns (min):    35 ns (max):  5384 ns, CPU cycles(avg):    7579 (min):     121 (max):   18266 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1648 ns, CPU cycles(avg):     733 (min):     133 (max):    5591 (stdd):11863079.953508
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11845005.180789
+CPU Frequency:3392MHz (3392159534 cycles/sec)
+PCIe linkmode=11, length=4, loops=10000
+    time (avg):  2235 ns (min):    30 ns (max):  5609 ns, CPU cycles(avg):    7583 (min):     102 (max):   19028 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1616 ns, CPU cycles(avg):     733 (min):     133 (max):    5485 (stdd):11862597.197102
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11857080.304744
+CPU Frequency:3392MHz (3392159419 cycles/sec)
+PCIe linkmode=11, length=4, loops=10000
+    time (avg):  2244 ns (min):    30 ns (max):  5615 ns, CPU cycles(avg):    7614 (min):     102 (max):   19049 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1528 ns, CPU cycles(avg):     733 (min):     133 (max):    5186 (stdd):11862663.297098
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11844717.886515
+CPU Frequency:3392MHz (3392158396 cycles/sec)
+PCIe linkmode=11, length=4, loops=10000
+    time (avg):  2238 ns (min):    35 ns (max):  5382 ns, CPU cycles(avg):    7593 (min):     121 (max):   18257 (stdd):2.236068
+    time (avg):   219 ns (min):    38 ns (max):  1871 ns, CPU cycles(avg):     744 (min):     130 (max):    6347 (stdd):11862855.378984
+    time (avg):    13 ns (min):    10 ns (max):  1479 ns, CPU cycles(avg):      45 (min):      36 (max):    5020 (stdd):11858083.400534
+11,64,10000,121937,10541,284,71131,3421,27,272031,49921,27508
+11,64,10000,120807,10432,284,71022,3409,30,297456,61784,28103
+11,64,10000,120437,10405,284,70448,3409,27,255179,20379,27324
+11,64,10000,120296,10405,284,71067,3406,36,204819,20479,4210
+CPU Frequency:3392MHz (3392159153 cycles/sec)
+PCIe linkmode=11, length=64, loops=10000
+    time (avg): 35581 ns (min): 20942 ns (max): 84838 ns, CPU cycles(avg):  120699 (min):   71041 (max):  287785 (stdd):2.236068
+    time (avg):  3067 ns (min):  1006 ns (max):  6004 ns, CPU cycles(avg):   10405 (min):    3415 (max):   20367 (stdd):11862660.128935
+    time (avg):    83 ns (min):     7 ns (max):  1846 ns, CPU cycles(avg):     284 (min):      27 (max):    6265 (stdd):11835257.294200
+CPU Frequency:3392MHz (3392157878 cycles/sec)
+PCIe linkmode=11, length=64, loops=10000
+    time (avg): 35470 ns (min): 20944 ns (max): 65877 ns, CPU cycles(avg):  120320 (min):   71046 (max):  223467 (stdd):2.236068
+    time (avg):  3059 ns (min):  1018 ns (max):  5864 ns, CPU cycles(avg):   10378 (min):    3454 (max):   19895 (stdd):11862763.199548
+    time (avg):    83 ns (min):     7 ns (max):  8074 ns, CPU cycles(avg):     284 (min):      27 (max):   27390 (stdd):11845697.568216
+CPU Frequency:3392MHz (3392158669 cycles/sec)
+PCIe linkmode=11, length=64, loops=10000
+    time (avg): 35513 ns (min): 19866 ns (max): 80587 ns, CPU cycles(avg):  120468 (min):   67389 (max):  273365 (stdd):2.236068
+    time (avg):  3076 ns (min):  1011 ns (max): 19872 ns, CPU cycles(avg):   10435 (min):    3430 (max):   67412 (stdd):11863225.272802
+    time (avg):    83 ns (min):     8 ns (max):  8175 ns, CPU cycles(avg):     284 (min):      30 (max):   27732 (stdd):11845771.455543
+CPU Frequency:3392MHz (3392158591 cycles/sec)
+PCIe linkmode=11, length=64, loops=10000
+    time (avg): 35493 ns (min): 20998 ns (max): 73713 ns, CPU cycles(avg):  120400 (min):   71231 (max):  250047 (stdd):2.236068
+    time (avg):  3130 ns (min):  1067 ns (max): 19809 ns, CPU cycles(avg):   10618 (min):    3621 (max):   67196 (stdd):11862904.187412
+    time (avg):    83 ns (min):     8 ns (max):  8091 ns, CPU cycles(avg):     284 (min):      30 (max):   27448 (stdd):11843968.967392
+CPU Frequency:3392MHz (3392160307 cycles/sec)
+PCIe linkmode=11, length=64, loops=10000
+    time (avg): 35549 ns (min): 20988 ns (max): 78139 ns, CPU cycles(avg):  120589 (min):   71195 (max):  265061 (stdd):2.236068
+    time (avg):  3131 ns (min):  1061 ns (max): 20052 ns, CPU cycles(avg):   10621 (min):    3602 (max):   68021 (stdd):11862560.775316
+    time (avg):    83 ns (min):     7 ns (max):  8064 ns, CPU cycles(avg):     284 (min):      27 (max):   27357 (stdd):11859742.619618
+=============================
+12,4,0
+12,4,10000,6392,733,45,102,130,30,78770,5147,188
+12,4,10000,6367,732,45,121,133,27,21851,5008,109
+12,4,10000,6366,732,45,124,130,36,16867,4180,208
+12,4,10000,6374,732,45,102,130,27,48243,4050,3675
+CPU Frequency:3392MHz (3392158138 cycles/sec)
+PCIe linkmode=12, length=4, loops=10000
+    time (avg):  1891 ns (min):    35 ns (max):  5058 ns, CPU cycles(avg):    6417 (min):     121 (max):   17160 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1473 ns, CPU cycles(avg):     732 (min):     130 (max):    4999 (stdd):11862610.682104
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11824008.418831
+CPU Frequency:3392MHz (3392160326 cycles/sec)
+PCIe linkmode=12, length=4, loops=10000
+    time (avg):  1892 ns (min):    30 ns (max): 12268 ns, CPU cycles(avg):    6420 (min):     105 (max):   41616 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  2362 ns, CPU cycles(avg):     733 (min):     130 (max):    8015 (stdd):11862836.446779
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11857831.501848
+CPU Frequency:3392MHz (3392159129 cycles/sec)
+PCIe linkmode=12, length=4, loops=10000
+    time (avg):  1890 ns (min):    30 ns (max):  4934 ns, CPU cycles(avg):    6413 (min):     105 (max):   16737 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1264 ns, CPU cycles(avg):     732 (min):     133 (max):    4291 (stdd):11862754.246897
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11840352.932532
+CPU Frequency:3392MHz (3392159419 cycles/sec)
+PCIe linkmode=12, length=4, loops=10000
+    time (avg):  1890 ns (min):    35 ns (max):  4694 ns, CPU cycles(avg):    6413 (min):     121 (max):   15924 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1515 ns, CPU cycles(avg):     732 (min):     130 (max):    5141 (stdd):11862656.775698
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11832670.765309
+CPU Frequency:3392MHz (3392158896 cycles/sec)
+PCIe linkmode=12, length=4, loops=10000
+    time (avg):  1890 ns (min):    35 ns (max):  4732 ns, CPU cycles(avg):    6413 (min):     121 (max):   16054 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1517 ns, CPU cycles(avg):     733 (min):     133 (max):    5147 (stdd):11862845.403512
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11845035.389818
+12,64,10000,100508,10374,142,59426,3445,30,224430,19832,2518
+12,64,10000,100522,10371,142,59075,3466,36,227564,19753,15102
+12,64,10000,100527,10368,141,54711,6758,45,174935,45867,2584
+12,64,10000,100683,10370,141,59544,3460,27,192013,20198,2557
+CPU Frequency:3392MHz (3392160239 cycles/sec)
+PCIe linkmode=12, length=64, loops=10000
+    time (avg): 29681 ns (min): 17568 ns (max): 49685 ns, CPU cycles(avg):  100683 (min):   59595 (max):  168542 (stdd):2.236068
+    time (avg):  3116 ns (min):  1065 ns (max):  5925 ns, CPU cycles(avg):   10572 (min):    3615 (max):   20101 (stdd):11862884.003305
+    time (avg):    41 ns (min):    10 ns (max):   886 ns, CPU cycles(avg):     142 (min):      36 (max):    3007 (stdd):11850459.830082
+CPU Frequency:3392MHz (3392158570 cycles/sec)
+PCIe linkmode=12, length=64, loops=10000
+    time (avg): 29589 ns (min): 17468 ns (max): 65803 ns, CPU cycles(avg):  100372 (min):   59257 (max):  223215 (stdd):2.236068
+    time (avg):  3072 ns (min):  1007 ns (max): 18250 ns, CPU cycles(avg):   10423 (min):    3418 (max):   61907 (stdd):11862907.791251
+    time (avg):    41 ns (min):     7 ns (max):  4562 ns, CPU cycles(avg):     142 (min):      27 (max):   15477 (stdd):11819915.962457
+CPU Frequency:3392MHz (3392159093 cycles/sec)
+PCIe linkmode=12, length=64, loops=10000
+    time (avg): 29736 ns (min): 19865 ns (max): 54245 ns, CPU cycles(avg):  100872 (min):   67386 (max):  184011 (stdd):2.236068
+    time (avg):  3054 ns (min):  1998 ns (max):  5074 ns, CPU cycles(avg):   10361 (min):    6779 (max):   17212 (stdd):11862895.861375
+    time (avg):    41 ns (min):    14 ns (max):  1479 ns, CPU cycles(avg):     142 (min):      48 (max):    5020 (stdd):11843806.855695
+CPU Frequency:3392MHz (3392158234 cycles/sec)
+PCIe linkmode=12, length=64, loops=10000
+    time (avg): 29630 ns (min): 17579 ns (max): 65267 ns, CPU cycles(avg):  100510 (min):   59634 (max):  221399 (stdd):2.236068
+    time (avg):  3057 ns (min):  1012 ns (max):  5873 ns, CPU cycles(avg):   10370 (min):    3436 (max):   19925 (stdd):11862937.853006
+    time (avg):    41 ns (min):     7 ns (max):   872 ns, CPU cycles(avg):     141 (min):      27 (max):    2959 (stdd):11859487.327094
+CPU Frequency:3392MHz (3392157917 cycles/sec)
+PCIe linkmode=12, length=64, loops=10000
+    time (avg): 29702 ns (min): 16695 ns (max): 64502 ns, CPU cycles(avg):  100754 (min):   56633 (max):  218802 (stdd):2.236068
+    time (avg):  3133 ns (min):  1045 ns (max): 19872 ns, CPU cycles(avg):   10628 (min):    3548 (max):   67411 (stdd):11862932.703026
+    time (avg):    41 ns (min):    10 ns (max):   702 ns, CPU cycles(avg):     142 (min):      36 (max):    2382 (stdd):11853334.860953
+=============================
+13,4,0
+13,4,10000,5852,744,45,121,133,36,65489,5240,208
+13,4,10000,5808,743,45,102,130,30,15377,4186,4588
+13,4,10000,5806,743,45,121,130,36,14827,4146,220
+13,4,10000,5823,743,45,121,130,27,53240,4098,3796
+CPU Frequency:3392MHz (3392157796 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1711 ns (min):    30 ns (max):  4657 ns, CPU cycles(avg):    5805 (min):     105 (max):   15800 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1212 ns, CPU cycles(avg):     744 (min):     133 (max):    4113 (stdd):11862736.761094
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11828036.891708
+CPU Frequency:3392MHz (3392159840 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1713 ns (min):    35 ns (max):  4333 ns, CPU cycles(avg):    5811 (min):     121 (max):   14700 (stdd):2.236068
+    time (avg):   218 ns (min):    38 ns (max):  1189 ns, CPU cycles(avg):     742 (min):     130 (max):    4035 (stdd):11863238.626923
+    time (avg):    13 ns (min):    10 ns (max):    60 ns, CPU cycles(avg):      45 (min):      36 (max):     205 (stdd):11859142.620841
+CPU Frequency:3392MHz (3392157018 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1711 ns (min):    32 ns (max):  4307 ns, CPU cycles(avg):    5806 (min):     111 (max):   14612 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1207 ns, CPU cycles(avg):     744 (min):     133 (max):    4095 (stdd):11863119.916707
+    time (avg):    13 ns (min):    10 ns (max):    33 ns, CPU cycles(avg):      45 (min):      36 (max):     112 (stdd):11833751.546912
+CPU Frequency:3392MHz (3392158970 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1712 ns (min):    35 ns (max):  4341 ns, CPU cycles(avg):    5808 (min):     121 (max):   14727 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1174 ns, CPU cycles(avg):     733 (min):     133 (max):    3983 (stdd):11862911.050501
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11840982.933575
+CPU Frequency:3392MHz (3392157168 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1712 ns (min):    74 ns (max):  3935 ns, CPU cycles(avg):    5808 (min):     254 (max):   13349 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1188 ns, CPU cycles(avg):     733 (min):     130 (max):    4032 (stdd):11862725.177883
+    time (avg):    13 ns (min):    10 ns (max):    60 ns, CPU cycles(avg):      45 (min):      36 (max):     205 (stdd):11825230.997417
+13,64,10000,91652,10372,71,54403,3461,27,221998,19998,2841
+13,64,10000,91586,10376,71,51532,3473,30,190019,21068,1200
+13,64,10000,91640,10370,71,55733,3458,30,191457,20624,1272
+ffffffff,64,10000,91627,10368,71,54152,3461,27,219332,20757,1499
+CPU Frequency:3392MHz (3392157971 cycles/sec)
+PCIe linkmode=13, length=64, loops=10000
+    time (avg): 26998 ns (min): 16093 ns (max): 50830 ns, CPU cycles(avg):   91582 (min):   54593 (max):  172424 (stdd):2.236068
+    time (avg):  3070 ns (min):  1008 ns (max):  6328 ns, CPU cycles(avg):   10415 (min):    3421 (max):   21467 (stdd):11862655.004730
+    time (avg):    20 ns (min):     8 ns (max):  2683 ns, CPU cycles(avg):      71 (min):      30 (max):    9103 (stdd):11838655.121649
+CPU Frequency:3392MHz (3392159704 cycles/sec)
+PCIe linkmode=13, length=64, loops=10000
+    time (avg): 27071 ns (min): 15225 ns (max): 64656 ns, CPU cycles(avg):   91832 (min):   51647 (max):  219325 (stdd):2.236068
+    time (avg):  3131 ns (min):  1058 ns (max): 19630 ns, CPU cycles(avg):   10621 (min):    3590 (max):   66590 (stdd):11863149.805635
+    time (avg):    20 ns (min):     7 ns (max):  2802 ns, CPU cycles(avg):      71 (min):      27 (max):    9508 (stdd):11856702.290431
+CPU Frequency:3392MHz (3392159760 cycles/sec)
+PCIe linkmode=13, length=64, loops=10000
+    time (avg): 27011 ns (min): 16020 ns (max): 63631 ns, CPU cycles(avg):   91628 (min):   54345 (max):  215848 (stdd):2.236068
+    time (avg):  3089 ns (min):   977 ns (max):  5946 ns, CPU cycles(avg):   10481 (min):    3316 (max):   20173 (stdd):11862762.657973
+    time (avg):    20 ns (min):     8 ns (max):   372 ns, CPU cycles(avg):      71 (min):      30 (max):    1263 (stdd):11817086.066851
+CPU Frequency:3392MHz (3392157992 cycles/sec)
+PCIe linkmode=13, length=64, loops=10000
+    time (avg): 27000 ns (min): 16041 ns (max): 52302 ns, CPU cycles(avg):   91589 (min):   54415 (max):  177417 (stdd):2.236068
+    time (avg):  3066 ns (min):  1004 ns (max):  5974 ns, CPU cycles(avg):   10403 (min):    3409 (max):   20267 (stdd):11862741.235441
+    time (avg):    20 ns (min):     7 ns (max):   374 ns, CPU cycles(avg):      71 (min):      27 (max):    1269 (stdd):11845833.414368
+CPU Frequency:3392MHz (3392158702 cycles/sec)
+PCIe linkmode=13, length=64, loops=10000
+    time (avg): 27006 ns (min): 16045 ns (max): 53509 ns, CPU cycles(avg):   91611 (min):   54430 (max):  181513 (stdd):2.236068
+    time (avg):  3118 ns (min):  1048 ns (max):  5972 ns, CPU cycles(avg):   10580 (min):    3557 (max):   20261 (stdd):11862943.335486
+    time (avg):    20 ns (min):    10 ns (max):   378 ns, CPU cycles(avg):      71 (min):      36 (max):    1285 (stdd):11818862.429464
