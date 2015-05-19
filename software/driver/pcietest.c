@@ -87,7 +87,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 		while (i<LOOPS) {
 //			mb();
 			memcpy(dptr, ptr, parameter_length);
-			ptr+=64; //parameter_length;
+			ptr+=parameter_length;
 //			dptr+=parameter_length;
 			tsce = rdtsc();
 			tsc0[i] = tsce-tscs;
@@ -109,7 +109,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 		while (i<LOOPS) {
 //			mb();
 			memcpy(ptr, dptr, parameter_length);
-			ptr+=64; //parameter_length;
+			ptr+=parameter_length;
 //			dptr+=parameter_length;
 			tsce = rdtsc();
 			tsc1[i] = tsce-tscs;
@@ -131,7 +131,7 @@ static ssize_t pcietest_read(struct file *filp, char __user *buf,
 		while (i<LOOPS) {
 //			mb();
 			memcpy(ptr, dptr, parameter_length);
-			ptr+=64; //parameter_length;
+			ptr+=parameter_length;
 //			dptr+=parameter_length;
 			tsce = rdtsc();
 			tsc2[i] = tsce-tscs;

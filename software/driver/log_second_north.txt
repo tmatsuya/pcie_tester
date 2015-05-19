@@ -1,483 +1,483 @@
 
 
-2015年  5月 19日 火曜日 10:18:07 JST
+2015年  5月 18日 月曜日 17:44:49 JST
 =============================
 00,4,0
-00,4,10000,16439,1311,325,105,130,27,85741,5681,28738
-00,4,10000,16336,1311,325,105,130,30,38968,5222,29751
-00,4,10000,16377,1311,325,105,136,30,66194,5098,30902
-00,4,10000,16349,1311,325,102,133,30,62451,6619,30377
-CPU Frequency:3392MHz (3392159253 cycles/sec)
+00,4,10000,16372,1311,66,121,133,27,71794,4812,17181
+00,4,10000,16348,1311,69,121,130,36,72507,5848,85269
+00,4,10000,16390,1321,63,105,130,30,85264,37123,95506
+00,4,10000,16328,1311,64,102,130,27,80281,5558,12863
+CPU Frequency:3392MHz (3392158310 cycles/sec)
 PCIe linkmode=0, length=4, loops=10000
-    time (avg):  4800 ns (min):    30 ns (max): 10704 ns, CPU cycles(avg):   16284 (min):     102 (max):   36312 (stdd):2.236068
-    time (avg):   386 ns (min):    33 ns (max):  1724 ns, CPU cycles(avg):    1311 (min):     114 (max):    5851 (stdd):11863184.734220
-    time (avg):    95 ns (min):     7 ns (max):  8840 ns, CPU cycles(avg):     325 (min):      27 (max):   29989 (stdd):11820656.962185
-CPU Frequency:3392MHz (3392161415 cycles/sec)
+    time (avg):  4816 ns (min):    31 ns (max): 20088 ns, CPU cycles(avg):   16339 (min):     108 (max):   68144 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1972 ns, CPU cycles(avg):    1311 (min):     130 (max):    6691 (stdd):11862853.111188
+    time (avg):    18 ns (min):     7 ns (max): 17482 ns, CPU cycles(avg):      63 (min):      27 (max):   59305 (stdd):11845749.607405
+CPU Frequency:3392MHz (3392159344 cycles/sec)
 PCIe linkmode=0, length=4, loops=10000
-    time (avg):  4816 ns (min):    35 ns (max): 19470 ns, CPU cycles(avg):   16340 (min):     121 (max):   66047 (stdd):2.236068
-    time (avg):   386 ns (min):    38 ns (max):  1637 ns, CPU cycles(avg):    1311 (min):     130 (max):    5555 (stdd):11862780.433774
-    time (avg):    95 ns (min):     7 ns (max):  9042 ns, CPU cycles(avg):     325 (min):      27 (max):   30672 (stdd):11828875.504802
-CPU Frequency:3392MHz (3392160926 cycles/sec)
+    time (avg):  4814 ns (min):    30 ns (max): 10758 ns, CPU cycles(avg):   16332 (min):     102 (max):   36496 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1632 ns, CPU cycles(avg):    1311 (min):     130 (max):    5537 (stdd):11863204.971160
+    time (avg):    19 ns (min):     8 ns (max): 11617 ns, CPU cycles(avg):      66 (min):      30 (max):   39407 (stdd):11852713.842557
+CPU Frequency:3392MHz (3392157248 cycles/sec)
 PCIe linkmode=0, length=4, loops=10000
-    time (avg):  4814 ns (min):    35 ns (max): 10865 ns, CPU cycles(avg):   16332 (min):     121 (max):   36856 (stdd):2.236068
-    time (avg):   386 ns (min):    38 ns (max):  1635 ns, CPU cycles(avg):    1311 (min):     130 (max):    5549 (stdd):11862756.798016
-    time (avg):    95 ns (min):     9 ns (max):  8703 ns, CPU cycles(avg):     325 (min):      33 (max):   29524 (stdd):11849577.896147
-CPU Frequency:3392MHz (3392159868 cycles/sec)
+    time (avg):  4814 ns (min):    30 ns (max): 11139 ns, CPU cycles(avg):   16333 (min):     105 (max):   37787 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1592 ns, CPU cycles(avg):    1311 (min):     130 (max):    5401 (stdd):11863179.160873
+    time (avg):    19 ns (min):     7 ns (max): 11446 ns, CPU cycles(avg):      66 (min):      27 (max):   38829 (stdd):11827235.657887
+CPU Frequency:3392MHz (3392157711 cycles/sec)
 PCIe linkmode=0, length=4, loops=10000
-    time (avg):  4814 ns (min):    30 ns (max): 10688 ns, CPU cycles(avg):   16332 (min):     102 (max):   36257 (stdd):2.236068
-    time (avg):   386 ns (min):    38 ns (max):  1641 ns, CPU cycles(avg):    1311 (min):     130 (max):    5567 (stdd):11862781.292835
-    time (avg):    95 ns (min):    10 ns (max):  8977 ns, CPU cycles(avg):     325 (min):      36 (max):   30452 (stdd):11816831.802183
-CPU Frequency:3392MHz (3392160585 cycles/sec)
+    time (avg):  4814 ns (min):    35 ns (max): 10689 ns, CPU cycles(avg):   16332 (min):     121 (max):   36261 (stdd):2.236068
+    time (avg):   386 ns (min):    39 ns (max):  1363 ns, CPU cycles(avg):    1311 (min):     133 (max):    4624 (stdd):11863210.281745
+    time (avg):    20 ns (min):    10 ns (max): 27848 ns, CPU cycles(avg):      70 (min):      36 (max):   94468 (stdd):11860855.591136
+CPU Frequency:3392MHz (3392159600 cycles/sec)
 PCIe linkmode=0, length=4, loops=10000
-    time (avg):  4817 ns (min):    30 ns (max): 22796 ns, CPU cycles(avg):   16341 (min):     105 (max):   77328 (stdd):2.236068
-    time (avg):   386 ns (min):    38 ns (max):  1680 ns, CPU cycles(avg):    1311 (min):     130 (max):    5700 (stdd):11862872.801599
-    time (avg):    95 ns (min):     7 ns (max):  9125 ns, CPU cycles(avg):     325 (min):      27 (max):   30954 (stdd):11861258.276491
-00,64,10000,260897,21061,1142,154182,3421,30,483329,73011,130974
-00,64,10000,260789,21073,1147,153852,3403,30,608769,70549,101097
-00,64,10000,260531,21000,1138,154248,3403,30,479572,37844,101550
-00,64,10000,261437,21062,1142,154157,3418,27,555484,70162,130672
-CPU Frequency:3392MHz (3392159875 cycles/sec)
+    time (avg):  4809 ns (min):    35 ns (max): 18494 ns, CPU cycles(avg):   16313 (min):     121 (max):   62735 (stdd):2.236068
+    time (avg):   386 ns (min):    38 ns (max):  1630 ns, CPU cycles(avg):    1311 (min):     130 (max):    5530 (stdd):11862701.056891
+    time (avg):    18 ns (min):     7 ns (max): 19054 ns, CPU cycles(avg):      63 (min):      27 (max):   64636 (stdd):11861525.003928
+00,64,10000,261359,21081,1142,154191,3452,30,549653,76483,130563
+00,64,10000,260849,21081,1138,146448,3421,30,444956,77150,100450
+00,64,10000,262123,21050,1138,146360,6728,45,477115,76633,101471
+00,64,10000,260334,21010,1138,154230,3418,27,395418,59097,101704
+CPU Frequency:3392MHz (3392158060 cycles/sec)
 PCIe linkmode=0, length=64, loops=10000
-    time (avg): 77068 ns (min): 45599 ns (max):165728 ns, CPU cycles(avg):  261428 (min):  154680 (max):  562179 (stdd):2.236068
-    time (avg):  6193 ns (min):  1057 ns (max): 19509 ns, CPU cycles(avg):   21011 (min):    3587 (max):   66180 (stdd):11862757.505326
-    time (avg):   336 ns (min):     7 ns (max): 29726 ns, CPU cycles(avg):    1143 (min):      27 (max):  100836 (stdd):11852036.994121
-CPU Frequency:3392MHz (3392160758 cycles/sec)
+    time (avg): 76739 ns (min): 45448 ns (max):114053 ns, CPU cycles(avg):  260314 (min):  154167 (max):  386886 (stdd):2.236068
+    time (avg):  6190 ns (min):  1005 ns (max): 11021 ns, CPU cycles(avg):   21000 (min):    3412 (max):   37388 (stdd):11862987.123419
+    time (avg):   335 ns (min):     7 ns (max): 29548 ns, CPU cycles(avg):    1138 (min):      27 (max):  100232 (stdd):11849229.580878
+CPU Frequency:3392MHz (3392157654 cycles/sec)
 PCIe linkmode=0, length=64, loops=10000
-    time (avg): 76953 ns (min): 45433 ns (max):133385 ns, CPU cycles(avg):  261037 (min):  154118 (max):  452466 (stdd):2.236068
-    time (avg):  6208 ns (min):  1006 ns (max): 21976 ns, CPU cycles(avg):   21059 (min):    3415 (max):   74549 (stdd):11863227.044030
-    time (avg):   337 ns (min):     8 ns (max): 39593 ns, CPU cycles(avg):    1144 (min):      30 (max):  134309 (stdd):11819722.346565
-CPU Frequency:3392MHz (3392159692 cycles/sec)
+    time (avg): 77105 ns (min): 45398 ns (max):135944 ns, CPU cycles(avg):  261555 (min):  154000 (max):  461146 (stdd):2.236068
+    time (avg):  6216 ns (min):  1009 ns (max): 21347 ns, CPU cycles(avg):   21087 (min):    3424 (max):   72415 (stdd):11863221.928011
+    time (avg):   335 ns (min):     8 ns (max): 29641 ns, CPU cycles(avg):    1138 (min):      30 (max):  100547 (stdd):11849596.305457
+CPU Frequency:3392MHz (3392158431 cycles/sec)
 PCIe linkmode=0, length=64, loops=10000
-    time (avg): 77131 ns (min): 45500 ns (max):154440 ns, CPU cycles(avg):  261642 (min):  154345 (max):  523886 (stdd):2.236068
-    time (avg):  6216 ns (min):  1027 ns (max): 23033 ns, CPU cycles(avg):   21089 (min):    3485 (max):   78135 (stdd):11863200.696898
-    time (avg):   335 ns (min):     7 ns (max): 29596 ns, CPU cycles(avg):    1138 (min):      27 (max):  100395 (stdd):11836702.363974
-CPU Frequency:3392MHz (3392158912 cycles/sec)
+    time (avg): 76984 ns (min): 43641 ns (max):144634 ns, CPU cycles(avg):  261145 (min):  148040 (max):  490622 (stdd):2.236068
+    time (avg):  6190 ns (min):  1008 ns (max): 11145 ns, CPU cycles(avg):   21000 (min):    3421 (max):   37808 (stdd):11862795.618387
+    time (avg):   335 ns (min):     8 ns (max): 29960 ns, CPU cycles(avg):    1138 (min):      30 (max):  101631 (stdd):11847545.832708
+CPU Frequency:3392MHz (3392159344 cycles/sec)
 PCIe linkmode=0, length=64, loops=10000
-    time (avg): 76974 ns (min): 45462 ns (max):167367 ns, CPU cycles(avg):  261111 (min):  154215 (max):  567738 (stdd):2.236068
-    time (avg):  6191 ns (min):  1018 ns (max): 15188 ns, CPU cycles(avg):   21004 (min):    3454 (max):   51521 (stdd):11862973.838587
-    time (avg):   335 ns (min):     8 ns (max): 29624 ns, CPU cycles(avg):    1138 (min):      30 (max):  100492 (stdd):11834914.877493
-CPU Frequency:3392MHz (3392159936 cycles/sec)
+    time (avg): 77093 ns (min): 45459 ns (max):127904 ns, CPU cycles(avg):  261514 (min):  154206 (max):  433872 (stdd):2.236068
+    time (avg):  6191 ns (min):  1980 ns (max):  9361 ns, CPU cycles(avg):   21001 (min):    6719 (max):   31757 (stdd):11862763.949673
+    time (avg):   335 ns (min):    13 ns (max): 29878 ns, CPU cycles(avg):    1138 (min):      45 (max):  101354 (stdd):11820873.504414
+CPU Frequency:3392MHz (3392158186 cycles/sec)
 PCIe linkmode=0, length=64, loops=10000
-    time (avg): 76989 ns (min): 45466 ns (max):156424 ns, CPU cycles(avg):  261162 (min):  154230 (max):  530616 (stdd):2.236068
-    time (avg):  6190 ns (min):  1010 ns (max): 11416 ns, CPU cycles(avg):   21000 (min):    3427 (max):   38727 (stdd):11862708.292486
-    time (avg):   335 ns (min):     8 ns (max): 29891 ns, CPU cycles(avg):    1139 (min):      30 (max):  101396 (stdd):11837124.656978
+    time (avg): 76808 ns (min): 44484 ns (max):133545 ns, CPU cycles(avg):  260546 (min):  150900 (max):  453007 (stdd):2.236068
+    time (avg):  6219 ns (min):  1010 ns (max): 22891 ns, CPU cycles(avg):   21099 (min):    3427 (max):   77650 (stdd):11863005.836306
+    time (avg):   336 ns (min):     9 ns (max): 37970 ns, CPU cycles(avg):    1143 (min):      33 (max):  128801 (stdd):11816241.549149
 =============================
 01,4,0
-01,4,10000,12568,734,162,121,130,27,71859,6676,4772
-01,4,10000,12526,732,162,102,130,30,44321,4162,17006
-01,4,10000,12538,733,162,102,130,30,68680,4098,1215
-01,4,10000,12528,732,162,102,130,33,51041,5041,16474
-CPU Frequency:3392MHz (3392159219 cycles/sec)
+01,4,10000,12696,739,45,105,130,30,75737,34511,106
+01,4,10000,12626,739,45,102,136,30,61459,34566,97
+01,4,10000,12626,739,45,102,130,36,68625,34569,100
+01,4,10000,12622,739,45,121,130,30,64556,34406,3446
+CPU Frequency:3392MHz (3392159050 cycles/sec)
 PCIe linkmode=1, length=4, loops=10000
-    time (avg):  3691 ns (min):    30 ns (max):  8652 ns, CPU cycles(avg):   12521 (min):     105 (max):   29352 (stdd):2.236068
-    time (avg):   216 ns (min):    39 ns (max):  1240 ns, CPU cycles(avg):     733 (min):     133 (max):    4207 (stdd):11862607.038467
-    time (avg):    47 ns (min):     8 ns (max):   373 ns, CPU cycles(avg):     162 (min):      30 (max):    1266 (stdd):11848130.645467
-CPU Frequency:3392MHz (3392161329 cycles/sec)
+    time (avg):  3691 ns (min):    30 ns (max):  8453 ns, CPU cycles(avg):   12522 (min):     102 (max):   28675 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1218 ns, CPU cycles(avg):     732 (min):     130 (max):    4132 (stdd):11863266.794912
+    time (avg):    13 ns (min):    10 ns (max):    31 ns, CPU cycles(avg):      45 (min):      36 (max):     106 (stdd):11822498.567317
+CPU Frequency:3392MHz (3392156445 cycles/sec)
 PCIe linkmode=1, length=4, loops=10000
-    time (avg):  3692 ns (min):    30 ns (max): 10955 ns, CPU cycles(avg):   12524 (min):     102 (max):   37162 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1294 ns, CPU cycles(avg):     733 (min):     130 (max):    4392 (stdd):11863074.582960
-    time (avg):    47 ns (min):    10 ns (max):  1192 ns, CPU cycles(avg):     162 (min):      36 (max):    4044 (stdd):11853528.506270
-CPU Frequency:3392MHz (3392159948 cycles/sec)
+    time (avg):  3691 ns (min):    30 ns (max):  8209 ns, CPU cycles(avg):   12523 (min):     102 (max):   27847 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1185 ns, CPU cycles(avg):     732 (min):     130 (max):    4020 (stdd):11862643.683857
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11847366.347553
+CPU Frequency:3392MHz (3392159600 cycles/sec)
 PCIe linkmode=1, length=4, loops=10000
-    time (avg):  3681 ns (min):    30 ns (max):  8463 ns, CPU cycles(avg):   12487 (min):     102 (max):   28711 (stdd):2.236068
-    time (avg):   217 ns (min):    33 ns (max):  1300 ns, CPU cycles(avg):     739 (min):     114 (max):    4413 (stdd):11863212.312963
-    time (avg):    47 ns (min):     9 ns (max):  5001 ns, CPU cycles(avg):     162 (min):      33 (max):   16967 (stdd):11851163.869903
-CPU Frequency:3392MHz (3392158521 cycles/sec)
+    time (avg):  3691 ns (min):    35 ns (max):  8569 ns, CPU cycles(avg):   12523 (min):     121 (max):   29068 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1194 ns, CPU cycles(avg):     733 (min):     133 (max):    4052 (stdd):11862918.491926
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11816805.837922
+CPU Frequency:3392MHz (3392156566 cycles/sec)
 PCIe linkmode=1, length=4, loops=10000
-    time (avg):  3691 ns (min):    30 ns (max):  8435 ns, CPU cycles(avg):   12522 (min):     102 (max):   28615 (stdd):2.236068
-    time (avg):   215 ns (min):    38 ns (max):  1207 ns, CPU cycles(avg):     732 (min):     130 (max):    4095 (stdd):11863282.847767
-    time (avg):    47 ns (min):     7 ns (max):  5279 ns, CPU cycles(avg):     162 (min):      27 (max):   17910 (stdd):11826717.415022
-CPU Frequency:3392MHz (3392162124 cycles/sec)
+    time (avg):  3691 ns (min):    30 ns (max):  8564 ns, CPU cycles(avg):   12522 (min):     102 (max):   29053 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1198 ns, CPU cycles(avg):     733 (min):     130 (max):    4065 (stdd):11863027.049296
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11830042.533152
+CPU Frequency:3392MHz (3392159885 cycles/sec)
 PCIe linkmode=1, length=4, loops=10000
-    time (avg):  3691 ns (min):    30 ns (max):  8725 ns, CPU cycles(avg):   12523 (min):     102 (max):   29599 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1300 ns, CPU cycles(avg):     734 (min):     130 (max):    4412 (stdd):11862639.788171
-    time (avg):    47 ns (min):     8 ns (max):   300 ns, CPU cycles(avg):     162 (min):      30 (max):    1018 (stdd):11824081.276016
-01,64,10000,199029,10532,568,117268,3412,27,375058,64813,51701
-01,64,10000,199284,10532,568,117187,3406,27,422295,64961,51834
-01,64,10000,199486,10552,568,117274,3331,27,429585,68242,53112
-01,64,10000,198172,10579,568,117253,3569,27,453334,66323,52070
-CPU Frequency:3392MHz (3392161079 cycles/sec)
+    time (avg):  3691 ns (min):    30 ns (max):  8612 ns, CPU cycles(avg):   12523 (min):     102 (max):   29216 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1203 ns, CPU cycles(avg):     733 (min):     133 (max):    4083 (stdd):11862779.266550
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11855089.187079
+01,64,10000,198416,10511,568,117226,3412,27,372862,64113,52079
+01,64,10000,198377,10489,568,117259,3415,30,315206,20239,51689
+01,64,10000,199163,10555,568,117259,3406,27,373302,65461,52209
+01,64,10000,198478,10555,568,117326,6712,45,379571,47076,52390
+CPU Frequency:3392MHz (3392159252 cycles/sec)
 PCIe linkmode=1, length=64, loops=10000
-    time (avg): 58419 ns (min): 34570 ns (max):103558 ns, CPU cycles(avg):  198169 (min):  117269 (max):  351286 (stdd):2.236068
-    time (avg):  3119 ns (min):  1046 ns (max):  5992 ns, CPU cycles(avg):   10583 (min):    3551 (max):   20327 (stdd):11862962.293761
-    time (avg):   167 ns (min):     9 ns (max): 15320 ns, CPU cycles(avg):     568 (min):      33 (max):   51970 (stdd):11846292.363441
-CPU Frequency:3392MHz (3392161356 cycles/sec)
+    time (avg): 58541 ns (min): 34565 ns (max):109449 ns, CPU cycles(avg):  198582 (min):  117253 (max):  371271 (stdd):2.236068
+    time (avg):  3102 ns (min):  1003 ns (max): 21662 ns, CPU cycles(avg):   10524 (min):    3403 (max):   73482 (stdd):11862782.577110
+    time (avg):   168 ns (min):     7 ns (max): 23972 ns, CPU cycles(avg):     573 (min):      27 (max):   81317 (stdd):11817309.401872
+CPU Frequency:3392MHz (3392158482 cycles/sec)
 PCIe linkmode=1, length=64, loops=10000
-    time (avg): 58785 ns (min): 34573 ns (max):107973 ns, CPU cycles(avg):  199411 (min):  117280 (max):  366263 (stdd):2.236068
-    time (avg):  3112 ns (min):   976 ns (max): 20123 ns, CPU cycles(avg):   10559 (min):    3312 (max):   68262 (stdd):11862567.382918
-    time (avg):   167 ns (min):     8 ns (max): 15499 ns, CPU cycles(avg):     568 (min):      30 (max):   52578 (stdd):11857886.357743
-CPU Frequency:3392MHz (3392159583 cycles/sec)
+    time (avg): 58480 ns (min): 34576 ns (max): 97458 ns, CPU cycles(avg):  198374 (min):  117289 (max):  330595 (stdd):2.236068
+    time (avg):  3092 ns (min):  1005 ns (max):  6194 ns, CPU cycles(avg):   10490 (min):    3412 (max):   21014 (stdd):11862972.513591
+    time (avg):   167 ns (min):     8 ns (max): 15224 ns, CPU cycles(avg):     568 (min):      30 (max):   51644 (stdd):11856184.472927
+CPU Frequency:3392MHz (3392157728 cycles/sec)
 PCIe linkmode=1, length=64, loops=10000
-    time (avg): 58676 ns (min): 34572 ns (max):112267 ns, CPU cycles(avg):  199041 (min):  117277 (max):  380830 (stdd):2.236068
-    time (avg):  3107 ns (min):   983 ns (max): 20012 ns, CPU cycles(avg):   10541 (min):    3337 (max):   67886 (stdd):11862976.198721
-    time (avg):   167 ns (min):     7 ns (max): 15400 ns, CPU cycles(avg):     568 (min):      27 (max):   52242 (stdd):11850097.220243
-CPU Frequency:3392MHz (3392159693 cycles/sec)
+    time (avg): 58465 ns (min): 34555 ns (max): 83428 ns, CPU cycles(avg):  198325 (min):  117217 (max):  283004 (stdd):2.236068
+    time (avg):  3092 ns (min):  1006 ns (max):  5920 ns, CPU cycles(avg):   10489 (min):    3415 (max):   20083 (stdd):11863251.641804
+    time (avg):   167 ns (min):     7 ns (max): 15825 ns, CPU cycles(avg):     568 (min):      27 (max):   53681 (stdd):11861708.388037
+CPU Frequency:3392MHz (3392157753 cycles/sec)
 PCIe linkmode=1, length=64, loops=10000
-    time (avg): 58563 ns (min): 34578 ns (max):130593 ns, CPU cycles(avg):  198658 (min):  117296 (max):  442993 (stdd):2.236068
-    time (avg):  3110 ns (min):  1026 ns (max): 21943 ns, CPU cycles(avg):   10552 (min):    3482 (max):   74435 (stdd):11862803.150175
-    time (avg):   167 ns (min):     8 ns (max): 15283 ns, CPU cycles(avg):     568 (min):      30 (max):   51843 (stdd):11839200.249160
-CPU Frequency:3392MHz (3392160806 cycles/sec)
+    time (avg): 58507 ns (min): 34575 ns (max):102969 ns, CPU cycles(avg):  198468 (min):  117287 (max):  349290 (stdd):2.236068
+    time (avg):  3092 ns (min):  1977 ns (max):  5139 ns, CPU cycles(avg):   10491 (min):    6709 (max):   17435 (stdd):11862706.619586
+    time (avg):   167 ns (min):    13 ns (max): 15385 ns, CPU cycles(avg):     568 (min):      45 (max):   52191 (stdd):11836880.866485
+CPU Frequency:3392MHz (3392158156 cycles/sec)
 PCIe linkmode=1, length=64, loops=10000
-    time (avg): 58409 ns (min): 34578 ns (max): 97941 ns, CPU cycles(avg):  198133 (min):  117295 (max):  332235 (stdd):2.236068
-    time (avg):  3119 ns (min):  1048 ns (max):  6297 ns, CPU cycles(avg):   10583 (min):    3557 (max):   21361 (stdd):11862958.692529
-    time (avg):   167 ns (min):     9 ns (max): 15392 ns, CPU cycles(avg):     568 (min):      33 (max):   52215 (stdd):11837118.043478
+    time (avg): 58628 ns (min): 34562 ns (max):109682 ns, CPU cycles(avg):  198877 (min):  117241 (max):  372059 (stdd):2.236068
+    time (avg):  3112 ns (min):  1006 ns (max): 19622 ns, CPU cycles(avg):   10557 (min):    3415 (max):   66564 (stdd):11862662.419556
+    time (avg):   167 ns (min):     7 ns (max): 15309 ns, CPU cycles(avg):     568 (min):      27 (max):   51931 (stdd):11858049.623922
 =============================
 02,4,0
-02,4,10000,10247,748,81,102,130,36,77200,34990,2034
-02,4,10000,10141,741,81,121,130,27,73776,4470,502
-02,4,10000,10154,742,81,102,133,27,70348,4210,475
-02,4,10000,10074,741,81,102,111,27,23957,4370,290
-CPU Frequency:3392MHz (3392158715 cycles/sec)
+02,4,10000,10158,743,45,121,130,36,69276,4219,97
+02,4,10000,10131,743,45,102,136,36,24380,4309,145
+02,4,10000,10137,743,45,102,130,36,53305,4168,112
+02,4,10000,10165,744,45,102,111,27,74197,4479,97
+CPU Frequency:3392MHz (3392157755 cycles/sec)
 PCIe linkmode=2, length=4, loops=10000
-    time (avg):  2983 ns (min):    35 ns (max):  6834 ns, CPU cycles(avg):   10121 (min):     121 (max):   23183 (stdd):2.236068
-    time (avg):   218 ns (min):    39 ns (max):  1434 ns, CPU cycles(avg):     741 (min):     133 (max):    4866 (stdd):11863068.030538
-    time (avg):    23 ns (min):     7 ns (max):   170 ns, CPU cycles(avg):      81 (min):      27 (max):     578 (stdd):11837084.161366
-CPU Frequency:3392MHz (3392159801 cycles/sec)
+    time (avg):  2982 ns (min):    35 ns (max):  8154 ns, CPU cycles(avg):   10117 (min):     121 (max):   27663 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1154 ns, CPU cycles(avg):     732 (min):     133 (max):    3917 (stdd):11863220.691086
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11849106.219188
+CPU Frequency:3392MHz (3392157573 cycles/sec)
 PCIe linkmode=2, length=4, loops=10000
-    time (avg):  2969 ns (min):    30 ns (max):  6842 ns, CPU cycles(avg):   10074 (min):     102 (max):   23210 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1449 ns, CPU cycles(avg):     741 (min):     130 (max):    4917 (stdd):11863076.454685
-    time (avg):    23 ns (min):    10 ns (max):  2450 ns, CPU cycles(avg):      81 (min):      36 (max):    8311 (stdd):11851292.415330
-CPU Frequency:3392MHz (3392158524 cycles/sec)
+    time (avg):  2992 ns (min):    39 ns (max):  7025 ns, CPU cycles(avg):   10150 (min):     133 (max):   23833 (stdd):2.236068
+    time (avg):   218 ns (min):    43 ns (max):  1626 ns, CPU cycles(avg):     740 (min):     148 (max):    5516 (stdd):11862651.648902
+    time (avg):    18 ns (min):    13 ns (max):    34 ns, CPU cycles(avg):      63 (min):      45 (max):     118 (stdd):11840948.219866
+CPU Frequency:3392MHz (3392157525 cycles/sec)
 PCIe linkmode=2, length=4, loops=10000
-    time (avg):  2987 ns (min):    30 ns (max):  6900 ns, CPU cycles(avg):   10134 (min):     105 (max):   23407 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1471 ns, CPU cycles(avg):     741 (min):     130 (max):    4992 (stdd):11863071.487586
-    time (avg):    23 ns (min):     7 ns (max):  2957 ns, CPU cycles(avg):      81 (min):      27 (max):   10034 (stdd):11852548.276655
-CPU Frequency:3392MHz (3392161425 cycles/sec)
+    time (avg):  2983 ns (min):    35 ns (max):  6813 ns, CPU cycles(avg):   10119 (min):     121 (max):   23114 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1224 ns, CPU cycles(avg):     732 (min):     133 (max):    4153 (stdd):11863087.722146
+    time (avg):    13 ns (min):    10 ns (max):    33 ns, CPU cycles(avg):      45 (min):      36 (max):     112 (stdd):11842529.338241
+CPU Frequency:3392MHz (3392158866 cycles/sec)
 PCIe linkmode=2, length=4, loops=10000
-    time (avg):  2976 ns (min):    35 ns (max):  6821 ns, CPU cycles(avg):   10096 (min):     121 (max):   23141 (stdd):2.236068
-    time (avg):   217 ns (min):    38 ns (max):  1429 ns, CPU cycles(avg):     739 (min):     130 (max):    4848 (stdd):11863101.558422
-    time (avg):    23 ns (min):     8 ns (max):   593 ns, CPU cycles(avg):      81 (min):      30 (max):    2013 (stdd):11832765.503272
-CPU Frequency:3392MHz (3392158881 cycles/sec)
+    time (avg):  2984 ns (min):    35 ns (max):  7070 ns, CPU cycles(avg):   10124 (min):     121 (max):   23984 (stdd):2.236068
+    time (avg):   217 ns (min):    39 ns (max):  1439 ns, CPU cycles(avg):     739 (min):     133 (max):    4884 (stdd):11862824.597800
+    time (avg):    13 ns (min):     8 ns (max):    31 ns, CPU cycles(avg):      45 (min):      30 (max):     106 (stdd):11823340.114671
+CPU Frequency:3392MHz (3392158874 cycles/sec)
 PCIe linkmode=2, length=4, loops=10000
-    time (avg):  2979 ns (min):    35 ns (max): 18775 ns, CPU cycles(avg):   10106 (min):     121 (max):   63690 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1241 ns, CPU cycles(avg):     733 (min):     130 (max):    4210 (stdd):11862818.540201
-    time (avg):    23 ns (min):     7 ns (max):   712 ns, CPU cycles(avg):      81 (min):      27 (max):    2418 (stdd):11824433.203580
-02,64,10000,159958,10372,284,94436,3433,30,290194,20333,27669
-02,64,10000,160429,10451,284,94432,3439,33,387230,66366,27237
-02,64,10000,159561,10367,284,94478,3445,27,288955,20155,27182
-02,64,10000,160356,10427,284,86847,3470,27,360944,67875,27783
-CPU Frequency:3392MHz (3392158675 cycles/sec)
+    time (avg):  2983 ns (min):    35 ns (max):  7073 ns, CPU cycles(avg):   10122 (min):     121 (max):   23993 (stdd):2.236068
+    time (avg):   217 ns (min):    38 ns (max):  1209 ns, CPU cycles(avg):     739 (min):     130 (max):    4102 (stdd):11863123.904422
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11848126.961942
+02,64,10000,159905,10461,289,94414,3412,27,285890,67213,57454
+02,64,10000,159769,10399,284,94417,3418,33,299907,20137,27720
+02,64,10000,159880,10484,284,94414,3409,30,316113,67767,27889
+02,64,10000,159768,10403,284,94490,3421,30,283557,19379,4567
+CPU Frequency:3392MHz (3392159845 cycles/sec)
 PCIe linkmode=2, length=64, loops=10000
-    time (avg): 47102 ns (min): 27850 ns (max): 86281 ns, CPU cycles(avg):  159778 (min):   94472 (max):  292681 (stdd):2.236068
-    time (avg):  3064 ns (min):  1026 ns (max): 19463 ns, CPU cycles(avg):   10394 (min):    3482 (max):   66024 (stdd):11862969.496741
-    time (avg):    83 ns (min):     7 ns (max):  8235 ns, CPU cycles(avg):     284 (min):      27 (max):   27937 (stdd):11845179.054205
-CPU Frequency:3392MHz (3392160552 cycles/sec)
+    time (avg): 47201 ns (min): 27912 ns (max): 73573 ns, CPU cycles(avg):  160116 (min):   94683 (max):  249572 (stdd):2.236068
+    time (avg):  3090 ns (min):   978 ns (max):  6142 ns, CPU cycles(avg):   10482 (min):    3318 (max):   20838 (stdd):11862589.685728
+    time (avg):    83 ns (min):    10 ns (max):  8354 ns, CPU cycles(avg):     284 (min):      36 (max):   28340 (stdd):11823793.870677
+CPU Frequency:3392MHz (3392157133 cycles/sec)
 PCIe linkmode=2, length=64, loops=10000
-    time (avg): 47291 ns (min): 27838 ns (max):117281 ns, CPU cycles(avg):  160419 (min):   94432 (max):  397837 (stdd):2.236068
-    time (avg):  3079 ns (min):  1021 ns (max): 19689 ns, CPU cycles(avg):   10445 (min):    3464 (max):   66789 (stdd):11862641.847973
-    time (avg):    85 ns (min):     7 ns (max): 17024 ns, CPU cycles(avg):     289 (min):      27 (max):   57751 (stdd):11846689.096610
-CPU Frequency:3392MHz (3392159612 cycles/sec)
+    time (avg): 47099 ns (min): 27839 ns (max): 72413 ns, CPU cycles(avg):  159768 (min):   94435 (max):  245637 (stdd):2.236068
+    time (avg):  3065 ns (min):  1008 ns (max):  6029 ns, CPU cycles(avg):   10397 (min):    3421 (max):   20454 (stdd):11863193.556034
+    time (avg):    83 ns (min):     8 ns (max):  8099 ns, CPU cycles(avg):     284 (min):      30 (max):   27475 (stdd):11860024.429776
+CPU Frequency:3392MHz (3392157650 cycles/sec)
 PCIe linkmode=2, length=64, loops=10000
-    time (avg): 47170 ns (min): 26394 ns (max): 69040 ns, CPU cycles(avg):  160011 (min):   89533 (max):  234195 (stdd):2.236068
-    time (avg):  3090 ns (min):   981 ns (max):  6034 ns, CPU cycles(avg):   10484 (min):    3328 (max):   20470 (stdd):11862907.509849
-    time (avg):    83 ns (min):     7 ns (max):  7979 ns, CPU cycles(avg):     284 (min):      27 (max):   27067 (stdd):11849716.654784
-CPU Frequency:3392MHz (3392158944 cycles/sec)
+    time (avg): 47141 ns (min): 27844 ns (max): 94210 ns, CPU cycles(avg):  159912 (min):   94453 (max):  319576 (stdd):2.236068
+    time (avg):  3083 ns (min):  1010 ns (max): 19883 ns, CPU cycles(avg):   10459 (min):    3427 (max):   67447 (stdd):11863167.384743
+    time (avg):    83 ns (min):     8 ns (max):  8082 ns, CPU cycles(avg):     284 (min):      30 (max):   27418 (stdd):11823007.564237
+CPU Frequency:3392MHz (3392159747 cycles/sec)
 PCIe linkmode=2, length=64, loops=10000
-    time (avg): 47241 ns (min): 27837 ns (max):100626 ns, CPU cycles(avg):  160251 (min):   94429 (max):  341342 (stdd):2.236068
-    time (avg):  3090 ns (min):   976 ns (max):  6275 ns, CPU cycles(avg):   10482 (min):    3312 (max):   21286 (stdd):11863108.269650
-    time (avg):    83 ns (min):    10 ns (max):  8364 ns, CPU cycles(avg):     284 (min):      36 (max):   28373 (stdd):11840905.070983
-CPU Frequency:3392MHz (3392159011 cycles/sec)
+    time (avg): 47098 ns (min): 27843 ns (max): 88144 ns, CPU cycles(avg):  159766 (min):   94451 (max):  299001 (stdd):2.236068
+    time (avg):  3072 ns (min):  1004 ns (max): 19054 ns, CPU cycles(avg):   10421 (min):    3409 (max):   64637 (stdd):11862592.332354
+    time (avg):    83 ns (min):     8 ns (max):  7940 ns, CPU cycles(avg):     284 (min):      30 (max):   26934 (stdd):11825476.843410
+CPU Frequency:3392MHz (3392159146 cycles/sec)
 PCIe linkmode=2, length=64, loops=10000
-    time (avg): 47115 ns (min): 27838 ns (max): 70756 ns, CPU cycles(avg):  159824 (min):   94432 (max):  240016 (stdd):2.236068
-    time (avg):  3068 ns (min):  1005 ns (max): 13958 ns, CPU cycles(avg):   10408 (min):    3412 (max):   47351 (stdd):11862631.402732
-    time (avg):    83 ns (min):     7 ns (max):  3030 ns, CPU cycles(avg):     284 (min):      27 (max):   10279 (stdd):11843059.129751
+    time (avg): 47297 ns (min): 31495 ns (max): 89253 ns, CPU cycles(avg):  160440 (min):  106838 (max):  302763 (stdd):2.236068
+    time (avg):  3082 ns (min):  1006 ns (max): 19877 ns, CPU cycles(avg):   10456 (min):    3415 (max):   67426 (stdd):11863173.511046
+    time (avg):    84 ns (min):     7 ns (max): 17039 ns, CPU cycles(avg):     287 (min):      27 (max):   57801 (stdd):11857069.674108
 =============================
 03,4,0
-03,4,10000,9222,732,64,121,130,27,81433,4022,206
-03,4,10000,9138,733,61,102,133,30,22893,4138,4385
-03,4,10000,9153,733,65,121,130,30,53784,4135,167
-03,4,10000,9137,732,60,121,130,30,22083,4047,151
-CPU Frequency:3392MHz (3392159658 cycles/sec)
+03,4,10000,9340,733,45,105,133,27,67126,4980,118
+03,4,10000,9323,732,45,102,133,30,21579,4065,224
+03,4,10000,9339,732,45,102,130,30,51003,4080,97
+03,4,10000,9323,732,45,105,130,27,22582,4440,97
+CPU Frequency:3392MHz (3392156590 cycles/sec)
 PCIe linkmode=3, length=4, loops=10000
-    time (avg):  2708 ns (min):    30 ns (max):  6309 ns, CPU cycles(avg):    9186 (min):     102 (max):   21403 (stdd):2.236068
-    time (avg):   217 ns (min):    33 ns (max):  1225 ns, CPU cycles(avg):     739 (min):     114 (max):    4156 (stdd):11862996.888845
-    time (avg):    19 ns (min):     7 ns (max):    52 ns, CPU cycles(avg):      67 (min):      27 (max):     179 (stdd):11826544.090489
-CPU Frequency:3392MHz (3392158823 cycles/sec)
+    time (avg):  2748 ns (min):    35 ns (max):  6565 ns, CPU cycles(avg):    9323 (min):     121 (max):   22271 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1176 ns, CPU cycles(avg):     733 (min):     133 (max):    3992 (stdd):11862687.673160
+    time (avg):    13 ns (min):    10 ns (max):  1149 ns, CPU cycles(avg):      45 (min):      36 (max):    3899 (stdd):11848521.494508
+CPU Frequency:3392MHz (3392159343 cycles/sec)
 PCIe linkmode=3, length=4, loops=10000
-    time (avg):  2692 ns (min):    35 ns (max):  6615 ns, CPU cycles(avg):    9134 (min):     121 (max):   22440 (stdd):2.236068
-    time (avg):   218 ns (min):    39 ns (max):  1201 ns, CPU cycles(avg):     741 (min):     133 (max):    4074 (stdd):11862816.678793
-    time (avg):    20 ns (min):     8 ns (max):    50 ns, CPU cycles(avg):      71 (min):      30 (max):     173 (stdd):11834878.399932
-CPU Frequency:3392MHz (3392160607 cycles/sec)
+    time (avg):  2748 ns (min):    30 ns (max):  6564 ns, CPU cycles(avg):    9323 (min):     102 (max):   22268 (stdd):2.236068
+    time (avg):   219 ns (min):    38 ns (max):  1186 ns, CPU cycles(avg):     744 (min):     130 (max):    4026 (stdd):11862564.756659
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11858469.258714
+CPU Frequency:3392MHz (3392157203 cycles/sec)
 PCIe linkmode=3, length=4, loops=10000
-    time (avg):  2692 ns (min):    30 ns (max):  6944 ns, CPU cycles(avg):    9134 (min):     105 (max):   23558 (stdd):2.236068
-    time (avg):   218 ns (min):    32 ns (max):  1264 ns, CPU cycles(avg):     741 (min):     111 (max):    4289 (stdd):11863275.566256
-    time (avg):    20 ns (min):     7 ns (max):    50 ns, CPU cycles(avg):      70 (min):      27 (max):     173 (stdd):11821583.065798
-CPU Frequency:3392MHz (3392160890 cycles/sec)
+    time (avg):  2735 ns (min):    30 ns (max): 19374 ns, CPU cycles(avg):    9280 (min):     105 (max):   65720 (stdd):2.236068
+    time (avg):   217 ns (min):    39 ns (max):  1164 ns, CPU cycles(avg):     739 (min):     133 (max):    3950 (stdd):11863010.401186
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11822662.151905
+CPU Frequency:3392MHz (3392157851 cycles/sec)
 PCIe linkmode=3, length=4, loops=10000
-    time (avg):  2702 ns (min):    35 ns (max): 20891 ns, CPU cycles(avg):    9168 (min):     121 (max):   70866 (stdd):2.236068
-    time (avg):   218 ns (min):    39 ns (max):  1299 ns, CPU cycles(avg):     741 (min):     133 (max):    4409 (stdd):11862855.459607
-    time (avg):    21 ns (min):     7 ns (max):  1371 ns, CPU cycles(avg):      72 (min):      27 (max):    4654 (stdd):11846034.055004
-CPU Frequency:3392MHz (3392159522 cycles/sec)
+    time (avg):  2748 ns (min):    30 ns (max):  6324 ns, CPU cycles(avg):    9323 (min):     102 (max):   21455 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1185 ns, CPU cycles(avg):     744 (min):     133 (max):    4023 (stdd):11862683.707742
+    time (avg):    13 ns (min):     8 ns (max):    48 ns, CPU cycles(avg):      45 (min):      30 (max):     163 (stdd):11857371.253211
+CPU Frequency:3392MHz (3392156960 cycles/sec)
 PCIe linkmode=3, length=4, loops=10000
-    time (avg):  2696 ns (min):    34 ns (max): 15220 ns, CPU cycles(avg):    9146 (min):     116 (max):   51631 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1209 ns, CPU cycles(avg):     741 (min):     130 (max):    4104 (stdd):11862581.223772
-    time (avg):    20 ns (min):     8 ns (max):  1271 ns, CPU cycles(avg):      69 (min):      30 (max):    4313 (stdd):11831282.919434
-03,64,10000,144844,10483,142,85375,3309,27,326671,20276,15465
-03,64,10000,144913,10485,142,85405,3306,27,233821,21116,2140
-03,64,10000,144912,10480,142,85387,3300,27,362295,19457,14932
-03,64,10000,144894,10510,143,85396,3309,27,264717,66743,14818
-CPU Frequency:3392MHz (3392160277 cycles/sec)
+    time (avg):  2748 ns (min):    30 ns (max):  6433 ns, CPU cycles(avg):    9323 (min):     102 (max):   21824 (stdd):2.236068
+    time (avg):   218 ns (min):    38 ns (max):  1196 ns, CPU cycles(avg):     742 (min):     130 (max):    4059 (stdd):11863031.259917
+    time (avg):    13 ns (min):     8 ns (max):    33 ns, CPU cycles(avg):      45 (min):      30 (max):     112 (stdd):11826824.518821
+03,64,10000,147173,10489,142,87687,3337,36,295153,66462,3294
+03,64,10000,147123,10486,142,85381,3300,30,261423,20527,16879
+03,64,10000,147157,10478,142,85399,3312,30,301288,21733,15812
+03,64,10000,147160,10482,142,79478,3309,30,271918,21162,2584
+CPU Frequency:3392MHz (3392159307 cycles/sec)
 PCIe linkmode=3, length=64, loops=10000
-    time (avg): 42648 ns (min): 25178 ns (max):106374 ns, CPU cycles(avg):  144672 (min):   85408 (max):  360838 (stdd):2.236068
-    time (avg):  3068 ns (min):  1004 ns (max):  5808 ns, CPU cycles(avg):   10410 (min):    3406 (max):   19702 (stdd):11862843.628774
-    time (avg):    41 ns (min):    10 ns (max):  4819 ns, CPU cycles(avg):     142 (min):      36 (max):   16347 (stdd):11849202.971882
-CPU Frequency:3392MHz (3392158922 cycles/sec)
+    time (avg): 43377 ns (min): 28506 ns (max): 62758 ns, CPU cycles(avg):  147144 (min):   96699 (max):  212886 (stdd):2.236068
+    time (avg):  3080 ns (min):  1915 ns (max):  5371 ns, CPU cycles(avg):   10450 (min):    6497 (max):   18221 (stdd):11862638.209180
+    time (avg):    41 ns (min):    10 ns (max):  4855 ns, CPU cycles(avg):     142 (min):      36 (max):   16471 (stdd):11850462.118914
+CPU Frequency:3392MHz (3392159234 cycles/sec)
 PCIe linkmode=3, length=64, loops=10000
-    time (avg): 42489 ns (min): 25197 ns (max):103468 ns, CPU cycles(avg):  144132 (min):   85474 (max):  350980 (stdd):2.236068
-    time (avg):  3061 ns (min):  1016 ns (max):  5906 ns, CPU cycles(avg):   10386 (min):    3448 (max):   20037 (stdd):11863046.447488
-    time (avg):    41 ns (min):     8 ns (max):   851 ns, CPU cycles(avg):     142 (min):      30 (max):    2889 (stdd):11843368.300579
-CPU Frequency:3392MHz (3392158546 cycles/sec)
+    time (avg): 43361 ns (min): 24824 ns (max): 62261 ns, CPU cycles(avg):  147088 (min):   84208 (max):  211202 (stdd):2.236068
+    time (avg):  3090 ns (min):   973 ns (max):  6114 ns, CPU cycles(avg):   10484 (min):    3303 (max):   20742 (stdd):11863220.243790
+    time (avg):    41 ns (min):    10 ns (max):  1558 ns, CPU cycles(avg):     142 (min):      36 (max):    5286 (stdd):11818443.843165
+CPU Frequency:3392MHz (3392159340 cycles/sec)
 PCIe linkmode=3, length=64, loops=10000
-    time (avg): 42718 ns (min): 25175 ns (max): 96700 ns, CPU cycles(avg):  144907 (min):   85399 (max):  328023 (stdd):2.236068
-    time (avg):  3105 ns (min):   981 ns (max): 19983 ns, CPU cycles(avg):   10536 (min):    3328 (max):   67787 (stdd):11862728.726358
-    time (avg):    41 ns (min):    10 ns (max):  4452 ns, CPU cycles(avg):     142 (min):      36 (max):   15105 (stdd):11858511.531120
-CPU Frequency:3392MHz (3392159455 cycles/sec)
+    time (avg): 43371 ns (min): 25170 ns (max): 82701 ns, CPU cycles(avg):  147124 (min):   85384 (max):  280535 (stdd):2.236068
+    time (avg):  3080 ns (min):  1916 ns (max):  5179 ns, CPU cycles(avg):   10450 (min):    6501 (max):   17568 (stdd):11862622.652665
+    time (avg):    41 ns (min):    14 ns (max):  1583 ns, CPU cycles(avg):     142 (min):      48 (max):    5371 (stdd):11853585.337371
+CPU Frequency:3392MHz (3392216218 cycles/sec)
 PCIe linkmode=3, length=64, loops=10000
-    time (avg): 42642 ns (min): 25168 ns (max): 77751 ns, CPU cycles(avg):  144649 (min):   85375 (max):  263747 (stdd):2.236068
-    time (avg):  3065 ns (min):  1004 ns (max):  5812 ns, CPU cycles(avg):   10400 (min):    3406 (max):   19717 (stdd):11862900.901055
-    time (avg):    41 ns (min):     8 ns (max):  4328 ns, CPU cycles(avg):     142 (min):      30 (max):   14682 (stdd):11828595.379437
-CPU Frequency:3392MHz (3392161666 cycles/sec)
+    time (avg): 43365 ns (min): 25234 ns (max): 81272 ns, CPU cycles(avg):  147104 (min):   85602 (max):  275693 (stdd):2.236068
+    time (avg):  3090 ns (min):   984 ns (max): 13079 ns, CPU cycles(avg):   10484 (min):    3340 (max):   44368 (stdd):11863217.949133
+    time (avg):    41 ns (min):     8 ns (max):  4640 ns, CPU cycles(avg):     142 (min):      30 (max):   15742 (stdd):11833852.369940
+CPU Frequency:3392MHz (3392217092 cycles/sec)
 PCIe linkmode=3, length=64, loops=10000
-    time (avg): 42636 ns (min): 25233 ns (max): 90144 ns, CPU cycles(avg):  144629 (min):   85596 (max):  305785 (stdd):2.236068
-    time (avg):  3067 ns (min):  1004 ns (max):  5800 ns, CPU cycles(avg):   10404 (min):    3409 (max):   19677 (stdd):11863185.076038
-    time (avg):    41 ns (min):    10 ns (max):   920 ns, CPU cycles(avg):     142 (min):      36 (max):    3122 (stdd):11824363.343568
+    time (avg): 43456 ns (min): 25542 ns (max): 95685 ns, CPU cycles(avg):  147413 (min):   86647 (max):  324587 (stdd):2.236068
+    time (avg):  3074 ns (min):  1013 ns (max): 19803 ns, CPU cycles(avg):   10430 (min):    3437 (max):   67178 (stdd):11862934.390913
+    time (avg):    41 ns (min):    10 ns (max):   628 ns, CPU cycles(avg):     142 (min):      36 (max):    2131 (stdd):11855053.292791
 =============================
 10,4,0
-10,4,10000,9478,734,162,102,130,27,73214,5020,15407
-10,4,10000,9425,733,162,105,133,30,50475,4095,1245
-10,4,10000,9399,732,162,102,130,27,21948,4025,18233
-10,4,10000,9419,733,162,102,130,27,65136,5138,964
-CPU Frequency:3392MHz (3392191843 cycles/sec)
+10,4,10000,9421,732,45,121,130,36,67288,4935,109
+10,4,10000,9392,732,45,105,130,30,22141,4959,97
+10,4,10000,9407,732,45,121,111,27,68458,4942,202
+10,4,10000,9391,732,45,102,111,30,21820,4896,97
+CPU Frequency:3392MHz (3392217911 cycles/sec)
 PCIe linkmode=10, length=4, loops=10000
-    time (avg):  2771 ns (min):    30 ns (max):  6356 ns, CPU cycles(avg):    9402 (min):     102 (max):   21564 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1215 ns, CPU cycles(avg):     733 (min):     130 (max):    4122 (stdd):11863275.031092
-    time (avg):    47 ns (min):    10 ns (max):  1323 ns, CPU cycles(avg):     162 (min):      36 (max):    4488 (stdd):11833417.693369
-CPU Frequency:3392MHz (3392160050 cycles/sec)
+    time (avg):  2768 ns (min):    35 ns (max):  6660 ns, CPU cycles(avg):    9391 (min):     121 (max):   22594 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1544 ns, CPU cycles(avg):     733 (min):     133 (max):    5238 (stdd):11862698.047913
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11843551.010435
+CPU Frequency:3392MHz (3392219909 cycles/sec)
 PCIe linkmode=10, length=4, loops=10000
-    time (avg):  2770 ns (min):    35 ns (max):  6464 ns, CPU cycles(avg):    9399 (min):     121 (max):   21929 (stdd):2.236068
-    time (avg):   216 ns (min):    39 ns (max):  1486 ns, CPU cycles(avg):     734 (min):     133 (max):    5044 (stdd):11863243.835812
-    time (avg):    47 ns (min):     7 ns (max):  1343 ns, CPU cycles(avg):     162 (min):      27 (max):    4557 (stdd):11828203.397023
-CPU Frequency:3392MHz (3392159497 cycles/sec)
+    time (avg):  2768 ns (min):    30 ns (max):  6603 ns, CPU cycles(avg):    9390 (min):     102 (max):   22401 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1465 ns, CPU cycles(avg):     733 (min):     130 (max):    4972 (stdd):11863037.271832
+    time (avg):    13 ns (min):    10 ns (max):    32 ns, CPU cycles(avg):      45 (min):      36 (max):     109 (stdd):11837704.596110
+CPU Frequency:3392MHz (3392209153 cycles/sec)
 PCIe linkmode=10, length=4, loops=10000
-    time (avg):  2771 ns (min):    30 ns (max):  6719 ns, CPU cycles(avg):    9401 (min):     102 (max):   22793 (stdd):2.236068
-    time (avg):   216 ns (min):    39 ns (max):  1476 ns, CPU cycles(avg):     733 (min):     133 (max):    5008 (stdd):11863013.170464
-    time (avg):    47 ns (min):     7 ns (max):  1253 ns, CPU cycles(avg):     162 (min):      27 (max):    4252 (stdd):11833164.495109
-CPU Frequency:3392MHz (3392159839 cycles/sec)
+    time (avg):  2771 ns (min):    35 ns (max): 18319 ns, CPU cycles(avg):    9402 (min):     121 (max):   62145 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1176 ns, CPU cycles(avg):     732 (min):     133 (max):    3992 (stdd):11862708.417133
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11828121.430533
+CPU Frequency:3392MHz (3392159863 cycles/sec)
 PCIe linkmode=10, length=4, loops=10000
-    time (avg):  2774 ns (min):    30 ns (max): 14689 ns, CPU cycles(avg):    9411 (min):     105 (max):   49829 (stdd):2.236068
-    time (avg):   218 ns (min):    39 ns (max): 10120 ns, CPU cycles(avg):     740 (min):     133 (max):   34329 (stdd):11862881.155619
-    time (avg):    47 ns (min):    10 ns (max):  1362 ns, CPU cycles(avg):     162 (min):      36 (max):    4621 (stdd):11828729.140735
-CPU Frequency:3392MHz (3392160229 cycles/sec)
+    time (avg):  2768 ns (min):    35 ns (max):  6785 ns, CPU cycles(avg):    9391 (min):     121 (max):   23017 (stdd):2.236068
+    time (avg):   215 ns (min):    33 ns (max):  1458 ns, CPU cycles(avg):     732 (min):     114 (max):    4947 (stdd):11863224.679976
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11825127.268871
+CPU Frequency:3392MHz (3392160333 cycles/sec)
 PCIe linkmode=10, length=4, loops=10000
-    time (avg):  2770 ns (min):    30 ns (max):  6449 ns, CPU cycles(avg):    9398 (min):     105 (max):   21878 (stdd):2.236068
-    time (avg):   216 ns (min):    39 ns (max):  1180 ns, CPU cycles(avg):     733 (min):     133 (max):    4004 (stdd):11863147.421367
-    time (avg):    47 ns (min):     8 ns (max):   364 ns, CPU cycles(avg):     162 (min):      30 (max):    1236 (stdd):11847710.598683
-10,64,10000,148365,10554,568,87940,3412,30,339489,66655,51825
-10,64,10000,148380,10489,568,87947,3434,33,231632,20578,51789
-10,64,10000,148339,10489,568,87965,3406,27,260177,20512,52019
-10,64,10000,148406,10537,571,85085,3440,36,311298,66292,82224
-CPU Frequency:3392MHz (3392160893 cycles/sec)
+    time (avg):  2768 ns (min):    35 ns (max):  6432 ns, CPU cycles(avg):    9390 (min):     121 (max):   21820 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1201 ns, CPU cycles(avg):     733 (min):     133 (max):    4077 (stdd):11862831.169519
+    time (avg):    13 ns (min):    10 ns (max):    32 ns, CPU cycles(avg):      45 (min):      36 (max):     109 (stdd):11853640.572287
+10,64,10000,148274,10498,568,87995,3415,27,262988,65304,51913
+10,64,10000,148227,10489,568,82446,3424,30,304418,20747,51976
+10,64,10000,148294,10504,568,83462,3406,30,308996,63799,51671
+10,64,10000,148247,10489,568,87823,3418,33,307704,20527,51946
+CPU Frequency:3392MHz (3392159131 cycles/sec)
 PCIe linkmode=10, length=64, loops=10000
-    time (avg): 43716 ns (min): 25927 ns (max): 72532 ns, CPU cycles(avg):  148295 (min):   87950 (max):  246041 (stdd):2.236068
-    time (avg):  3092 ns (min):  1019 ns (max):  5918 ns, CPU cycles(avg):   10489 (min):    3458 (max):   20077 (stdd):11863230.127451
-    time (avg):   167 ns (min):     7 ns (max): 15216 ns, CPU cycles(avg):     568 (min):      27 (max):   51617 (stdd):11848414.514070
-CPU Frequency:3392MHz (3392159747 cycles/sec)
+    time (avg): 43704 ns (min): 25920 ns (max): 85833 ns, CPU cycles(avg):  148253 (min):   87928 (max):  291161 (stdd):2.236068
+    time (avg):  3108 ns (min):  1006 ns (max): 19483 ns, CPU cycles(avg):   10546 (min):    3415 (max):   66090 (stdd):11862968.239073
+    time (avg):   168 ns (min):     7 ns (max): 24138 ns, CPU cycles(avg):     571 (min):      27 (max):   81882 (stdd):11821171.887618
+CPU Frequency:3392MHz (3392158229 cycles/sec)
 PCIe linkmode=10, length=64, loops=10000
-    time (avg): 43736 ns (min): 25932 ns (max): 84406 ns, CPU cycles(avg):  148361 (min):   87968 (max):  286319 (stdd):2.236068
-    time (avg):  3092 ns (min):  1013 ns (max):  5993 ns, CPU cycles(avg):   10489 (min):    3439 (max):   20330 (stdd):11863085.259488
-    time (avg):   167 ns (min):     8 ns (max): 15290 ns, CPU cycles(avg):     568 (min):      30 (max):   51867 (stdd):11849263.596259
-CPU Frequency:3392MHz (3392158645 cycles/sec)
+    time (avg): 43689 ns (min): 25908 ns (max): 62466 ns, CPU cycles(avg):  148202 (min):   87886 (max):  211897 (stdd):2.236068
+    time (avg):  3092 ns (min):  1007 ns (max):  5931 ns, CPU cycles(avg):   10489 (min):    3418 (max):   20122 (stdd):11863163.079912
+    time (avg):   167 ns (min):     7 ns (max): 15354 ns, CPU cycles(avg):     568 (min):      27 (max):   52085 (stdd):11818633.761985
+CPU Frequency:3392MHz (3392159135 cycles/sec)
 PCIe linkmode=10, length=64, loops=10000
-    time (avg): 43713 ns (min): 25938 ns (max):104607 ns, CPU cycles(avg):  148284 (min):   87989 (max):  354845 (stdd):2.236068
-    time (avg):  3092 ns (min):  1023 ns (max):  6082 ns, CPU cycles(avg):   10489 (min):    3473 (max):   20633 (stdd):11863005.381924
-    time (avg):   167 ns (min):     9 ns (max): 15456 ns, CPU cycles(avg):     568 (min):      33 (max):   52430 (stdd):11833764.901066
-CPU Frequency:3392MHz (3392158572 cycles/sec)
+    time (avg): 43776 ns (min): 25917 ns (max): 87831 ns, CPU cycles(avg):  148497 (min):   87916 (max):  297937 (stdd):2.236068
+    time (avg):  3111 ns (min):   977 ns (max): 20087 ns, CPU cycles(avg):   10556 (min):    3316 (max):   68140 (stdd):11863154.647540
+    time (avg):   167 ns (min):     8 ns (max): 15141 ns, CPU cycles(avg):     568 (min):      30 (max):   51363 (stdd):11827637.839967
+CPU Frequency:3392MHz (3392158457 cycles/sec)
 PCIe linkmode=10, length=64, loops=10000
-    time (avg): 43733 ns (min): 25934 ns (max):110172 ns, CPU cycles(avg):  148352 (min):   87974 (max):  373722 (stdd):2.236068
-    time (avg):  3093 ns (min):   979 ns (max):  6431 ns, CPU cycles(avg):   10493 (min):    3322 (max):   21815 (stdd):11863264.003079
-    time (avg):   167 ns (min):     9 ns (max): 15766 ns, CPU cycles(avg):     568 (min):      33 (max):   53481 (stdd):11844875.089685
-CPU Frequency:3392MHz (3392159310 cycles/sec)
+    time (avg): 43714 ns (min): 26569 ns (max): 77435 ns, CPU cycles(avg):  148288 (min):   90129 (max):  262673 (stdd):2.236068
+    time (avg):  3092 ns (min):  1976 ns (max):  5015 ns, CPU cycles(avg):   10489 (min):    6703 (max):   17015 (stdd):11863257.174721
+    time (avg):   167 ns (min):    13 ns (max): 15421 ns, CPU cycles(avg):     568 (min):      45 (max):   52311 (stdd):11852866.046746
+CPU Frequency:3392MHz (3392159617 cycles/sec)
 PCIe linkmode=10, length=64, loops=10000
-    time (avg): 43735 ns (min): 25935 ns (max):103730 ns, CPU cycles(avg):  148358 (min):   87977 (max):  351870 (stdd):2.236068
-    time (avg):  3092 ns (min):  1004 ns (max):  5859 ns, CPU cycles(avg):   10489 (min):    3409 (max):   19877 (stdd):11863141.155043
-    time (avg):   167 ns (min):     7 ns (max): 15282 ns, CPU cycles(avg):     568 (min):      27 (max):   51840 (stdd):11861684.653972
+    time (avg): 43758 ns (min): 24570 ns (max): 85467 ns, CPU cycles(avg):  148436 (min):   83347 (max):  289919 (stdd):2.236068
+    time (avg):  3110 ns (min):  1004 ns (max): 19906 ns, CPU cycles(avg):   10552 (min):    3409 (max):   67525 (stdd):11862930.850095
+    time (avg):   167 ns (min):     7 ns (max): 16020 ns, CPU cycles(avg):     568 (min):      27 (max):   54345 (stdd):11843985.626704
 =============================
 11,4,0
-11,4,10000,7791,733,81,105,133,27,43933,4080,2043
-11,4,10000,7659,733,81,121,130,27,19082,5174,10007
-11,4,10000,7756,733,81,121,130,36,19215,4219,363
-11,4,10000,7671,733,81,102,130,27,45154,5095,556
-CPU Frequency:3392MHz (3392160331 cycles/sec)
+11,4,10000,7683,740,45,105,133,27,66860,34432,109
+11,4,10000,7648,732,45,102,133,27,46660,4470,97
+11,4,10000,7648,739,45,102,130,36,46887,34317,97
+11,4,10000,7657,739,45,102,130,30,46962,34532,97
+CPU Frequency:3392MHz (3392159607 cycles/sec)
 PCIe linkmode=11, length=4, loops=10000
-    time (avg):  2289 ns (min):    35 ns (max): 16859 ns, CPU cycles(avg):    7768 (min):     121 (max):   57191 (stdd):2.236068
-    time (avg):   215 ns (min):    39 ns (max):  1210 ns, CPU cycles(avg):     732 (min):     133 (max):    4107 (stdd):11862832.901444
-    time (avg):    23 ns (min):     8 ns (max):   130 ns, CPU cycles(avg):      81 (min):      30 (max):     441 (stdd):11835389.874478
-CPU Frequency:3392MHz (3392160177 cycles/sec)
+    time (avg):  2233 ns (min):    30 ns (max):  5660 ns, CPU cycles(avg):    7577 (min):     102 (max):   19203 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1180 ns, CPU cycles(avg):     733 (min):     133 (max):    4004 (stdd):11862669.221325
+    time (avg):    13 ns (min):     8 ns (max):    31 ns, CPU cycles(avg):      45 (min):      30 (max):     106 (stdd):11843665.462734
+CPU Frequency:3392MHz (3392157534 cycles/sec)
 PCIe linkmode=11, length=4, loops=10000
-    time (avg):  2266 ns (min):    35 ns (max):  5538 ns, CPU cycles(avg):    7688 (min):     121 (max):   18789 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1217 ns, CPU cycles(avg):     741 (min):     130 (max):    4131 (stdd):11863094.473778
-    time (avg):    23 ns (min):     8 ns (max):  2920 ns, CPU cycles(avg):      81 (min):      30 (max):    9907 (stdd):11836636.356563
-CPU Frequency:3392MHz (3392159721 cycles/sec)
+    time (avg):  2234 ns (min):    35 ns (max):  5384 ns, CPU cycles(avg):    7579 (min):     121 (max):   18266 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1648 ns, CPU cycles(avg):     733 (min):     133 (max):    5591 (stdd):11863079.953508
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11845005.180789
+CPU Frequency:3392MHz (3392159534 cycles/sec)
 PCIe linkmode=11, length=4, loops=10000
-    time (avg):  2277 ns (min):    35 ns (max):  5772 ns, CPU cycles(avg):    7724 (min):     121 (max):   19581 (stdd):2.236068
-    time (avg):   217 ns (min):    38 ns (max):  1581 ns, CPU cycles(avg):     739 (min):     130 (max):    5364 (stdd):11862780.150298
-    time (avg):    23 ns (min):     8 ns (max):   615 ns, CPU cycles(avg):      81 (min):      30 (max):    2088 (stdd):11845700.589464
-CPU Frequency:3392MHz (3392161710 cycles/sec)
+    time (avg):  2235 ns (min):    30 ns (max):  5609 ns, CPU cycles(avg):    7583 (min):     102 (max):   19028 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1616 ns, CPU cycles(avg):     733 (min):     133 (max):    5485 (stdd):11862597.197102
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11857080.304744
+CPU Frequency:3392MHz (3392159419 cycles/sec)
 PCIe linkmode=11, length=4, loops=10000
-    time (avg):  2268 ns (min):    35 ns (max): 10931 ns, CPU cycles(avg):    7694 (min):     121 (max):   37080 (stdd):2.236068
-    time (avg):   217 ns (min):    38 ns (max):  1600 ns, CPU cycles(avg):     739 (min):     130 (max):    5428 (stdd):11862738.450908
-    time (avg):    23 ns (min):     7 ns (max):   608 ns, CPU cycles(avg):      81 (min):      27 (max):    2064 (stdd):11830212.447978
-CPU Frequency:3392MHz (3392160298 cycles/sec)
+    time (avg):  2244 ns (min):    30 ns (max):  5615 ns, CPU cycles(avg):    7614 (min):     102 (max):   19049 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1528 ns, CPU cycles(avg):     733 (min):     133 (max):    5186 (stdd):11862663.297098
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11844717.886515
+CPU Frequency:3392MHz (3392158396 cycles/sec)
 PCIe linkmode=11, length=4, loops=10000
-    time (avg):  2286 ns (min):    35 ns (max):  5948 ns, CPU cycles(avg):    7757 (min):     121 (max):   20177 (stdd):2.236068
-    time (avg):   215 ns (min):    38 ns (max):  1328 ns, CPU cycles(avg):     732 (min):     130 (max):    4506 (stdd):11862695.007515
-    time (avg):    23 ns (min):     8 ns (max):   625 ns, CPU cycles(avg):      81 (min):      30 (max):    2122 (stdd):11843665.161854
-11,64,10000,121923,10453,284,71941,3415,27,257892,67541,10351
-11,64,10000,121790,10407,284,72020,3434,27,246236,35381,27270
-11,64,10000,121637,10406,284,71929,3409,30,244667,20086,26562
-11,64,10000,121723,10409,284,71892,3421,27,259807,21065,28618
-CPU Frequency:3392MHz (3392161117 cycles/sec)
+    time (avg):  2238 ns (min):    35 ns (max):  5382 ns, CPU cycles(avg):    7593 (min):     121 (max):   18257 (stdd):2.236068
+    time (avg):   219 ns (min):    38 ns (max):  1871 ns, CPU cycles(avg):     744 (min):     130 (max):    6347 (stdd):11862855.378984
+    time (avg):    13 ns (min):    10 ns (max):  1479 ns, CPU cycles(avg):      45 (min):      36 (max):    5020 (stdd):11858083.400534
+11,64,10000,121937,10541,284,71131,3421,27,272031,49921,27508
+11,64,10000,120807,10432,284,71022,3409,30,297456,61784,28103
+11,64,10000,120437,10405,284,70448,3409,27,255179,20379,27324
+11,64,10000,120296,10405,284,71067,3406,36,204819,20479,4210
+CPU Frequency:3392MHz (3392159153 cycles/sec)
 PCIe linkmode=11, length=64, loops=10000
-    time (avg): 35959 ns (min): 21215 ns (max): 93275 ns, CPU cycles(avg):  121982 (min):   71965 (max):  316405 (stdd):2.236068
-    time (avg):  3057 ns (min):  1021 ns (max):  5823 ns, CPU cycles(avg):   10370 (min):    3466 (max):   19753 (stdd):11862565.554101
-    time (avg):    83 ns (min):    10 ns (max):  8089 ns, CPU cycles(avg):     284 (min):      36 (max):   27442 (stdd):11830531.999499
-CPU Frequency:3392MHz (3392160966 cycles/sec)
+    time (avg): 35581 ns (min): 20942 ns (max): 84838 ns, CPU cycles(avg):  120699 (min):   71041 (max):  287785 (stdd):2.236068
+    time (avg):  3067 ns (min):  1006 ns (max):  6004 ns, CPU cycles(avg):   10405 (min):    3415 (max):   20367 (stdd):11862660.128935
+    time (avg):    83 ns (min):     7 ns (max):  1846 ns, CPU cycles(avg):     284 (min):      27 (max):    6265 (stdd):11835257.294200
+CPU Frequency:3392MHz (3392157878 cycles/sec)
 PCIe linkmode=11, length=64, loops=10000
-    time (avg): 36004 ns (min): 21342 ns (max): 51367 ns, CPU cycles(avg):  122134 (min):   72397 (max):  174246 (stdd):2.236068
-    time (avg):  3111 ns (min):  1053 ns (max):  5941 ns, CPU cycles(avg):   10554 (min):    3575 (max):   20155 (stdd):11862668.434248
-    time (avg):    83 ns (min):     7 ns (max):  7877 ns, CPU cycles(avg):     284 (min):      27 (max):   26722 (stdd):11836150.721590
-CPU Frequency:3392MHz (3392159225 cycles/sec)
+    time (avg): 35470 ns (min): 20944 ns (max): 65877 ns, CPU cycles(avg):  120320 (min):   71046 (max):  223467 (stdd):2.236068
+    time (avg):  3059 ns (min):  1018 ns (max):  5864 ns, CPU cycles(avg):   10378 (min):    3454 (max):   19895 (stdd):11862763.199548
+    time (avg):    83 ns (min):     7 ns (max):  8074 ns, CPU cycles(avg):     284 (min):      27 (max):   27390 (stdd):11845697.568216
+CPU Frequency:3392MHz (3392158669 cycles/sec)
 PCIe linkmode=11, length=64, loops=10000
-    time (avg): 35834 ns (min): 21018 ns (max): 85609 ns, CPU cycles(avg):  121556 (min):   71297 (max):  290402 (stdd):2.236068
-    time (avg):  3089 ns (min):   975 ns (max):  6142 ns, CPU cycles(avg):   10481 (min):    3309 (max):   20835 (stdd):11862738.450390
-    time (avg):    83 ns (min):     9 ns (max):  8025 ns, CPU cycles(avg):     284 (min):      33 (max):   27224 (stdd):11834768.856170
-CPU Frequency:3392MHz (3392160014 cycles/sec)
+    time (avg): 35513 ns (min): 19866 ns (max): 80587 ns, CPU cycles(avg):  120468 (min):   67389 (max):  273365 (stdd):2.236068
+    time (avg):  3076 ns (min):  1011 ns (max): 19872 ns, CPU cycles(avg):   10435 (min):    3430 (max):   67412 (stdd):11863225.272802
+    time (avg):    83 ns (min):     8 ns (max):  8175 ns, CPU cycles(avg):     284 (min):      30 (max):   27732 (stdd):11845771.455543
+CPU Frequency:3392MHz (3392158591 cycles/sec)
 PCIe linkmode=11, length=64, loops=10000
-    time (avg): 35848 ns (min): 21348 ns (max): 86389 ns, CPU cycles(avg):  121605 (min):   72416 (max):  293048 (stdd):2.236068
-    time (avg):  3091 ns (min):   976 ns (max):  6168 ns, CPU cycles(avg):   10487 (min):    3312 (max):   20923 (stdd):11862811.897520
-    time (avg):    83 ns (min):     7 ns (max):  8477 ns, CPU cycles(avg):     284 (min):      27 (max):   28756 (stdd):11822743.789352
-CPU Frequency:3392MHz (3392159149 cycles/sec)
+    time (avg): 35493 ns (min): 20998 ns (max): 73713 ns, CPU cycles(avg):  120400 (min):   71231 (max):  250047 (stdd):2.236068
+    time (avg):  3130 ns (min):  1067 ns (max): 19809 ns, CPU cycles(avg):   10618 (min):    3621 (max):   67196 (stdd):11862904.187412
+    time (avg):    83 ns (min):     8 ns (max):  8091 ns, CPU cycles(avg):     284 (min):      30 (max):   27448 (stdd):11843968.967392
+CPU Frequency:3392MHz (3392160307 cycles/sec)
 PCIe linkmode=11, length=64, loops=10000
-    time (avg): 35840 ns (min): 21367 ns (max): 57984 ns, CPU cycles(avg):  121578 (min):   72482 (max):  196693 (stdd):2.236068
-    time (avg):  3090 ns (min):   981 ns (max):  5971 ns, CPU cycles(avg):   10483 (min):    3331 (max):   20255 (stdd):11863076.798404
-    time (avg):    83 ns (min):     8 ns (max):  6648 ns, CPU cycles(avg):     284 (min):      30 (max):   22552 (stdd):11857067.008631
+    time (avg): 35549 ns (min): 20988 ns (max): 78139 ns, CPU cycles(avg):  120589 (min):   71195 (max):  265061 (stdd):2.236068
+    time (avg):  3131 ns (min):  1061 ns (max): 20052 ns, CPU cycles(avg):   10621 (min):    3602 (max):   68021 (stdd):11862560.775316
+    time (avg):    83 ns (min):     7 ns (max):  8064 ns, CPU cycles(avg):     284 (min):      27 (max):   27357 (stdd):11859742.619618
 =============================
 12,4,0
-12,4,10000,6425,741,71,121,130,27,61513,5192,169
-12,4,10000,6343,741,70,121,130,27,15921,4270,170
-12,4,10000,6415,741,73,105,130,30,45164,4123,173
-12,4,10000,6382,741,73,102,130,30,49519,4089,176
-CPU Frequency:3392MHz (3392161934 cycles/sec)
+12,4,10000,6392,733,45,102,130,30,78770,5147,188
+12,4,10000,6367,732,45,121,133,27,21851,5008,109
+12,4,10000,6366,732,45,124,130,36,16867,4180,208
+12,4,10000,6374,732,45,102,130,27,48243,4050,3675
+CPU Frequency:3392MHz (3392158138 cycles/sec)
 PCIe linkmode=12, length=4, loops=10000
-    time (avg):  1887 ns (min):    37 ns (max):  4574 ns, CPU cycles(avg):    6402 (min):     127 (max):   15516 (stdd):2.236068
-    time (avg):   217 ns (min):    38 ns (max):  1456 ns, CPU cycles(avg):     739 (min):     130 (max):    4942 (stdd):11862742.597927
-    time (avg):    19 ns (min):    10 ns (max):    50 ns, CPU cycles(avg):      67 (min):      36 (max):     173 (stdd):11816484.041300
-CPU Frequency:3392MHz (3392160174 cycles/sec)
+    time (avg):  1891 ns (min):    35 ns (max):  5058 ns, CPU cycles(avg):    6417 (min):     121 (max):   17160 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1473 ns, CPU cycles(avg):     732 (min):     130 (max):    4999 (stdd):11862610.682104
+    time (avg):    13 ns (min):    10 ns (max):    28 ns, CPU cycles(avg):      45 (min):      36 (max):      97 (stdd):11824008.418831
+CPU Frequency:3392MHz (3392160326 cycles/sec)
 PCIe linkmode=12, length=4, loops=10000
-    time (avg):  1877 ns (min):    36 ns (max):  5439 ns, CPU cycles(avg):    6370 (min):     124 (max):   18450 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1751 ns, CPU cycles(avg):     740 (min):     130 (max):    5942 (stdd):11863215.829528
-    time (avg):    21 ns (min):     7 ns (max):    50 ns, CPU cycles(avg):      72 (min):      27 (max):     170 (stdd):11843491.073578
-CPU Frequency:3392MHz (3392161745 cycles/sec)
+    time (avg):  1892 ns (min):    30 ns (max): 12268 ns, CPU cycles(avg):    6420 (min):     105 (max):   41616 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  2362 ns, CPU cycles(avg):     733 (min):     130 (max):    8015 (stdd):11862836.446779
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11857831.501848
+CPU Frequency:3392MHz (3392159129 cycles/sec)
 PCIe linkmode=12, length=4, loops=10000
-    time (avg):  1887 ns (min):    30 ns (max):  4946 ns, CPU cycles(avg):    6404 (min):     102 (max):   16780 (stdd):2.236068
-    time (avg):   217 ns (min):    32 ns (max):  1193 ns, CPU cycles(avg):     739 (min):     111 (max):    4047 (stdd):11862758.916322
-    time (avg):    19 ns (min):    10 ns (max):    51 ns, CPU cycles(avg):      67 (min):      36 (max):     176 (stdd):11846787.895300
-CPU Frequency:3392MHz (3392160668 cycles/sec)
+    time (avg):  1890 ns (min):    30 ns (max):  4934 ns, CPU cycles(avg):    6413 (min):     105 (max):   16737 (stdd):2.236068
+    time (avg):   215 ns (min):    39 ns (max):  1264 ns, CPU cycles(avg):     732 (min):     133 (max):    4291 (stdd):11862754.246897
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11840352.932532
+CPU Frequency:3392MHz (3392159419 cycles/sec)
 PCIe linkmode=12, length=4, loops=10000
-    time (avg):  1883 ns (min):    30 ns (max):  4909 ns, CPU cycles(avg):    6390 (min):     105 (max):   16655 (stdd):2.236068
-    time (avg):   218 ns (min):    39 ns (max):  1530 ns, CPU cycles(avg):     740 (min):     133 (max):    5192 (stdd):11862798.377874
-    time (avg):    21 ns (min):     8 ns (max):    49 ns, CPU cycles(avg):      72 (min):      30 (max):     167 (stdd):11861393.045212
-CPU Frequency:3392MHz (3392160497 cycles/sec)
+    time (avg):  1890 ns (min):    35 ns (max):  4694 ns, CPU cycles(avg):    6413 (min):     121 (max):   15924 (stdd):2.236068
+    time (avg):   215 ns (min):    38 ns (max):  1515 ns, CPU cycles(avg):     732 (min):     130 (max):    5141 (stdd):11862656.775698
+    time (avg):    13 ns (min):     7 ns (max):    32 ns, CPU cycles(avg):      45 (min):      27 (max):     109 (stdd):11832670.765309
+CPU Frequency:3392MHz (3392158896 cycles/sec)
 PCIe linkmode=12, length=4, loops=10000
-    time (avg):  1897 ns (min):    30 ns (max): 13777 ns, CPU cycles(avg):    6435 (min):     102 (max):   46736 (stdd):2.236068
-    time (avg):   217 ns (min):    38 ns (max):  1231 ns, CPU cycles(avg):     739 (min):     130 (max):    4177 (stdd):11862642.783179
-    time (avg):    19 ns (min):    10 ns (max):    50 ns, CPU cycles(avg):      67 (min):      36 (max):     173 (stdd):11857759.867763
-12,64,10000,100921,10549,142,59538,3324,27,260090,68469,15316
-12,64,10000,100570,10482,142,59565,3306,27,180231,19974,15582
-12,64,10000,100778,10551,141,59531,3297,27,212659,48816,2560
-12,64,10000,101199,10539,142,56386,3324,30,276284,47821,2415
-CPU Frequency:3392MHz (3392161223 cycles/sec)
+    time (avg):  1890 ns (min):    35 ns (max):  4732 ns, CPU cycles(avg):    6413 (min):     121 (max):   16054 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1517 ns, CPU cycles(avg):     733 (min):     133 (max):    5147 (stdd):11862845.403512
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11845035.389818
+12,64,10000,100508,10374,142,59426,3445,30,224430,19832,2518
+12,64,10000,100522,10371,142,59075,3466,36,227564,19753,15102
+12,64,10000,100527,10368,141,54711,6758,45,174935,45867,2584
+12,64,10000,100683,10370,141,59544,3460,27,192013,20198,2557
+CPU Frequency:3392MHz (3392160239 cycles/sec)
 PCIe linkmode=12, length=64, loops=10000
-    time (avg): 29645 ns (min): 17541 ns (max): 43125 ns, CPU cycles(avg):  100563 (min):   59504 (max):  146290 (stdd):2.236068
-    time (avg):  3086 ns (min):   977 ns (max):  5987 ns, CPU cycles(avg):   10469 (min):    3315 (max):   20312 (stdd):11862811.227157
-    time (avg):    41 ns (min):    10 ns (max):  1478 ns, CPU cycles(avg):     142 (min):      36 (max):    5014 (stdd):11859421.030145
-CPU Frequency:3392MHz (3392159195 cycles/sec)
+    time (avg): 29681 ns (min): 17568 ns (max): 49685 ns, CPU cycles(avg):  100683 (min):   59595 (max):  168542 (stdd):2.236068
+    time (avg):  3116 ns (min):  1065 ns (max):  5925 ns, CPU cycles(avg):   10572 (min):    3615 (max):   20101 (stdd):11862884.003305
+    time (avg):    41 ns (min):    10 ns (max):   886 ns, CPU cycles(avg):     142 (min):      36 (max):    3007 (stdd):11850459.830082
+CPU Frequency:3392MHz (3392158570 cycles/sec)
 PCIe linkmode=12, length=64, loops=10000
-    time (avg): 29624 ns (min): 17552 ns (max): 48461 ns, CPU cycles(avg):  100492 (min):   59541 (max):  164390 (stdd):2.236068
-    time (avg):  3090 ns (min):   978 ns (max):  6035 ns, CPU cycles(avg):   10484 (min):    3318 (max):   20473 (stdd):11863252.740964
-    time (avg):    41 ns (min):     7 ns (max):  4464 ns, CPU cycles(avg):     142 (min):      27 (max):   15144 (stdd):11836552.694532
-CPU Frequency:3392MHz (3392161105 cycles/sec)
+    time (avg): 29589 ns (min): 17468 ns (max): 65803 ns, CPU cycles(avg):  100372 (min):   59257 (max):  223215 (stdd):2.236068
+    time (avg):  3072 ns (min):  1007 ns (max): 18250 ns, CPU cycles(avg):   10423 (min):    3418 (max):   61907 (stdd):11862907.791251
+    time (avg):    41 ns (min):     7 ns (max):  4562 ns, CPU cycles(avg):     142 (min):      27 (max):   15477 (stdd):11819915.962457
+CPU Frequency:3392MHz (3392159093 cycles/sec)
 PCIe linkmode=12, length=64, loops=10000
-    time (avg): 29631 ns (min): 17546 ns (max): 76571 ns, CPU cycles(avg):  100514 (min):   59519 (max):  259742 (stdd):2.236068
-    time (avg):  3089 ns (min):   982 ns (max):  6447 ns, CPU cycles(avg):   10481 (min):    3334 (max):   21872 (stdd):11863058.945360
-    time (avg):    41 ns (min):     7 ns (max):  1563 ns, CPU cycles(avg):     142 (min):      27 (max):    5304 (stdd):11839935.029203
-CPU Frequency:3392MHz (3392159648 cycles/sec)
+    time (avg): 29736 ns (min): 19865 ns (max): 54245 ns, CPU cycles(avg):  100872 (min):   67386 (max):  184011 (stdd):2.236068
+    time (avg):  3054 ns (min):  1998 ns (max):  5074 ns, CPU cycles(avg):   10361 (min):    6779 (max):   17212 (stdd):11862895.861375
+    time (avg):    41 ns (min):    14 ns (max):  1479 ns, CPU cycles(avg):     142 (min):      48 (max):    5020 (stdd):11843806.855695
+CPU Frequency:3392MHz (3392158234 cycles/sec)
 PCIe linkmode=12, length=64, loops=10000
-    time (avg): 29623 ns (min): 17546 ns (max): 42857 ns, CPU cycles(avg):  100486 (min):   59522 (max):  145381 (stdd):2.236068
-    time (avg):  3089 ns (min):   974 ns (max):  6059 ns, CPU cycles(avg):   10481 (min):    3306 (max):   20554 (stdd):11862676.663074
-    time (avg):    41 ns (min):    10 ns (max):  1512 ns, CPU cycles(avg):     142 (min):      36 (max):    5129 (stdd):11818454.576821
-CPU Frequency:3392MHz (3392159694 cycles/sec)
+    time (avg): 29630 ns (min): 17579 ns (max): 65267 ns, CPU cycles(avg):  100510 (min):   59634 (max):  221399 (stdd):2.236068
+    time (avg):  3057 ns (min):  1012 ns (max):  5873 ns, CPU cycles(avg):   10370 (min):    3436 (max):   19925 (stdd):11862937.853006
+    time (avg):    41 ns (min):     7 ns (max):   872 ns, CPU cycles(avg):     141 (min):      27 (max):    2959 (stdd):11859487.327094
+CPU Frequency:3392MHz (3392157917 cycles/sec)
 PCIe linkmode=12, length=64, loops=10000
-    time (avg): 29626 ns (min): 17559 ns (max): 48676 ns, CPU cycles(avg):  100499 (min):   59565 (max):  165120 (stdd):2.236068
-    time (avg):  3071 ns (min):  1010 ns (max):  5896 ns, CPU cycles(avg):   10419 (min):    3428 (max):   20001 (stdd):11862813.655689
-    time (avg):    41 ns (min):     7 ns (max):  1136 ns, CPU cycles(avg):     142 (min):      27 (max):    3856 (stdd):11816873.593377
+    time (avg): 29702 ns (min): 16695 ns (max): 64502 ns, CPU cycles(avg):  100754 (min):   56633 (max):  218802 (stdd):2.236068
+    time (avg):  3133 ns (min):  1045 ns (max): 19872 ns, CPU cycles(avg):   10628 (min):    3548 (max):   67411 (stdd):11862932.703026
+    time (avg):    41 ns (min):    10 ns (max):   702 ns, CPU cycles(avg):     142 (min):      36 (max):    2382 (stdd):11853334.860953
 =============================
 13,4,0
-13,4,10000,5908,741,70,121,130,36,42702,4240,166
-13,4,10000,5929,741,73,102,130,30,65002,4219,170
-13,4,10000,5888,741,73,102,130,27,14788,4267,164
-ffffffff,4,10000,5904,741,72,121,130,27,53437,4180,164
-CPU Frequency:3392MHz (3392159473 cycles/sec)
+13,4,10000,5852,744,45,121,133,36,65489,5240,208
+13,4,10000,5808,743,45,102,130,30,15377,4186,4588
+13,4,10000,5806,743,45,121,130,36,14827,4146,220
+13,4,10000,5823,743,45,121,130,27,53240,4098,3796
+CPU Frequency:3392MHz (3392157796 cycles/sec)
 PCIe linkmode=13, length=4, loops=10000
-    time (avg):  1742 ns (min):    30 ns (max): 19332 ns, CPU cycles(avg):    5911 (min):     102 (max):   65579 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1629 ns, CPU cycles(avg):     734 (min):     130 (max):    5527 (stdd):11862870.280199
-    time (avg):    18 ns (min):     7 ns (max):  1258 ns, CPU cycles(avg):      62 (min):      27 (max):    4270 (stdd):11847744.884802
-CPU Frequency:3392MHz (3392159849 cycles/sec)
+    time (avg):  1711 ns (min):    30 ns (max):  4657 ns, CPU cycles(avg):    5805 (min):     105 (max):   15800 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1212 ns, CPU cycles(avg):     744 (min):     133 (max):    4113 (stdd):11862736.761094
+    time (avg):    13 ns (min):     7 ns (max):    33 ns, CPU cycles(avg):      45 (min):      27 (max):     112 (stdd):11828036.891708
+CPU Frequency:3392MHz (3392159840 cycles/sec)
 PCIe linkmode=13, length=4, loops=10000
-    time (avg):  1732 ns (min):    35 ns (max):  4336 ns, CPU cycles(avg):    5878 (min):     121 (max):   14709 (stdd):2.236068
-    time (avg):   215 ns (min):    38 ns (max):  1218 ns, CPU cycles(avg):     732 (min):     130 (max):    4135 (stdd):11862768.318009
-    time (avg):    19 ns (min):    10 ns (max):    50 ns, CPU cycles(avg):      65 (min):      36 (max):     170 (stdd):11852627.197982
-CPU Frequency:3392MHz (3392159001 cycles/sec)
+    time (avg):  1713 ns (min):    35 ns (max):  4333 ns, CPU cycles(avg):    5811 (min):     121 (max):   14700 (stdd):2.236068
+    time (avg):   218 ns (min):    38 ns (max):  1189 ns, CPU cycles(avg):     742 (min):     130 (max):    4035 (stdd):11863238.626923
+    time (avg):    13 ns (min):    10 ns (max):    60 ns, CPU cycles(avg):      45 (min):      36 (max):     205 (stdd):11859142.620841
+CPU Frequency:3392MHz (3392157018 cycles/sec)
 PCIe linkmode=13, length=4, loops=10000
-    time (avg):  1735 ns (min):    30 ns (max):  4616 ns, CPU cycles(avg):    5888 (min):     105 (max):   15661 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1189 ns, CPU cycles(avg):     741 (min):     130 (max):    4035 (stdd):11862686.346578
-    time (avg):    21 ns (min):     7 ns (max):  1232 ns, CPU cycles(avg):      73 (min):      27 (max):    4182 (stdd):11827203.894997
-CPU Frequency:3392MHz (3392159585 cycles/sec)
-PCIe linkmode=ffffffff, length=4, loops=10000
-    time (avg):  1733 ns (min):    35 ns (max):  4348 ns, CPU cycles(avg):    5879 (min):     121 (max):   14752 (stdd):2.236068
-    time (avg):   218 ns (min):    38 ns (max):  1201 ns, CPU cycles(avg):     741 (min):     130 (max):    4074 (stdd):11863251.954099
-    time (avg):    20 ns (min):     7 ns (max):    50 ns, CPU cycles(avg):      68 (min):      27 (max):     173 (stdd):11860085.224012
-CPU Frequency:3392MHz (3392159793 cycles/sec)
+    time (avg):  1711 ns (min):    32 ns (max):  4307 ns, CPU cycles(avg):    5806 (min):     111 (max):   14612 (stdd):2.236068
+    time (avg):   219 ns (min):    39 ns (max):  1207 ns, CPU cycles(avg):     744 (min):     133 (max):    4095 (stdd):11863119.916707
+    time (avg):    13 ns (min):    10 ns (max):    33 ns, CPU cycles(avg):      45 (min):      36 (max):     112 (stdd):11833751.546912
+CPU Frequency:3392MHz (3392158970 cycles/sec)
 PCIe linkmode=13, length=4, loops=10000
-    time (avg):  1732 ns (min):    35 ns (max):  4528 ns, CPU cycles(avg):    5877 (min):     121 (max):   15362 (stdd):2.236068
-    time (avg):   216 ns (min):    38 ns (max):  1198 ns, CPU cycles(avg):     733 (min):     130 (max):    4065 (stdd):11862866.244405
-    time (avg):    19 ns (min):     7 ns (max):  1520 ns, CPU cycles(avg):      66 (min):      27 (max):    5159 (stdd):11857504.779882
-13,64,10000,92209,10600,71,54379,3557,27,267944,67589,9502
-13,64,10000,91843,10534,71,54391,3557,27,168296,18508,8849
-13,64,10000,91974,10577,71,54457,3551,27,268344,19708,1303
-13,64,10000,91951,10576,71,54452,3569,27,216677,20811,1257
-CPU Frequency:3392MHz (3392159657 cycles/sec)
+    time (avg):  1712 ns (min):    35 ns (max):  4341 ns, CPU cycles(avg):    5808 (min):     121 (max):   14727 (stdd):2.236068
+    time (avg):   216 ns (min):    39 ns (max):  1174 ns, CPU cycles(avg):     733 (min):     133 (max):    3983 (stdd):11862911.050501
+    time (avg):    13 ns (min):     8 ns (max):    32 ns, CPU cycles(avg):      45 (min):      30 (max):     109 (stdd):11840982.933575
+CPU Frequency:3392MHz (3392157168 cycles/sec)
+PCIe linkmode=13, length=4, loops=10000
+    time (avg):  1712 ns (min):    74 ns (max):  3935 ns, CPU cycles(avg):    5808 (min):     254 (max):   13349 (stdd):2.236068
+    time (avg):   216 ns (min):    38 ns (max):  1188 ns, CPU cycles(avg):     733 (min):     130 (max):    4032 (stdd):11862725.177883
+    time (avg):    13 ns (min):    10 ns (max):    60 ns, CPU cycles(avg):      45 (min):      36 (max):     205 (stdd):11825230.997417
+13,64,10000,91652,10372,71,54403,3461,27,221998,19998,2841
+13,64,10000,91586,10376,71,51532,3473,30,190019,21068,1200
+13,64,10000,91640,10370,71,55733,3458,30,191457,20624,1272
+ffffffff,64,10000,91627,10368,71,54152,3461,27,219332,20757,1499
+CPU Frequency:3392MHz (3392157971 cycles/sec)
 PCIe linkmode=13, length=64, loops=10000
-    time (avg): 27099 ns (min): 16067 ns (max): 49143 ns, CPU cycles(avg):   91925 (min):   54503 (max):  166703 (stdd):2.236068
-    time (avg):  3121 ns (min):  1045 ns (max): 13525 ns, CPU cycles(avg):   10590 (min):    3548 (max):   45879 (stdd):11863025.791633
-    time (avg):    20 ns (min):     8 ns (max):   755 ns, CPU cycles(avg):      71 (min):      30 (max):    2563 (stdd):11842908.808457
-CPU Frequency:3392MHz (3392161682 cycles/sec)
+    time (avg): 26998 ns (min): 16093 ns (max): 50830 ns, CPU cycles(avg):   91582 (min):   54593 (max):  172424 (stdd):2.236068
+    time (avg):  3070 ns (min):  1008 ns (max):  6328 ns, CPU cycles(avg):   10415 (min):    3421 (max):   21467 (stdd):11862655.004730
+    time (avg):    20 ns (min):     8 ns (max):  2683 ns, CPU cycles(avg):      71 (min):      30 (max):    9103 (stdd):11838655.121649
+CPU Frequency:3392MHz (3392159704 cycles/sec)
 PCIe linkmode=13, length=64, loops=10000
-    time (avg): 27143 ns (min): 16025 ns (max): 59524 ns, CPU cycles(avg):   92074 (min):   54360 (max):  201916 (stdd):2.236068
-    time (avg):  3131 ns (min):  1052 ns (max): 19935 ns, CPU cycles(avg):   10623 (min):    3569 (max):   67624 (stdd):11862673.390811
-    time (avg):    20 ns (min):     7 ns (max):   796 ns, CPU cycles(avg):      71 (min):      27 (max):    2702 (stdd):11817848.839121
+    time (avg): 27071 ns (min): 15225 ns (max): 64656 ns, CPU cycles(avg):   91832 (min):   51647 (max):  219325 (stdd):2.236068
+    time (avg):  3131 ns (min):  1058 ns (max): 19630 ns, CPU cycles(avg):   10621 (min):    3590 (max):   66590 (stdd):11863149.805635
+    time (avg):    20 ns (min):     7 ns (max):  2802 ns, CPU cycles(avg):      71 (min):      27 (max):    9508 (stdd):11856702.290431
 CPU Frequency:3392MHz (3392159760 cycles/sec)
 PCIe linkmode=13, length=64, loops=10000
-    time (avg): 27088 ns (min): 16084 ns (max): 39880 ns, CPU cycles(avg):   91890 (min):   54560 (max):  135280 (stdd):2.236068
-    time (avg):  3114 ns (min):  1060 ns (max):  5909 ns, CPU cycles(avg):   10565 (min):    3596 (max):   20047 (stdd):11862690.543508
-    time (avg):    20 ns (min):     7 ns (max):   772 ns, CPU cycles(avg):      71 (min):      27 (max):    2620 (stdd):11825922.610085
-CPU Frequency:3392MHz (3392158463 cycles/sec)
+    time (avg): 27011 ns (min): 16020 ns (max): 63631 ns, CPU cycles(avg):   91628 (min):   54345 (max):  215848 (stdd):2.236068
+    time (avg):  3089 ns (min):   977 ns (max):  5946 ns, CPU cycles(avg):   10481 (min):    3316 (max):   20173 (stdd):11862762.657973
+    time (avg):    20 ns (min):     8 ns (max):   372 ns, CPU cycles(avg):      71 (min):      30 (max):    1263 (stdd):11817086.066851
+CPU Frequency:3392MHz (3392157992 cycles/sec)
 PCIe linkmode=13, length=64, loops=10000
-    time (avg): 27069 ns (min): 16049 ns (max): 46608 ns, CPU cycles(avg):   91823 (min):   54442 (max):  158102 (stdd):2.236068
-    time (avg):  3114 ns (min):  1052 ns (max):  5946 ns, CPU cycles(avg):   10564 (min):    3569 (max):   20173 (stdd):11863115.881861
-    time (avg):    20 ns (min):     7 ns (max):   785 ns, CPU cycles(avg):      71 (min):      27 (max):    2666 (stdd):11847744.731821
-CPU Frequency:3392MHz (3392161312 cycles/sec)
+    time (avg): 27000 ns (min): 16041 ns (max): 52302 ns, CPU cycles(avg):   91589 (min):   54415 (max):  177417 (stdd):2.236068
+    time (avg):  3066 ns (min):  1004 ns (max):  5974 ns, CPU cycles(avg):   10403 (min):    3409 (max):   20267 (stdd):11862741.235441
+    time (avg):    20 ns (min):     7 ns (max):   374 ns, CPU cycles(avg):      71 (min):      27 (max):    1269 (stdd):11845833.414368
+CPU Frequency:3392MHz (3392158702 cycles/sec)
 PCIe linkmode=13, length=64, loops=10000
-    time (avg): 27112 ns (min): 16033 ns (max): 61869 ns, CPU cycles(avg):   91970 (min):   54388 (max):  209872 (stdd):2.236068
-    time (avg):  3124 ns (min):  1048 ns (max): 19646 ns, CPU cycles(avg):   10600 (min):    3557 (max):   66643 (stdd):11863139.647589
-    time (avg):    20 ns (min):     7 ns (max):   815 ns, CPU cycles(avg):      71 (min):      27 (max):    2768 (stdd):11842813.554503
+    time (avg): 27006 ns (min): 16045 ns (max): 53509 ns, CPU cycles(avg):   91611 (min):   54430 (max):  181513 (stdd):2.236068
+    time (avg):  3118 ns (min):  1048 ns (max):  5972 ns, CPU cycles(avg):   10580 (min):    3557 (max):   20261 (stdd):11862943.335486
+    time (avg):    20 ns (min):    10 ns (max):   378 ns, CPU cycles(avg):      71 (min):      36 (max):    1285 (stdd):11818862.429464
